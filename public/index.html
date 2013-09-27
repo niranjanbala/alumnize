@@ -14,135 +14,67 @@
 <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
 <!--<link rel="stylesheet" type="text/css" media="screen" href="http://www.alumnize.com/public/css/applications.css" />
 <link rel="stylesheet" type="text/css" media="screen" href="http://www.alumnize.com/public/css/cards.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="http://www.alumnize.com/public/css/plugins.css" /> -->
+<link rel="stylesheet" type="text/css" media="screen" href="http://www.alumnize.com/public/css/plugins.css" />
 <link rel="shortcut icon" href="http://www.alumnize.com/public/images/favicon.ico" type="image/x-icon"> 
-<link rel="icon" href="http://www.alumnize.com/public/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="http://www.alumnize.com/public/images/favicon.ico" type="image/x-icon"> -->
 <!--[if lt IE 9]><script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script><![endif]-->
-<!--<link rel="stylesheet" type="text/css" media="screen" href="http://www.alumnize.com/public/css/extra.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="http://www.alumnize.com/public/css/site/home.css" /> -->		
+<link rel="stylesheet" type="text/css" media="screen" href="http://www.alumnize.com/public/css/extra.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="http://www.alumnize.com/public/css/site/home.css" />
 <!-- <![endif]--> 
 <title>Alumnize - Start Alumnizing!!!</title>
-<script type="text/javascript" src="/lib/jquery-1.9.1.min.js"></script>    
 </head>
 <body>
 	<div id="body">	
-		<div id="wrapper">
-			<div id="page-loading">Loading...</div>
-		    <div id="container" class="container">
-        	   <div id="header" class="clearfix">
-        			<a href="http://www.alumnize.com/" id="logo">Alumnize</a>            
-					<ul id="main-menu" class="span4">                
-						<li><a href="http://www.alumnize.com/index.php/jobs/index" class="">Jobs</a></li>
-						<li><a href="http://www.alumnize.com/index.php/networks/index" class="">Networks</a></li>
-						<li><a href="http://www.alumnize.com/index.php/companies/index" class="">Companies</a></li>
-						<li><a href="http://www.alumnize.com/index.php/people/index" class="">People</a></li>                            	
-		            </ul>
-        		  <div id="search"> 
-        	    	<form action="http://www.alumnize.com/index.php/search/results" method="post" accept-charset="utf-8">                                              
-		            	<input name="q" type="text" class="q placeholder curve6" placeholder="Search Networks" />
-        		        <input type="hidden" name="search_type_value" value="networks" />
-        		        <input type="submit" value="&nbsp;" class="search-submit" />                
-	                </form>            
-	            </div><!--Search Ends-->            
-				<ul id="user-menu" class="nav pull-right">
-					<li><a href="http://www.alumnize.com/index.php/start/login" class="hover-menu">Sign in</a></li>
-	               <li><a href="http://www.alumnize.com/index.php/start/signup/recruiter" class="hover-menu">Recruiter</a></li>
-                </ul>
-	            <div id="sub-menu-holder">
-    		        <ul id="sub-menu" class="clearfix">
+		<nav class="navbar navbar-default" role="navigation">
+			  <!-- Brand and toggle get grouped for better mobile display -->
+			  <div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+				  <span class="sr-only">Toggle navigation</span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Brand</a>
+			  </div>
+
+			  <!-- Collect the nav links, forms, and other content for toggling -->
+			  <div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+				  <li class="active"><a href="#">Link</a></li>
+				  <li><a href="#">Link</a></li>
+				  <li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+					  <li><a href="#">Action</a></li>
+					  <li><a href="#">Another action</a></li>
+					  <li><a href="#">Something else here</a></li>
+					  <li><a href="#">Separated link</a></li>
+					  <li><a href="#">One more separated link</a></li>
 					</ul>
-            	</div>                                
-	        	</div><!--Header Ends-->
-				<div class="noclear">&nbsp;</div>
-				<!--Flash-Message Ends-->
-				<div class="noclear">&nbsp;</div>
-	    	</div><!--Container Ends-->
-			<div id="home-header-wrapper">
-				<div class="container">
-				    <div class="noclear">&nbsp;</div>
-				    <div class="home-title">Leverage the power of alumni networks for your career goals!</div>
-				    <div class="home-faces"><img src="http://www.alumnize.com/public/images/home-faces.png" /></div>
-				    <div class="right-forms">
-		    	        <h2 class="home-sub-title">New to alumnize? Join Now!</h2>
-				        <div class="social-holder clearfix">
-				            <a href="http://www.alumnize.com/index.php/linked/connect" class="linkedin">Join with LinkedIn</a>        
-				            <a href="http://www.alumnize.com/index.php/fb/connect" class="facebook">Connect with Facebook</a>            
-							<span class="divider">or</span>
-				        </div>
-				        <div class="signup-form">
-				            <form action="http://www.alumnize.com/index.php/start/signup" method="post" accept-charset="utf-8" id="signup">            <input type="text" name="firstname" placeholder="First Name" class="half-input" />
-					            <input type="text" name="lastname" placeholder="Last Name" class="half-input last-half" />
-					            <input type="text" name="email" placeholder="Email Address" class="full-input" />
-					            <input type="password" name="password" placeholder="Password" class="full-input" />        
-					            <div class="noclear">&nbsp;</div>
-					            <input type="submit" class="btn btn-large btn-block" value="Start Alumnizing" />
-				            </form>
-				        </div><!--signup-form-->
-		               <div class="intro-video">
-				            <iframe src="http://player.vimeo.com/video/53143434?title=0&amp;byline=0&amp;portrait=0" width="356" height="200" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-				        </div>
-				    </div><!--Right-forms ends-->
-				</div>
-			</div><!--Home-header-wrapper ends-->
-		<div id="home-content-wrapper">
-			<div class="container">
-    			<ul class="features">
-		        	<li class="network">
-		            	<h3>Networks</h3>
-		                <p>
-		               Explore your alumni beyond your current social and professional networks.
-		                </p>
-        		    </li>
-		        	<li class="mentoring">
-        		    	<h3>Forums</h3>
-        		        <p>
-        			        Discussions over specific topics/issues through an exclusive discussion board.<br />			
-		                </p>
-		            </li>        	
-    		        <li class="jobs">
-		            	<h3>Jobs</h3>
-    		            <p>
-    			            Get access to top notch alumni and recruiter posted jobs/internships.<br />		
-		                </p>
-        		    </li>            
-		        </ul>
-		    </div><!--Container Ends-->
-		</div><!--home-content-wrapper-->
-		<div id="footer-wrapper">
-			<div class="container">
-				<div class="footer-box quick-links">
-    				<div class="footer-title">Quick Links</div>
-			    	<ul>
-        				<li><a href="http://www.alumnize.com/index.php/site/about">About us</a></li>
-			        	<li><a href="http://www.alumnize.com/index.php/site/faq">FAQs</a></li>
-			        	<li><a href="http://www.alumnize.com/index.php/site/contact">Contact us</a></li>
-			        	<li><a href="http://www.alumnize.com/index.php/site/terms">Terms of use</a></li>            
-        				<li><a href="http://www.alumnize.com/index.php/site/blog">Blog</a></li>                        
-			        </ul>
-			    </div>
-				<div class="footer-box connect-links">
-    				<div class="footer-title">Connect with us</div>
-				    	<ul>
-        					<li><a href="http://twitter.com/alumnize" class="twitter" target="_blank">Twitter</a></li>
-        					<li><a href="http://facebook.com/alumnize" class="facebook" target="_blank">Facebook</a></li>
-				        	<li><a href="http://pinterest.com/alumnize" class="pinterest" target="_blank">Pinterest</a></li>
-				        	<li><a href="http://youtube.com/alumnize" class="youtube" target="_blank">YouTube</a></li>            
-				        </ul>
-				    </div>
-				<div class="footer-box like-box">
-				    <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FAlumnize&amp;width=292&amp;height=180&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=false&amp;appId=192967367441385" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:180px;" allowTransparency="true"></iframe>
-			    </div>    
-			    <hr>
-       			<ul id="footer-left">
-					<li>&copy; 2013 Alumnize. All Rights Reserved</li>	     
+				  </li>
 				</ul>
-			    <ul id="footer-right">
-			    	<li></li>
-			    </ul>            		
-		    </div><!--container-->    
-		</div><!--Footer-Wrapper ends-->	                  
-	</div><!--Wrapper Ends-->
-</div><!--Body Ends-->      	            
+				<form class="navbar-form navbar-left" role="search">
+				  <div class="form-group">
+					<input type="text" class="form-control" placeholder="Search">
+				  </div>
+				  <button type="submit" class="btn btn-default">Submit</button>
+				</form>
+				<ul class="nav navbar-nav navbar-right">
+				  <li><a href="#">Link</a></li>
+				  <li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+					  <li><a href="#">Action</a></li>
+					  <li><a href="#">Another action</a></li>
+					  <li><a href="#">Something else here</a></li>
+					  <li><a href="#">Separated link</a></li>
+					</ul>
+				  </li>
+				</ul>
+			  </div><!-- /.navbar-collapse -->
+		</nav>
+	</div>
+<script type="text/javascript" src="/lib/jquery-1.9.1.min.js"></script>    
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js"></script>
 <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
 <!--<script type="text/javascript" src="http://www.alumnize.com/public/js/plugins.js" ></script>
