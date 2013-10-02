@@ -24,7 +24,7 @@ alumnize.Router = Backbone.Router.extend({
     }
 });
 $(document).on("ready", function () {
-    alumnize.loadTemplates(["LandingPage"],
+    alumnize.loadTemplates(["FeedBack","Carousel","Navigation","Features","Footer"],
         function () {
             alumnize.router = new alumnize.Router();
             Backbone.history.start();
