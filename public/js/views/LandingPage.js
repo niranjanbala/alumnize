@@ -6,6 +6,7 @@ alumnize.LandingPage = Backbone.View.extend({
         this.$el.append(new alumnize.Carousel().render().el);
         this.$el.append(new alumnize.Features().render().el);
         this.$el.append(new alumnize.Footer().render().el);
+        this.$el.append(new alumnize.Login().render().el);
         return this;
     }
 });
