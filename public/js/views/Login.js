@@ -1,6 +1,6 @@
 alumnize.Login = Backbone.View.extend({
     events: {
-	"click.fbLogin" : "facebookLogin"
+	"click .fbLogin" : "facebookLogin"
     },
 
     initialize:function () {
