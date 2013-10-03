@@ -1,3 +1,6 @@
+require.paths.unshift(__dirname + '/../../lib')
+require.paths.unshift(__dirname + '/../../lib/support/express/lib')
+require.paths.unshift(__dirname + '/../../lib/support/hashlib/build/default')
 var express = require('express'),
     path = require('path'),
     http = require('http');
