@@ -1,6 +1,5 @@
 alumnize.facebookConnect = function(successHandler,failureHandler) {
 	$.ajaxSetup({ cache: true });
-	$.getScript('//connect.facebook.net/en_UK/all.js', function(){
 		FB.init({
 			appId: '514256625329292',
 			status     : true, // check login status
@@ -17,5 +16,4 @@ alumnize.facebookConnect = function(successHandler,failureHandler) {
 				failureHandler(response);
 			}
 		}, {scope: 'email,publish_stream,user_about_me,user_education_history,user_location,user_work_history'});
-	});
 }
