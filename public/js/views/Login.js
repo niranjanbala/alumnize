@@ -21,7 +21,7 @@ alumnize.Login = Backbone.View.extend({
 
 
 	linkedinSuccess: function(response) {
-		console.log('Good to see you, ' + response.name + '.');
+		console.log('Good to see you, ' + response );
 		console.log(response);
 	},
 	linkedinFailure: function(response) {
