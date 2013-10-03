@@ -1,6 +1,6 @@
 alumnize
 ========
 
-Connect with you alumnize
+Connect with you alumni..
 
 --
