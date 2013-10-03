@@ -8,7 +8,7 @@ alumnize.Login = Backbone.View.extend({
     },
 	facebookSuccess: function(response) {
 		console.log('Good to see you, ' + response.name + '.');
-		console.log('Full response : ' + response);
+		console.log(response);
 	},
 	facebookFailure: function(response) {
 			console.log('User cancelled login or did not fully authorize.');
