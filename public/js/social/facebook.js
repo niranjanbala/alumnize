@@ -17,4 +17,5 @@ alumnize.facebookConnect = function(successHandler,failureHandler) {
 				failureHandler(response);
 			}
 		}, {scope: 'email,publish_stream,user_about_me,user_education_history,user_location,user_work_history'});
-	}
+	});
+}
