@@ -18,8 +18,6 @@ alumnize.Login = Backbone.View.extend({
 	facebookLogin:function () {
 		alumnize.facebookConnect(this.facebookSuccess,this.facebookFailure);
 	},
-
-
 	linkedinSuccess: function(response) {
 		console.log('Good to see you, ' + response );
 		console.log(response);
