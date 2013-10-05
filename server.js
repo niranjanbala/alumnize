@@ -9,7 +9,7 @@ app.configure(function () {
     app.set('port', process.env.PORT || 3000);
     app.use(express.logger('dev')); /* 'default', 'short', 'tiny', 'dev' */
     app.use(express.bodyParser()),
-    app.use(facebook.middleware({ appId: '514256625329292', secret: 'YOUR_APP_SECRET' }));
+    app.use(facebook.middleware({ appId: '514256625329292', secret: 'a5ed124040736814f413ceaf753170a8' }));
     app.use(express.static(path.join(__dirname, 'public')));
 });
 app.get('/', facebook.loginRequired(), function (req, res) {
