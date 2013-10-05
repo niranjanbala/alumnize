@@ -10,6 +10,8 @@ alumnize.Login = Backbone.View.extend({
 	facebookSuccess: function(response) {
 		console.log('Good to see you, ' + response.name + '.');
 		console.log(response);
+		alumnize.userHomePage = new alumnize.UserHomePage();
+		$('body').html(alumnize.userHomePage.render().el);
 	},
 	facebookFailure: function(response) {
 			console.log('User cancelled login or did not fully authorize.');
@@ -21,6 +23,8 @@ alumnize.Login = Backbone.View.extend({
 	linkedinSuccess: function(response) {
 		console.log('Good to see you, ' + response );
 		console.log(response);
+		alumnize.userHomePage = new alumnize.UserHomePage();
+		$('body').html(alumnize.userHomePage.render().el);
 	},
 	linkedinFailure: function(response) {
 		console.log('User cancelled login or did not fully authorize.');
