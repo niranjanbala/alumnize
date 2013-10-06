@@ -5,7 +5,7 @@ MongoClient.connect("mongodb://heroku_app18353461:welcome001*@ds047448.mongolab.
 });
 exports.findOrCreateFaceBookUser = function(accessToken, refreshToken, profile, done) {
 	db.collection('users', function(err, collection) {
-		collection.findOne{fbId : profile.id}, function(err, item) {
+		collection.findOne({fbId : profile.id}, function(err, item) {
 			if(item){
             	done(null,item);
         	}else {
