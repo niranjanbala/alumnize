@@ -23,7 +23,7 @@ alumnize.Router = Backbone.Router.extend({
 		alumnize.landingPage = new alumnize.LandingPage();
 		$('body').html(alumnize.landingPage.render().el);
     },
-    home: function() {
+    home: function() {        
         alumnize.userHomePage = new alumnize.UserHomePage();
         $('body').html(alumnize.userHomePage.render().el);  
     }    

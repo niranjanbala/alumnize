@@ -1,6 +1,7 @@
 var express = require('express'),
     path = require('path'),
     http = require('http'),
+    users = require('./routes/users'),
     passport = require('passport'),
     FacebookStrategy = require('passport-facebook').Strategy;
 var FACEBOOK_APP_ID = "629803890376356"
@@ -18,9 +19,7 @@ passport.use(new FacebookStrategy({
     callbackURL: "http://alumnize-beta.herokuapp.com/auth/facebook/callback"
   },
   function(accessToken, refreshToken, profile, done) {
-    process.nextTick(function () {
-      return done(null, profile);
-    });
+    users.findOrCreateFaceBookUser(accessToken, refreshToken, profile, done);
   }
 ));
 var app = express();
@@ -46,7 +45,7 @@ app.get('/account', ensureAuthenticated, function(req, res){
 });
 
 app.get('/login', function(req, res){
-  res.render('login', { user: req.user });
+  res.render('#login', { user: req.user });
 });
 
 app.get('/auth/facebook',
@@ -73,5 +72,5 @@ http.createServer(app).listen(app.get('port'), function () {
 
 function ensureAuthenticated(req, res, next) {
   if (req.isAuthenticated()) { return next(); }
-  res.redirect('/login')
+  res.redirect('/#login')
 }
