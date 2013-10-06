@@ -67,7 +67,7 @@ app.configure(function () {
     app.use(express.logger('dev')); /* 'default', 'short', 'tiny', 'dev' */
     app.use(express.bodyParser()),
     app.use(express.logger());
-  	app.use(express.cookieParser());  
+  	app.use(express.cookieParser());
   	app.use(express.methodOverride());
   	app.use(express.session({ secret: 'keyboard cat' }));
   	app.use(passport.initialize());
@@ -84,14 +84,14 @@ app.get('/auth/facebook',
   passport.authenticate('facebook', { scope: ['email','publish_stream','user_about_me','user_education_history','user_location','user_work_history'] })
 );
 
-app.get('/auth/facebook/callback', 
+app.get('/auth/facebook/callback',
   passport.authenticate('facebook', { successRedirect: '/#home',
                                       failureRedirect: '/#login' }));
-app.get('/auth/google', 
+app.get('/auth/google',
   passport.authenticate('google')
 );
 
-app.get('/auth/google/return', 
+app.get('/auth/google/return',
   passport.authenticate('google', { successRedirect: '/#home',
                                     failureRedirect: '/#login' }));
 
