@@ -25,10 +25,10 @@ exports.findOrCreateFaceBookUser = function(accessToken, refreshToken, profile, 
             	    "locale" : profile._json.locale,
             	    "timezone": profile._json.timezone,
             	    "location": profile._json.location.name,
-                	"associations":[
+                	"associations": {
                 		"work": profile._json.work,
                 		"school": profile._json.school
-                	]
+                	}
         		}], {safe:true}, function(err, result) {
         			if(err) throw err;
                 	done(null, result);
