@@ -14,12 +14,13 @@ exports.findOrCreateFaceBookUser = function(accessToken, refreshToken, profile, 
         		collection.insert([{           
         			"facebook": {
         				"id": profile.id,
-        				"link": profile.link,
+        				"link": profile.profileUrl,
         				"updated_time": profile.updated_time,
         				"username": profile.username,
-						"verified": profile.verified
+						"verified": profile.verified,
+						"profile": profile,
         			},    	
-                	"email" : [profile.email],
+                	"email" : profile.emails,
                 	"gender": profile.gender,
 	                "name" : profile.displayName,	
     	            "firstName": profile.first_name,
