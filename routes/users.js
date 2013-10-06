@@ -16,8 +16,8 @@ exports.findOrCreateFaceBookUser = function(accessToken, refreshToken, profile, 
         				link: profile.link,
         				updated_time: profile.updated_time,
         				username: profile.username,
-						verified: true,		
-        			}     	
+						verified: profile.verified,		
+        			},    	
                 	"email" : [profile.email]
                 	"gender": profile.gender,
 	                "name" : profile.displayName,	
