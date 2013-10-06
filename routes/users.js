@@ -5,7 +5,7 @@ MongoClient.connect("mongodb://user:welcome001*@ds047448.mongolab.com:47448/hero
 });
 exports.findOrCreateFaceBookUser = function(accessToken, refreshToken, profile, done) {
 	db.collection('users', function(err, collection) {		
-		collection.findOne({facebook.id : profile.id}, function(err, item) {
+		collection.findOne({"facebook.id" : profile.id}, function(err, item) {
 			if(item){
             	done(null,item);
         	}else {
@@ -16,7 +16,7 @@ exports.findOrCreateFaceBookUser = function(accessToken, refreshToken, profile, 
         				"link": profile.link,
         				"updated_time": profile.updated_time,
         				"username": profile.username,
-						"verified": profile.verified,		
+						"verified": profile.verified
         			},    	
                 	"email" : [profile.email],
                 	"gender": profile.gender,
