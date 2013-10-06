@@ -45,12 +45,10 @@ alumnize.Router = Backbone.Router.extend({
         });    
     },
     login: function() {        
-        //alumnize.landingPage = new alumnize.LandingPage();
-        //$('body').html(alumnize.landingPage.render().el);
+        this.landingPage();
     },
     signup: function() {        
-        //alumnize.landingPage = new alumnize.LandingPage();
-        //$('body').html(alumnize.landingPage.render().el);
+        this.landingPage();
     }
 });
 $(document).on("ready", function () {
