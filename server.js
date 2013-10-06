@@ -3,8 +3,8 @@ var express = require('express'),
     http = require('http'),
     passport = require('passport'),
     FacebookStrategy = require('passport-facebook').Strategy;
-var FACEBOOK_APP_ID = "514256625329292"
-var FACEBOOK_APP_SECRET = "a5ed124040736814f413ceaf753170a8";
+var FACEBOOK_APP_ID = "629803890376356"
+var FACEBOOK_APP_SECRET = "e08df1dcb0bc79deed0d78946791e1de";
 passport.serializeUser(function(user, done) {
   done(null, user);
 });
@@ -15,7 +15,7 @@ passport.deserializeUser(function(obj, done) {
 passport.use(new FacebookStrategy({
     clientID: FACEBOOK_APP_ID,
     clientSecret: FACEBOOK_APP_SECRET,
-    callbackURL: "http://http://alumnize-beta.herokuapp.com/auth/facebook/callback"
+    callbackURL: "http://alumnize-beta.herokuapp.com/auth/facebook/callback"
   },
   function(accessToken, refreshToken, profile, done) {
     process.nextTick(function () {
@@ -52,11 +52,13 @@ app.get('/login', function(req, res){
 app.get('/auth/facebook',
   passport.authenticate('facebook'),
   function(req, res){
+  	console.log(res);
   });
 
 app.get('/auth/facebook/callback', 
   passport.authenticate('facebook', { failureRedirect: '/login' }),
   function(req, res) {
+  	console.log(res);
     res.redirect('/');
   });
 
