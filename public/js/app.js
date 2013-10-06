@@ -17,7 +17,9 @@ var alumnize = {
 };
 alumnize.Router = Backbone.Router.extend({
     routes: {
-        "home": "home"
+        "home": "home",
+        "login": "login",
+        "signup":"signup"
     },
     initialize: function () {
 		alumnize.landingPage = new alumnize.LandingPage();
@@ -26,7 +28,15 @@ alumnize.Router = Backbone.Router.extend({
     home: function() {        
         alumnize.userHomePage = new alumnize.UserHomePage();
         $('body').html(alumnize.userHomePage.render().el);  
-    }    
+    },
+    login: function() {        
+        alumnize.landingPage = new alumnize.LandingPage();
+        $('body').html(alumnize.landingPage.render().el);
+    }.
+    signup: function() {        
+        alumnize.landingPage = new alumnize.LandingPage();
+        $('body').html(alumnize.landingPage.render().el);
+    }
 });
 $(document).on("ready", function () {
     alumnize.loadTemplates(["FeedBack","Carousel","Navigation","Features","Footer","Login","UserHomePage"],

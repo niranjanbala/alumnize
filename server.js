@@ -48,10 +48,8 @@ app.get('/login', function(req, res){
 });
 
 app.get('/auth/facebook',
-  passport.authenticate('facebook'),
-  function(req, res){
-  	console.log(res);
-  });
+  passport.authenticate('facebook', { scope: ['email,publish_stream,user_about_me,user_education_history,user_location,user_work_history'] });
+);
 
 app.get('/auth/facebook/callback', 
   passport.authenticate('facebook', { failureRedirect: '/login' }),
