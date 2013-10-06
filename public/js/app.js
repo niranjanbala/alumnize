@@ -27,6 +27,7 @@ alumnize.Router = Backbone.Router.extend({
     },
     home: function() {            
         var user=new alumnize.User();
+        var self=this;
         user.fetch({
             success: function (data) {
                 console.log(data);
@@ -36,7 +37,7 @@ alumnize.Router = Backbone.Router.extend({
                 $('body').html(alumnize.userHomePage.render().el);  
             },
             error:   function(model, xhr, options){
-                    this.login();
+                    self.login();
             }
         });    
     },
