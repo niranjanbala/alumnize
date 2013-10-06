@@ -3,7 +3,8 @@ var express = require('express'),
     http = require('http'),
     users = require('./routes/users'),
     passport = require('passport'),
-    FacebookStrategy = require('passport-facebook').Strategy;
+    FacebookStrategy = require('passport-facebook').Strategy,
+    GoogleStrategy = require('passport-google').Strategy;
 var FACEBOOK_APP_ID = "629803890376356"
 var FACEBOOK_APP_SECRET = "e08df1dcb0bc79deed0d78946791e1de";
 passport.serializeUser(function(user, done) {
@@ -22,6 +23,18 @@ passport.use(new FacebookStrategy({
     users.findOrCreateFaceBookUser(accessToken, refreshToken, profile, done);
   }
 ));
+
+passport.use(new GoogleStrategy({
+    returnURL: 'http://alumnize-beta.herokuapp.com/auth/google/return',
+    realm: 'http://alumnize-beta.herokuapp.com/'
+  },
+  function(identifier, profile, done) {
+    User.findOrCreate({ openId: identifier }, function(err, user) {
+      done(err, user);
+    });
+  }
+));
+
 var app = express();
 app.use(express.logger());
 app.use(express.bodyParser());
@@ -58,6 +71,14 @@ app.get('/auth/facebook/callback',
   function(req, res) {  
     res.redirect('/#home');
   });
+
+app.get('/auth/google', 
+  passport.authenticate('google')
+);
+
+app.get('/auth/google/return', 
+  passport.authenticate('google', { successRedirect: '/',
+                                    failureRedirect: '/login' }));
 
 app.get('/logout', function(req, res){
   req.logout();
