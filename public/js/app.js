@@ -25,11 +25,20 @@ alumnize.Router = Backbone.Router.extend({
 		alumnize.landingPage = new alumnize.LandingPage();
 		$('body').html(alumnize.landingPage.render().el);
     },
-    home: function() {                
+    home: function() {            
         var user=new alumnize.User();
-        user.fetch({reset: true});
-        alumnize.userHomePage = new alumnize.UserHomePage({model: user});
-        $('body').html(alumnize.userHomePage.render().el);  
+        user.fetch({
+            success: function (data) {
+                console.log(data);
+                // Note that we could also 'recycle' the same instance of EmployeeFullView
+                // instead of creating new instances
+                alumnize.userHomePage = new alumnize.UserHomePage({model: data});
+                $('body').html(alumnize.userHomePage.render().el);  
+            },
+            error:   function(model, xhr, options){
+                    login();
+            }
+        });    
     },
     login: function() {        
         alumnize.landingPage = new alumnize.LandingPage();
