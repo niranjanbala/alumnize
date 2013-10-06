@@ -25,8 +25,10 @@ alumnize.Router = Backbone.Router.extend({
 		alumnize.landingPage = new alumnize.LandingPage();
 		$('body').html(alumnize.landingPage.render().el);
     },
-    home: function() {        
-        alumnize.userHomePage = new alumnize.UserHomePage();
+    home: function() {                
+        var user=new alumnize.User();
+        user.fetch({reset: true});
+        alumnize.userHomePage = new alumnize.UserHomePage({model: user});
         $('body').html(alumnize.userHomePage.render().el);  
     },
     login: function() {        
