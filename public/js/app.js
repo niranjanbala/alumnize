@@ -17,7 +17,7 @@ var alumnize = {
 };
 alumnize.Router = Backbone.Router.extend({
     routes: {
-        "home": home
+        "home": "home"
     },
     initialize: function () {
 		alumnize.landingPage = new alumnize.LandingPage();
