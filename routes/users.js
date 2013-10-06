@@ -9,6 +9,7 @@ exports.findOrCreateFaceBookUser = function(accessToken, refreshToken, profile, 
 			if(item){
             	done(null,item);
         	}else {
+        		console.log("**********profile-info******************");
         		console.log(profile);
         		collection.insert([{           
         			"facebook": {
@@ -32,8 +33,7 @@ exports.findOrCreateFaceBookUser = function(accessToken, refreshToken, profile, 
         			if(err) throw err;
                 	done(null, result);
         		});
-        	}
-            console.log(item);            
+        	}            
         });
 	});
 };

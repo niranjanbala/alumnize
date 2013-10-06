@@ -1,0 +1,707 @@
+2013-10-06T09:42:52.981912+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:52 GMT] "GET /require/js/require.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:53.003993+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:53 GMT] "GET /underscore/js/underscore-min.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:53.013829+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:53 GMT] "GET /bootstrap/js/bootstrap.min.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:53.013829+00:00 app[web.1]: [90mGET /bootstrap/js/bootstrap.min.js [36m304 [90m29ms[0m
+2013-10-06T09:42:53.013829+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:53 GMT] "GET /bootstrap/js/bootstrap.min.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:53.014306+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:53 GMT] "GET /jquery/js/jquery-2.0.3.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:53.014306+00:00 app[web.1]: [90mGET /jquery/js/jquery-2.0.3.js [36m304 [90m17ms[0m
+2013-10-06T09:42:53.023761+00:00 heroku[router]: at=info method=GET path=/bootstrap/js/bootstrap.min.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=1ms service=49ms status=304 bytes=0
+2013-10-06T09:42:53.010965+00:00 app[web.1]: [90mGET /underscore/js/underscore-min.js [36m304 [90m27ms[0m
+2013-10-06T09:42:53.012451+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:53 GMT] "GET /underscore/js/underscore-min.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:53.012981+00:00 heroku[router]: at=info method=GET path=/underscore/js/underscore-min.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=0ms service=40ms status=304 bytes=0
+2013-10-06T09:42:53.025329+00:00 heroku[router]: at=info method=GET path=/jquery/js/jquery-2.0.3.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=4ms service=50ms status=304 bytes=0
+2013-10-06T09:42:53.014306+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:53 GMT] "GET /jquery/js/jquery-2.0.3.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:53.033746+00:00 heroku[router]: at=info method=GET path=/css/carousel.css host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=1ms service=50ms status=304 bytes=0
+2013-10-06T09:42:53.025495+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:53 GMT] "GET /css/carousel.css HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:53.025495+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:53 GMT] "GET /css/carousel.css HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:53.025495+00:00 app[web.1]: [90mGET /css/carousel.css [36m304 [90m7ms[0m
+2013-10-06T09:42:53.355093+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:53 GMT] "GET /backbone/js/backbone-min.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:53.355093+00:00 app[web.1]: [90mGET /backbone/js/backbone-min.js [36m304 [90m2ms[0m
+2013-10-06T09:42:53.355093+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:53 GMT] "GET /backbone/js/backbone-min.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:53.363044+00:00 heroku[router]: at=info method=GET path=/backbone/js/backbone-min.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=1ms service=5ms status=304 bytes=0
+2013-10-06T09:42:53.395233+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:53 GMT] "GET /lib/holder.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:53.395233+00:00 app[web.1]: [90mGET /lib/holder.js [36m304 [90m2ms[0m
+2013-10-06T09:42:53.395233+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:53 GMT] "GET /lib/holder.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:53.453684+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:53 GMT] "GET /lib/json2.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:53.453684+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:53 GMT] "GET /lib/json2.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:53.453684+00:00 app[web.1]: [90mGET /lib/json2.js [36m304 [90m13ms[0m
+2013-10-06T09:42:53.399073+00:00 heroku[router]: at=info method=GET path=/lib/holder.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=0ms service=3ms status=304 bytes=0
+2013-10-06T09:42:53.450506+00:00 heroku[router]: at=info method=GET path=/lib/json2.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=1ms service=5ms status=304 bytes=0
+2013-10-06T09:42:53.493169+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:53 GMT] "GET /js/app.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:53.493169+00:00 app[web.1]: [90mGET /js/app.js [36m304 [90m9ms[0m
+2013-10-06T09:42:53.493169+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:53 GMT] "GET /js/app.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:53.500579+00:00 heroku[router]: at=info method=GET path=/js/app.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=2ms service=13ms status=304 bytes=0
+2013-10-06T09:42:53.541106+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:53 GMT] "GET /js/views/LandingPage.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:53.548947+00:00 heroku[router]: at=info method=GET path=/js/views/LandingPage.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=0ms service=20ms status=304 bytes=0
+2013-10-06T09:42:53.541259+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:53 GMT] "GET /js/views/LandingPage.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:53.541106+00:00 app[web.1]: [90mGET /js/views/LandingPage.js [36m304 [90m18ms[0m
+2013-10-06T09:42:53.581016+00:00 heroku[router]: at=info method=GET path=/js/views/FeedBack.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=1ms service=6ms status=304 bytes=0
+2013-10-06T09:42:53.570681+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:53 GMT] "GET /js/views/FeedBack.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:53.570681+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:53 GMT] "GET /js/views/FeedBack.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:53.570681+00:00 app[web.1]: [90mGET /js/views/FeedBack.js [36m304 [90m1ms[0m
+2013-10-06T09:42:53.751008+00:00 heroku[router]: at=info method=GET path=/js/views/Navigation.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=2ms service=7ms status=304 bytes=0
+2013-10-06T09:42:53.866681+00:00 heroku[router]: at=info method=GET path=/js/views/Carousel.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=1ms service=7ms status=304 bytes=0
+2013-10-06T09:42:53.909486+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:53 GMT] "GET /js/views/Navigation.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:53.909486+00:00 app[web.1]: [90mGET /js/views/Navigation.js [36m304 [90m2ms[0m
+2013-10-06T09:42:53.909486+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:53 GMT] "GET /js/views/Navigation.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:53.909486+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:53 GMT] "GET /js/views/Features.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:53.909486+00:00 app[web.1]: [90mGET /js/views/Features.js [36m304 [90m2ms[0m
+2013-10-06T09:42:53.909486+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:53 GMT] "GET /js/views/Features.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:53.909942+00:00 app[web.1]: [90mGET /js/views/Carousel.js [36m304 [90m4ms[0m
+2013-10-06T09:42:53.930654+00:00 heroku[router]: at=info method=GET path=/js/views/Footer.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=3ms service=10ms status=304 bytes=0
+2013-10-06T09:42:53.909942+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:53 GMT] "GET /js/views/Carousel.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:53.909486+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:53 GMT] "GET /js/views/Carousel.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:53.811049+00:00 heroku[router]: at=info method=GET path=/js/views/Features.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=1ms service=5ms status=304 bytes=0
+2013-10-06T09:42:53.963225+00:00 heroku[router]: at=info method=GET path=/js/views/Login.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=1ms service=5ms status=304 bytes=0
+2013-10-06T09:42:53.921421+00:00 app[web.1]: [90mGET /js/views/Footer.js [36m304 [90m5ms[0m
+2013-10-06T09:42:53.958781+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:53 GMT] "GET /js/views/Login.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:53.958781+00:00 app[web.1]: [90mGET /js/views/Login.js [36m304 [90m6ms[0m
+2013-10-06T09:42:53.921421+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:53 GMT] "GET /js/views/Footer.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:53.921421+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:53 GMT] "GET /js/views/Footer.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:53.954096+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:53 GMT] "GET /js/views/Login.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:54.003619+00:00 app[web.1]: [90mGET /js/views/UserHomePage.js [36m304 [90m3ms[0m
+2013-10-06T09:42:54.003619+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:54 GMT] "GET /js/views/UserHomePage.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:54.003619+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:54 GMT] "GET /js/views/UserHomePage.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:54.012516+00:00 heroku[router]: at=info method=GET path=/js/views/UserHomePage.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=0ms service=6ms status=304 bytes=0
+2013-10-06T09:42:54.142588+00:00 heroku[router]: at=info method=GET path=/js/social/facebook.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=0ms service=5ms status=304 bytes=0
+2013-10-06T09:42:54.136687+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:54 GMT] "GET /js/social/facebook.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:54.139721+00:00 app[web.1]: [90mGET /js/social/facebook.js [36m304 [90m4ms[0m
+2013-10-06T09:42:54.139843+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:54 GMT] "GET /js/social/facebook.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:54.185896+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:54 GMT] "GET /js/social/linkedin.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:54.185896+00:00 app[web.1]: [90mGET /js/social/linkedin.js [36m304 [90m2ms[0m
+2013-10-06T09:42:54.185896+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:54 GMT] "GET /js/social/linkedin.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:54.191769+00:00 heroku[router]: at=info method=GET path=/js/social/linkedin.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=0ms service=4ms status=304 bytes=0
+2013-10-06T09:42:54.594708+00:00 heroku[router]: at=info method=GET path=/templates/Navigation.html host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=0ms service=10ms status=304 bytes=0
+2013-10-06T09:42:54.600608+00:00 heroku[router]: at=info method=GET path=/templates/Features.html host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=0ms service=14ms status=304 bytes=0
+2013-10-06T09:42:54.590964+00:00 heroku[router]: at=info method=GET path=/templates/FeedBack.html host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=0ms service=8ms status=304 bytes=0
+2013-10-06T09:42:54.585860+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:54 GMT] "GET /templates/FeedBack.html HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:54.588985+00:00 app[web.1]: [90mGET /templates/Navigation.html [36m304 [90m8ms[0m
+2013-10-06T09:42:54.590504+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:54 GMT] "GET /templates/Carousel.html HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:54.604019+00:00 heroku[router]: at=info method=GET path=/templates/Login.html host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=1ms service=17ms status=304 bytes=0
+2013-10-06T09:42:54.598137+00:00 heroku[router]: at=info method=GET path=/templates/Carousel.html host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=0ms service=14ms status=304 bytes=0
+2013-10-06T09:42:54.601443+00:00 heroku[router]: at=info method=GET path=/templates/Footer.html host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=1ms service=17ms status=304 bytes=0
+2013-10-06T09:42:54.585685+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:54 GMT] "GET /templates/FeedBack.html HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:54.585685+00:00 app[web.1]: [90mGET /templates/FeedBack.html [36m304 [90m6ms[0m
+2013-10-06T09:42:54.586447+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:54 GMT] "GET /templates/Navigation.html HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:54.588985+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:54 GMT] "GET /templates/Navigation.html HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:54.591301+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:54 GMT] "GET /templates/Features.html HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:54.593975+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:54 GMT] "GET /templates/Features.html HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:54.596055+00:00 app[web.1]: [90mGET /templates/Footer.html [36m304 [90m12ms[0m
+2013-10-06T09:42:54.598203+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:54 GMT] "GET /templates/Login.html HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:54.595988+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:54 GMT] "GET /templates/Footer.html HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:54.593803+00:00 app[web.1]: [90mGET /templates/Features.html [36m304 [90m11ms[0m
+2013-10-06T09:42:54.599043+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:54 GMT] "GET /templates/Login.html HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:54.590625+00:00 app[web.1]: [90mGET /templates/Carousel.html [36m304 [90m9ms[0m
+2013-10-06T09:42:54.590739+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:54 GMT] "GET /templates/Carousel.html HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:54.598203+00:00 app[web.1]: [90mGET /templates/Login.html [36m304 [90m2ms[0m
+2013-10-06T09:42:54.596153+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:54 GMT] "GET /templates/Footer.html HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:54.945016+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:54 GMT] "GET /templates/UserHomePage.html HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:54.951251+00:00 heroku[router]: at=info method=GET path=/templates/UserHomePage.html host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=0ms service=4ms status=304 bytes=0
+2013-10-06T09:42:54.957451+00:00 app[web.1]: [90mGET /templates/UserHomePage.html [36m304 [90m14ms[0m
+2013-10-06T09:42:54.963973+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:54 GMT] "GET /templates/UserHomePage.html HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:55.364829+00:00 heroku[router]: at=info method=GET path=/images/logo.png host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=1ms service=21ms status=304 bytes=0
+2013-10-06T09:42:55.357082+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:55 GMT] "GET /images/logo.png HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:55.358206+00:00 app[web.1]: [90mGET /images/logo.png [36m304 [90m11ms[0m
+2013-10-06T09:42:55.358285+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:55 GMT] "GET /images/logo.png HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:55.367443+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:55 GMT] "GET /images/140x140.png HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:55.375530+00:00 heroku[router]: at=info method=GET path=/images/140x140.png host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=4ms service=22ms status=304 bytes=0
+2013-10-06T09:42:55.372820+00:00 app[web.1]: [90mGET /images/140x140.png [36m304 [90m14ms[0m
+2013-10-06T09:42:55.373395+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:55 GMT] "GET /images/140x140.png HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:55.374651+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:55 GMT] "GET /images/500x500.png HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:55.378184+00:00 heroku[router]: at=info method=GET path=/images/500x500.png host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=5ms service=29ms status=304 bytes=0
+2013-10-06T09:42:55.395582+00:00 app[web.1]: [90mGET /images/500x500.png [36m304 [90m29ms[0m
+2013-10-06T09:42:55.395582+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:55 GMT] "GET /images/500x500.png HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:57.616303+00:00 heroku[router]: at=info method=GET path=/auth/facebook host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=1ms service=4ms status=302 bytes=662
+2013-10-06T09:42:57.608823+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:57 GMT] "GET /auth/facebook HTTP/1.1" 302 662 "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:57.608960+00:00 app[web.1]: [90mGET /auth/facebook [36m302 [90m2ms - 662b[0m
+2013-10-06T09:42:57.609024+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:57 GMT] "GET /auth/facebook HTTP/1.1" 302 662 "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:58.737296+00:00 app[web.1]: { domain: null,
+2013-10-06T09:42:58.737296+00:00 app[web.1]:   _events: { finish: [Function], header: [Function] },
+2013-10-06T09:42:58.737296+00:00 app[web.1]:   _maxListeners: 10,
+2013-10-06T09:42:58.737296+00:00 app[web.1]:   output: [],
+2013-10-06T09:42:58.737296+00:00 app[web.1]:   outputEncodings: [],
+2013-10-06T09:42:58.737296+00:00 app[web.1]:   writable: true,
+2013-10-06T09:42:58.737296+00:00 app[web.1]:   _last: false,
+2013-10-06T09:42:58.737296+00:00 app[web.1]:   chunkedEncoding: false,
+2013-10-06T09:42:58.737296+00:00 app[web.1]:   shouldKeepAlive: false,
+2013-10-06T09:42:58.737296+00:00 app[web.1]:   useChunkedEncodingByDefault: true,
+2013-10-06T09:42:58.737490+00:00 app[web.1]:   sendDate: true,
+2013-10-06T09:42:58.737490+00:00 app[web.1]:   _headerSent: false,
+2013-10-06T09:42:58.737490+00:00 app[web.1]:   _header: '',
+2013-10-06T09:42:58.737490+00:00 app[web.1]:   _hasBody: true,
+2013-10-06T09:42:58.737490+00:00 app[web.1]:   _trailer: '',
+2013-10-06T09:42:58.737490+00:00 app[web.1]:   finished: false,
+2013-10-06T09:42:58.737490+00:00 app[web.1]:   _hangupClose: false,
+2013-10-06T09:42:58.737490+00:00 app[web.1]:   socket: 
+2013-10-06T09:42:58.737490+00:00 app[web.1]:    { _connecting: false,
+2013-10-06T09:42:58.737490+00:00 app[web.1]:      _handle: 
+2013-10-06T09:42:58.737637+00:00 app[web.1]:       { fd: 18,
+2013-10-06T09:42:58.737637+00:00 app[web.1]:         writeQueueSize: 0,
+2013-10-06T09:42:58.737637+00:00 app[web.1]:         owner: [Circular],
+2013-10-06T09:42:58.737637+00:00 app[web.1]:         onread: [Function: onread],
+2013-10-06T09:42:58.737637+00:00 app[web.1]:         reading: true },
+2013-10-06T09:42:58.737637+00:00 app[web.1]:      _readableState: 
+2013-10-06T09:42:58.737637+00:00 app[web.1]:       { highWaterMark: 16384,
+2013-10-06T09:42:58.737637+00:00 app[web.1]:         buffer: [],
+2013-10-06T09:42:58.737637+00:00 app[web.1]:         length: 0,
+2013-10-06T09:42:58.737637+00:00 app[web.1]:         pipes: null,
+2013-10-06T09:42:58.738009+00:00 app[web.1]:         pipesCount: 0,
+2013-10-06T09:42:58.738009+00:00 app[web.1]:         flowing: false,
+2013-10-06T09:42:58.738009+00:00 app[web.1]:         ended: false,
+2013-10-06T09:42:58.738009+00:00 app[web.1]:         endEmitted: false,
+2013-10-06T09:42:58.738009+00:00 app[web.1]:         reading: true,
+2013-10-06T09:42:58.738009+00:00 app[web.1]:         calledRead: true,
+2013-10-06T09:42:58.738009+00:00 app[web.1]:         sync: false,
+2013-10-06T09:42:58.738009+00:00 app[web.1]:         needReadable: true,
+2013-10-06T09:42:58.738009+00:00 app[web.1]:         emittedReadable: false,
+2013-10-06T09:42:58.738009+00:00 app[web.1]:         readableListening: false,
+2013-10-06T09:42:58.738151+00:00 app[web.1]:         objectMode: false,
+2013-10-06T09:42:58.738151+00:00 app[web.1]:         defaultEncoding: 'utf8',
+2013-10-06T09:42:58.738151+00:00 app[web.1]:         ranOut: false,
+2013-10-06T09:42:58.738151+00:00 app[web.1]:         awaitDrain: 0,
+2013-10-06T09:42:58.738151+00:00 app[web.1]:         readingMore: false,
+2013-10-06T09:42:58.738151+00:00 app[web.1]:         decoder: null,
+2013-10-06T09:42:58.738151+00:00 app[web.1]:         encoding: null },
+2013-10-06T09:42:58.738151+00:00 app[web.1]:      readable: true,
+2013-10-06T09:42:58.738151+00:00 app[web.1]:      domain: null,
+2013-10-06T09:42:58.738151+00:00 app[web.1]:      _events: 
+2013-10-06T09:42:58.738425+00:00 app[web.1]:       { end: [Object],
+2013-10-06T09:42:58.738425+00:00 app[web.1]:         finish: [Function: onSocketFinish],
+2013-10-06T09:42:58.738425+00:00 app[web.1]:         _socketEnd: [Function: onSocketEnd],
+2013-10-06T09:42:58.738425+00:00 app[web.1]:         drain: [Function: ondrain],
+2013-10-06T09:42:58.738425+00:00 app[web.1]:         timeout: [Function],
+2013-10-06T09:42:58.738425+00:00 app[web.1]:         error: [Function],
+2013-10-06T09:42:58.738425+00:00 app[web.1]:         close: [Object] },
+2013-10-06T09:42:58.738425+00:00 app[web.1]:      _maxListeners: 10,
+2013-10-06T09:42:58.738425+00:00 app[web.1]:      _writableState: 
+2013-10-06T09:42:58.738425+00:00 app[web.1]:       { highWaterMark: 16384,
+2013-10-06T09:42:58.738567+00:00 app[web.1]:         objectMode: false,
+2013-10-06T09:42:58.738567+00:00 app[web.1]:         needDrain: false,
+2013-10-06T09:42:58.738567+00:00 app[web.1]:         ending: false,
+2013-10-06T09:42:58.738567+00:00 app[web.1]:         ended: false,
+2013-10-06T09:42:58.738567+00:00 app[web.1]:         finished: false,
+2013-10-06T09:42:58.738567+00:00 app[web.1]:         decodeStrings: false,
+2013-10-06T09:42:58.738567+00:00 app[web.1]:         defaultEncoding: 'utf8',
+2013-10-06T09:42:58.738567+00:00 app[web.1]:         length: 0,
+2013-10-06T09:42:58.738567+00:00 app[web.1]:         writing: false,
+2013-10-06T09:42:58.738567+00:00 app[web.1]:         sync: true,
+2013-10-06T09:42:58.738863+00:00 app[web.1]:         bufferProcessing: false,
+2013-10-06T09:42:58.738863+00:00 app[web.1]:         onwrite: [Function],
+2013-10-06T09:42:58.738863+00:00 app[web.1]:         writecb: null,
+2013-10-06T09:42:58.738863+00:00 app[web.1]:         writelen: 0,
+2013-10-06T09:42:58.738863+00:00 app[web.1]:         buffer: [] },
+2013-10-06T09:42:58.738863+00:00 app[web.1]:      writable: true,
+2013-10-06T09:42:58.738863+00:00 app[web.1]:      allowHalfOpen: true,
+2013-10-06T09:42:58.738863+00:00 app[web.1]:      onend: [Function],
+2013-10-06T09:42:58.738863+00:00 app[web.1]:      destroyed: false,
+2013-10-06T09:42:58.738863+00:00 app[web.1]:      errorEmitted: false,
+2013-10-06T09:42:58.739045+00:00 app[web.1]:      bytesRead: 1157,
+2013-10-06T09:42:58.739045+00:00 app[web.1]:      _bytesDispatched: 0,
+2013-10-06T09:42:58.739045+00:00 app[web.1]:      _pendingData: null,
+2013-10-06T09:42:58.739045+00:00 app[web.1]:      _pendingEncoding: '',
+2013-10-06T09:42:58.739045+00:00 app[web.1]:      server: 
+2013-10-06T09:42:58.739045+00:00 app[web.1]:       { domain: null,
+2013-10-06T09:42:58.739045+00:00 app[web.1]:         _events: [Object],
+2013-10-06T09:42:58.739045+00:00 app[web.1]:         _maxListeners: 10,
+2013-10-06T09:42:58.739045+00:00 app[web.1]:         _connections: 1,
+2013-10-06T09:42:58.739045+00:00 app[web.1]:         connections: [Getter/Setter],
+2013-10-06T09:42:58.739314+00:00 app[web.1]:         _handle: [Object],
+2013-10-06T09:42:58.739314+00:00 app[web.1]:         _usingSlaves: false,
+2013-10-06T09:42:58.739314+00:00 app[web.1]:         _slaves: [],
+2013-10-06T09:42:58.739314+00:00 app[web.1]:         allowHalfOpen: true,
+2013-10-06T09:42:58.739314+00:00 app[web.1]:         httpAllowHalfOpen: false,
+2013-10-06T09:42:58.739314+00:00 app[web.1]:         timeout: 120000,
+2013-10-06T09:42:58.739314+00:00 app[web.1]:         _connectionKey: '4:0.0.0.0:22690' },
+2013-10-06T09:42:58.739314+00:00 app[web.1]:      _idleTimeout: 120000,
+2013-10-06T09:42:58.739314+00:00 app[web.1]:      _idleNext: 
+2013-10-06T09:42:58.739314+00:00 app[web.1]:       { _connecting: false,
+2013-10-06T09:42:58.739457+00:00 app[web.1]:         _handle: [Object],
+2013-10-06T09:42:58.739457+00:00 app[web.1]:         _readableState: [Object],
+2013-10-06T09:42:58.739457+00:00 app[web.1]:         readable: true,
+2013-10-06T09:42:58.739457+00:00 app[web.1]:         domain: null,
+2013-10-06T09:42:58.739457+00:00 app[web.1]:         _events: [Object],
+2013-10-06T09:42:58.739457+00:00 app[web.1]:         _maxListeners: 10,
+2013-10-06T09:42:58.739457+00:00 app[web.1]:         _writableState: [Object],
+2013-10-06T09:42:58.739457+00:00 app[web.1]:         writable: true,
+2013-10-06T09:42:58.739457+00:00 app[web.1]:         allowHalfOpen: false,
+2013-10-06T09:42:58.739457+00:00 app[web.1]:         onend: null,
+2013-10-06T09:42:58.739747+00:00 app[web.1]:         destroyed: false,
+2013-10-06T09:42:58.739747+00:00 app[web.1]:         errorEmitted: false,
+2013-10-06T09:42:58.739747+00:00 app[web.1]:         bytesRead: 39932,
+2013-10-06T09:42:58.739747+00:00 app[web.1]:         _bytesDispatched: 7772,
+2013-10-06T09:42:58.739747+00:00 app[web.1]:         _pendingData: null,
+2013-10-06T09:42:58.739747+00:00 app[web.1]:         _pendingEncoding: '',
+2013-10-06T09:42:58.739747+00:00 app[web.1]:         _idleTimeout: 30000,
+2013-10-06T09:42:58.739747+00:00 app[web.1]:         _idleNext: [Object],
+2013-10-06T09:42:58.739747+00:00 app[web.1]:         _idlePrev: [Circular],
+2013-10-06T09:42:58.739747+00:00 app[web.1]:         _idleStart: 1381052577661,
+2013-10-06T09:42:58.739891+00:00 app[web.1]:         pipe: [Function],
+2013-10-06T09:42:58.739891+00:00 app[web.1]:         addListener: [Function],
+2013-10-06T09:42:58.739891+00:00 app[web.1]:         on: [Function],
+2013-10-06T09:42:58.739891+00:00 app[web.1]:         pause: [Function],
+2013-10-06T09:42:58.739891+00:00 app[web.1]:         resume: [Function],
+2013-10-06T09:42:58.739891+00:00 app[web.1]:         read: [Function],
+2013-10-06T09:42:58.739891+00:00 app[web.1]:         _consuming: true },
+2013-10-06T09:42:58.739891+00:00 app[web.1]:      _idlePrev: { _idleNext: [Circular], _idlePrev: [Object] },
+2013-10-06T09:42:58.739891+00:00 app[web.1]:      _idleStart: 1381052578421,
+2013-10-06T09:42:58.739891+00:00 app[web.1]:      parser: 
+2013-10-06T09:42:58.740145+00:00 app[web.1]:       { _headers: [],
+2013-10-06T09:42:58.740145+00:00 app[web.1]:         _url: '',
+2013-10-06T09:42:58.740145+00:00 app[web.1]:         onHeaders: [Function: parserOnHeaders],
+2013-10-06T09:42:58.740145+00:00 app[web.1]:         onHeadersComplete: [Function: parserOnHeadersComplete],
+2013-10-06T09:42:58.740145+00:00 app[web.1]:         onBody: [Function: parserOnBody],
+2013-10-06T09:42:58.740145+00:00 app[web.1]:         onMessageComplete: [Function: parserOnMessageComplete],
+2013-10-06T09:42:58.740145+00:00 app[web.1]:         socket: [Circular],
+2013-10-06T09:42:58.740145+00:00 app[web.1]:         incoming: [Object],
+2013-10-06T09:42:58.740145+00:00 app[web.1]:         maxHeaderPairs: 2000,
+2013-10-06T09:42:58.740145+00:00 app[web.1]:         onIncoming: [Function] },
+2013-10-06T09:42:58.740289+00:00 app[web.1]:      ondata: [Function],
+2013-10-06T09:42:58.740289+00:00 app[web.1]:      _httpMessage: [Circular] },
+2013-10-06T09:42:58.740289+00:00 app[web.1]:   connection: 
+2013-10-06T09:42:58.740289+00:00 app[web.1]:    { _connecting: false,
+2013-10-06T09:42:58.740289+00:00 app[web.1]:      _handle: 
+2013-10-06T09:42:58.740289+00:00 app[web.1]:       { fd: 18,
+2013-10-06T09:42:58.740289+00:00 app[web.1]:         writeQueueSize: 0,
+2013-10-06T09:42:58.740289+00:00 app[web.1]:         owner: [Circular],
+2013-10-06T09:42:58.740289+00:00 app[web.1]:         onread: [Function: onread],
+2013-10-06T09:42:58.740289+00:00 app[web.1]:         reading: true },
+2013-10-06T09:42:58.740539+00:00 app[web.1]:      _readableState: 
+2013-10-06T09:42:58.740539+00:00 app[web.1]:       { highWaterMark: 16384,
+2013-10-06T09:42:58.740539+00:00 app[web.1]:         buffer: [],
+2013-10-06T09:42:58.740539+00:00 app[web.1]:         length: 0,
+2013-10-06T09:42:58.740539+00:00 app[web.1]:         pipes: null,
+2013-10-06T09:42:58.740539+00:00 app[web.1]:         pipesCount: 0,
+2013-10-06T09:42:58.740539+00:00 app[web.1]:         flowing: false,
+2013-10-06T09:42:58.740539+00:00 app[web.1]:         ended: false,
+2013-10-06T09:42:58.740539+00:00 app[web.1]:         endEmitted: false,
+2013-10-06T09:42:58.740539+00:00 app[web.1]:         reading: true,
+2013-10-06T09:42:58.740682+00:00 app[web.1]:         calledRead: true,
+2013-10-06T09:42:58.740682+00:00 app[web.1]:         sync: false,
+2013-10-06T09:42:58.740682+00:00 app[web.1]:         needReadable: true,
+2013-10-06T09:42:58.740682+00:00 app[web.1]:         emittedReadable: false,
+2013-10-06T09:42:58.740682+00:00 app[web.1]:         readableListening: false,
+2013-10-06T09:42:58.740682+00:00 app[web.1]:         objectMode: false,
+2013-10-06T09:42:58.740682+00:00 app[web.1]:         defaultEncoding: 'utf8',
+2013-10-06T09:42:58.740682+00:00 app[web.1]:         ranOut: false,
+2013-10-06T09:42:58.740682+00:00 app[web.1]:         awaitDrain: 0,
+2013-10-06T09:42:58.740682+00:00 app[web.1]:         readingMore: false,
+2013-10-06T09:42:58.740930+00:00 app[web.1]:         decoder: null,
+2013-10-06T09:42:58.740930+00:00 app[web.1]:         encoding: null },
+2013-10-06T09:42:58.740930+00:00 app[web.1]:      readable: true,
+2013-10-06T09:42:58.740930+00:00 app[web.1]:      domain: null,
+2013-10-06T09:42:58.740930+00:00 app[web.1]:      _events: 
+2013-10-06T09:42:58.740930+00:00 app[web.1]:       { end: [Object],
+2013-10-06T09:42:58.740930+00:00 app[web.1]:         finish: [Function: onSocketFinish],
+2013-10-06T09:42:58.740930+00:00 app[web.1]:         _socketEnd: [Function: onSocketEnd],
+2013-10-06T09:42:58.740930+00:00 app[web.1]:         drain: [Function: ondrain],
+2013-10-06T09:42:58.740930+00:00 app[web.1]:         timeout: [Function],
+2013-10-06T09:42:58.741073+00:00 app[web.1]:         error: [Function],
+2013-10-06T09:42:58.741073+00:00 app[web.1]:         close: [Object] },
+2013-10-06T09:42:58.741073+00:00 app[web.1]:      _maxListeners: 10,
+2013-10-06T09:42:58.741073+00:00 app[web.1]:      _writableState: 
+2013-10-06T09:42:58.741073+00:00 app[web.1]:       { highWaterMark: 16384,
+2013-10-06T09:42:58.741073+00:00 app[web.1]:         objectMode: false,
+2013-10-06T09:42:58.741073+00:00 app[web.1]:         needDrain: false,
+2013-10-06T09:42:58.741073+00:00 app[web.1]:         ending: false,
+2013-10-06T09:42:58.741073+00:00 app[web.1]:         ended: false,
+2013-10-06T09:42:58.741073+00:00 app[web.1]:         finished: false,
+2013-10-06T09:42:58.741354+00:00 app[web.1]:         decodeStrings: false,
+2013-10-06T09:42:58.741354+00:00 app[web.1]:         defaultEncoding: 'utf8',
+2013-10-06T09:42:58.741354+00:00 app[web.1]:         length: 0,
+2013-10-06T09:42:58.741354+00:00 app[web.1]:         writing: false,
+2013-10-06T09:42:58.741354+00:00 app[web.1]:         sync: true,
+2013-10-06T09:42:58.741354+00:00 app[web.1]:         bufferProcessing: false,
+2013-10-06T09:42:58.741354+00:00 app[web.1]:         onwrite: [Function],
+2013-10-06T09:42:58.741354+00:00 app[web.1]:         writecb: null,
+2013-10-06T09:42:58.741354+00:00 app[web.1]:         writelen: 0,
+2013-10-06T09:42:58.741354+00:00 app[web.1]:         buffer: [] },
+2013-10-06T09:42:58.741500+00:00 app[web.1]:      writable: true,
+2013-10-06T09:42:58.741500+00:00 app[web.1]:      allowHalfOpen: true,
+2013-10-06T09:42:58.741500+00:00 app[web.1]:      onend: [Function],
+2013-10-06T09:42:58.741500+00:00 app[web.1]:      destroyed: false,
+2013-10-06T09:42:58.741500+00:00 app[web.1]:      errorEmitted: false,
+2013-10-06T09:42:58.741500+00:00 app[web.1]:      bytesRead: 1157,
+2013-10-06T09:42:58.741500+00:00 app[web.1]:      _bytesDispatched: 0,
+2013-10-06T09:42:58.741500+00:00 app[web.1]:      _pendingData: null,
+2013-10-06T09:42:58.741500+00:00 app[web.1]:      _pendingEncoding: '',
+2013-10-06T09:42:58.741500+00:00 app[web.1]:      server: 
+2013-10-06T09:42:58.741752+00:00 app[web.1]:       { domain: null,
+2013-10-06T09:42:58.741752+00:00 app[web.1]:         _events: [Object],
+2013-10-06T09:42:58.741752+00:00 app[web.1]:         _maxListeners: 10,
+2013-10-06T09:42:58.741752+00:00 app[web.1]:         _connections: 1,
+2013-10-06T09:42:58.741752+00:00 app[web.1]:         connections: [Getter/Setter],
+2013-10-06T09:42:58.741752+00:00 app[web.1]:         _handle: [Object],
+2013-10-06T09:42:58.741752+00:00 app[web.1]:         _usingSlaves: false,
+2013-10-06T09:42:58.741752+00:00 app[web.1]:         _slaves: [],
+2013-10-06T09:42:58.741752+00:00 app[web.1]:         allowHalfOpen: true,
+2013-10-06T09:42:58.741752+00:00 app[web.1]:         httpAllowHalfOpen: false,
+2013-10-06T09:42:58.741896+00:00 app[web.1]:         timeout: 120000,
+2013-10-06T09:42:58.741896+00:00 app[web.1]:         _connectionKey: '4:0.0.0.0:22690' },
+2013-10-06T09:42:58.741896+00:00 app[web.1]:      _idleTimeout: 120000,
+2013-10-06T09:42:58.741896+00:00 app[web.1]:      _idleNext: 
+2013-10-06T09:42:58.741896+00:00 app[web.1]:       { _connecting: false,
+2013-10-06T09:42:58.741896+00:00 app[web.1]:         _handle: [Object],
+2013-10-06T09:42:58.741896+00:00 app[web.1]:         _readableState: [Object],
+2013-10-06T09:42:58.741896+00:00 app[web.1]:         readable: true,
+2013-10-06T09:42:58.741896+00:00 app[web.1]:         domain: null,
+2013-10-06T09:42:58.741896+00:00 app[web.1]:         _events: [Object],
+2013-10-06T09:42:58.742193+00:00 app[web.1]:         _maxListeners: 10,
+2013-10-06T09:42:58.742193+00:00 app[web.1]:         _writableState: [Object],
+2013-10-06T09:42:58.742193+00:00 app[web.1]:         writable: true,
+2013-10-06T09:42:58.742193+00:00 app[web.1]:         allowHalfOpen: false,
+2013-10-06T09:42:58.742193+00:00 app[web.1]:         onend: null,
+2013-10-06T09:42:58.742193+00:00 app[web.1]:         destroyed: false,
+2013-10-06T09:42:58.742193+00:00 app[web.1]:         errorEmitted: false,
+2013-10-06T09:42:58.742193+00:00 app[web.1]:         bytesRead: 39932,
+2013-10-06T09:42:58.742193+00:00 app[web.1]:         _bytesDispatched: 7772,
+2013-10-06T09:42:58.742193+00:00 app[web.1]:         _pendingData: null,
+2013-10-06T09:42:58.742342+00:00 app[web.1]:         _pendingEncoding: '',
+2013-10-06T09:42:58.742342+00:00 app[web.1]:         _idleTimeout: 30000,
+2013-10-06T09:42:58.742342+00:00 app[web.1]:         _idleNext: [Object],
+2013-10-06T09:42:58.742342+00:00 app[web.1]:         _idlePrev: [Circular],
+2013-10-06T09:42:58.742342+00:00 app[web.1]:         _idleStart: 1381052577661,
+2013-10-06T09:42:58.742342+00:00 app[web.1]:         pipe: [Function],
+2013-10-06T09:42:58.742342+00:00 app[web.1]:         addListener: [Function],
+2013-10-06T09:42:58.742342+00:00 app[web.1]:         on: [Function],
+2013-10-06T09:42:58.742342+00:00 app[web.1]:         pause: [Function],
+2013-10-06T09:42:58.742342+00:00 app[web.1]:         resume: [Function],
+2013-10-06T09:42:58.742608+00:00 app[web.1]:         read: [Function],
+2013-10-06T09:42:58.742608+00:00 app[web.1]:         _consuming: true },
+2013-10-06T09:42:58.742608+00:00 app[web.1]:      _idlePrev: { _idleNext: [Circular], _idlePrev: [Object] },
+2013-10-06T09:42:58.742608+00:00 app[web.1]:      _idleStart: 1381052578421,
+2013-10-06T09:42:58.742608+00:00 app[web.1]:      parser: 
+2013-10-06T09:42:58.742608+00:00 app[web.1]:       { _headers: [],
+2013-10-06T09:42:58.742608+00:00 app[web.1]:         _url: '',
+2013-10-06T09:42:58.742608+00:00 app[web.1]:         onHeaders: [Function: parserOnHeaders],
+2013-10-06T09:42:58.742608+00:00 app[web.1]:         onHeadersComplete: [Function: parserOnHeadersComplete],
+2013-10-06T09:42:58.742608+00:00 app[web.1]:         onBody: [Function: parserOnBody],
+2013-10-06T09:42:58.742759+00:00 app[web.1]:         onMessageComplete: [Function: parserOnMessageComplete],
+2013-10-06T09:42:58.742759+00:00 app[web.1]:         socket: [Circular],
+2013-10-06T09:42:58.742759+00:00 app[web.1]:         incoming: [Object],
+2013-10-06T09:42:58.742759+00:00 app[web.1]:         maxHeaderPairs: 2000,
+2013-10-06T09:42:58.742759+00:00 app[web.1]:         onIncoming: [Function] },
+2013-10-06T09:42:58.742759+00:00 app[web.1]:      ondata: [Function],
+2013-10-06T09:42:58.742759+00:00 app[web.1]:      _httpMessage: [Circular] },
+2013-10-06T09:42:58.742759+00:00 app[web.1]:   _headers: { 'x-powered-by': 'Express' },
+2013-10-06T09:42:58.742759+00:00 app[web.1]:   _headerNames: { 'x-powered-by': 'X-Powered-By' },
+2013-10-06T09:42:58.742759+00:00 app[web.1]:   req: 
+2013-10-06T09:42:58.743040+00:00 app[web.1]:    { _readableState: 
+2013-10-06T09:42:58.743040+00:00 app[web.1]:       { highWaterMark: 16384,
+2013-10-06T09:42:58.743040+00:00 app[web.1]:         buffer: [],
+2013-10-06T09:42:58.743040+00:00 app[web.1]:         length: 0,
+2013-10-06T09:42:58.743040+00:00 app[web.1]:         pipes: null,
+2013-10-06T09:42:58.743040+00:00 app[web.1]:         pipesCount: 0,
+2013-10-06T09:42:58.743040+00:00 app[web.1]:         flowing: false,
+2013-10-06T09:42:58.743040+00:00 app[web.1]:         ended: true,
+2013-10-06T09:42:58.743040+00:00 app[web.1]:         endEmitted: false,
+2013-10-06T09:42:58.743040+00:00 app[web.1]:         reading: false,
+2013-10-06T09:42:58.743188+00:00 app[web.1]:         calledRead: false,
+2013-10-06T09:42:58.743188+00:00 app[web.1]:         sync: true,
+2013-10-06T09:42:58.743188+00:00 app[web.1]:         needReadable: false,
+2013-10-06T09:42:58.743188+00:00 app[web.1]:         emittedReadable: false,
+2013-10-06T09:42:58.743188+00:00 app[web.1]:         readableListening: false,
+2013-10-06T09:42:58.743188+00:00 app[web.1]:         objectMode: false,
+2013-10-06T09:42:58.743188+00:00 app[web.1]:         defaultEncoding: 'utf8',
+2013-10-06T09:42:58.743188+00:00 app[web.1]:         ranOut: false,
+2013-10-06T09:42:58.743188+00:00 app[web.1]:         awaitDrain: 0,
+2013-10-06T09:42:58.743188+00:00 app[web.1]:         readingMore: false,
+2013-10-06T09:42:58.743461+00:00 app[web.1]:         decoder: null,
+2013-10-06T09:42:58.743461+00:00 app[web.1]:         encoding: null },
+2013-10-06T09:42:58.743461+00:00 app[web.1]:      readable: true,
+2013-10-06T09:42:58.743461+00:00 app[web.1]:      domain: null,
+2013-10-06T09:42:58.743461+00:00 app[web.1]:      _events: {},
+2013-10-06T09:42:58.743461+00:00 app[web.1]:      _maxListeners: 10,
+2013-10-06T09:42:58.743461+00:00 app[web.1]:      socket: 
+2013-10-06T09:42:58.743461+00:00 app[web.1]:       { _connecting: false,
+2013-10-06T09:42:58.743461+00:00 app[web.1]:         _handle: [Object],
+2013-10-06T09:42:58.743461+00:00 app[web.1]:         _readableState: [Object],
+2013-10-06T09:42:58.743608+00:00 app[web.1]:         readable: true,
+2013-10-06T09:42:58.743608+00:00 app[web.1]:         domain: null,
+2013-10-06T09:42:58.743608+00:00 app[web.1]:         _events: [Object],
+2013-10-06T09:42:58.743608+00:00 app[web.1]:         _maxListeners: 10,
+2013-10-06T09:42:58.743608+00:00 app[web.1]:         _writableState: [Object],
+2013-10-06T09:42:58.743608+00:00 app[web.1]:         writable: true,
+2013-10-06T09:42:58.743608+00:00 app[web.1]:         allowHalfOpen: true,
+2013-10-06T09:42:58.743608+00:00 app[web.1]:         onend: [Function],
+2013-10-06T09:42:58.743608+00:00 app[web.1]:         destroyed: false,
+2013-10-06T09:42:58.743608+00:00 app[web.1]:         errorEmitted: false,
+2013-10-06T09:42:58.743902+00:00 app[web.1]:         bytesRead: 1157,
+2013-10-06T09:42:58.743902+00:00 app[web.1]:         _bytesDispatched: 0,
+2013-10-06T09:42:58.743902+00:00 app[web.1]:         _pendingData: null,
+2013-10-06T09:42:58.743902+00:00 app[web.1]:         _pendingEncoding: '',
+2013-10-06T09:42:58.743902+00:00 app[web.1]:         server: [Object],
+2013-10-06T09:42:58.743902+00:00 app[web.1]:         _idleTimeout: 120000,
+2013-10-06T09:42:58.743902+00:00 app[web.1]:         _idleNext: [Object],
+2013-10-06T09:42:58.743902+00:00 app[web.1]:         _idlePrev: [Object],
+2013-10-06T09:42:58.743902+00:00 app[web.1]:         _idleStart: 1381052578421,
+2013-10-06T09:42:58.743902+00:00 app[web.1]:         parser: [Object],
+2013-10-06T09:42:58.744051+00:00 app[web.1]:         ondata: [Function],
+2013-10-06T09:42:58.744051+00:00 app[web.1]:         _httpMessage: [Circular] },
+2013-10-06T09:42:58.744051+00:00 app[web.1]:      connection: 
+2013-10-06T09:42:58.744051+00:00 app[web.1]:       { _connecting: false,
+2013-10-06T09:42:58.744051+00:00 app[web.1]:         _handle: [Object],
+2013-10-06T09:42:58.744051+00:00 app[web.1]:         _readableState: [Object],
+2013-10-06T09:42:58.744051+00:00 app[web.1]:         readable: true,
+2013-10-06T09:42:58.744051+00:00 app[web.1]:         domain: null,
+2013-10-06T09:42:58.744051+00:00 app[web.1]:         _events: [Object],
+2013-10-06T09:42:58.744051+00:00 app[web.1]:         _maxListeners: 10,
+2013-10-06T09:42:58.744329+00:00 app[web.1]:         _writableState: [Object],
+2013-10-06T09:42:58.744329+00:00 app[web.1]:         writable: true,
+2013-10-06T09:42:58.744329+00:00 app[web.1]:         allowHalfOpen: true,
+2013-10-06T09:42:58.744329+00:00 app[web.1]:         onend: [Function],
+2013-10-06T09:42:58.744329+00:00 app[web.1]:         destroyed: false,
+2013-10-06T09:42:58.744329+00:00 app[web.1]:         errorEmitted: false,
+2013-10-06T09:42:58.744329+00:00 app[web.1]:         bytesRead: 1157,
+2013-10-06T09:42:58.744329+00:00 app[web.1]:         _bytesDispatched: 0,
+2013-10-06T09:42:58.744329+00:00 app[web.1]:         _pendingData: null,
+2013-10-06T09:42:58.744329+00:00 app[web.1]:         _pendingEncoding: '',
+2013-10-06T09:42:58.744478+00:00 app[web.1]:         server: [Object],
+2013-10-06T09:42:58.744478+00:00 app[web.1]:         _idleTimeout: 120000,
+2013-10-06T09:42:58.744478+00:00 app[web.1]:         _idleNext: [Object],
+2013-10-06T09:42:58.744478+00:00 app[web.1]:         _idlePrev: [Object],
+2013-10-06T09:42:58.744478+00:00 app[web.1]:         _idleStart: 1381052578421,
+2013-10-06T09:42:58.744478+00:00 app[web.1]:         parser: [Object],
+2013-10-06T09:42:58.744478+00:00 app[web.1]:         ondata: [Function],
+2013-10-06T09:42:58.744478+00:00 app[web.1]:         _httpMessage: [Circular] },
+2013-10-06T09:42:58.744478+00:00 app[web.1]:      httpVersion: '1.1',
+2013-10-06T09:42:58.744478+00:00 app[web.1]:      complete: true,
+2013-10-06T09:42:58.744772+00:00 app[web.1]:      headers: 
+2013-10-06T09:42:58.744772+00:00 app[web.1]:       { 'x-request-start': '1381052578423',
+2013-10-06T09:42:58.744772+00:00 app[web.1]:         'x-forwarded-proto': 'http',
+2013-10-06T09:42:58.744772+00:00 app[web.1]:         'x-forwarded-port': '80',
+2013-10-06T09:42:58.744772+00:00 app[web.1]:         'x-forwarded-for': '106.198.95.75',
+2013-10-06T09:42:58.744772+00:00 app[web.1]:         'user-agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36',
+2013-10-06T09:42:58.744772+00:00 app[web.1]:         referer: 'http://alumnize-beta.herokuapp.com/',
+2013-10-06T09:42:58.744772+00:00 app[web.1]:         host: 'alumnize-beta.herokuapp.com',
+2013-10-06T09:42:58.744772+00:00 app[web.1]:         cookie: '__uvt=; __utma=40480754.1632644962.1380302854.1380302854.1380306610.2; __utmz=40480754.1380302854.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); uvts=eeOSNwSbD40yN7h; connect.sid=s%3AoH-9Jj_eY-txt7zfJVVmjDD2.fE9Z9MLGQMKzbj%2Bi9zgWORYHwtlOkfgnXuofjp8zF6I; IN_HASH=_%3D_; linkedin_oauth_12sy2ze5kvxl_crc=null',
+2013-10-06T09:42:58.744772+00:00 app[web.1]:         connection: 'close',
+2013-10-06T09:42:58.744923+00:00 app[web.1]:         'accept-language': 'en-US,en;q=0.8',
+2013-10-06T09:42:58.744923+00:00 app[web.1]:         'accept-encoding': 'gzip,deflate,sdch',
+2013-10-06T09:42:58.744923+00:00 app[web.1]:         accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8' },
+2013-10-06T09:42:58.744923+00:00 app[web.1]:      trailers: {},
+2013-10-06T09:42:58.744923+00:00 app[web.1]:      _pendings: [],
+2013-10-06T09:42:58.744923+00:00 app[web.1]:      _pendingIndex: 0,
+2013-10-06T09:42:58.744923+00:00 app[web.1]:      url: '/auth/facebook/callback?code=AQDMTJO0EBVEdqzcpA0XQSePNMyBh_pLfCYU-kvZyVVuRHQGkFFv2tff1HZ6L8o5cIx6XqwiFYByW2fbBVGDUPwzk8j7bbvKkUTGVoFAjXN3G8-1p8Lzln_qtJbHTxOTa-hE10ch4lXMuybWHWsohxFqDasDKtB8bOFfzgB66_cowX6w9fhm9boqvNfAzkhmszI2KC2IE0AeyRQSiOvkASzgc6CwkQgL9CtYgH8Zf1B1_2V21SZp9W-mJpzkcLL8FsKPaPtAS8iQnSWLOZVPtH6bSywY5tPZprUZWu4KXIrYEdtY5N93C8BH0iH0I4MWWSA',
+2013-10-06T09:42:58.744923+00:00 app[web.1]:      method: 'GET',
+2013-10-06T09:42:58.744923+00:00 app[web.1]:      statusCode: null,
+2013-10-06T09:42:58.744923+00:00 app[web.1]:      client: 
+2013-10-06T09:42:58.745210+00:00 app[web.1]:       { _connecting: false,
+2013-10-06T09:42:58.745210+00:00 app[web.1]:         _handle: [Object],
+2013-10-06T09:42:58.745210+00:00 app[web.1]:         _readableState: [Object],
+2013-10-06T09:42:58.745210+00:00 app[web.1]:         readable: true,
+2013-10-06T09:42:58.745210+00:00 app[web.1]:         domain: null,
+2013-10-06T09:42:58.745210+00:00 app[web.1]:         _events: [Object],
+2013-10-06T09:42:58.745210+00:00 app[web.1]:         _maxListeners: 10,
+2013-10-06T09:42:58.745210+00:00 app[web.1]:         _writableState: [Object],
+2013-10-06T09:42:58.745210+00:00 app[web.1]:         writable: true,
+2013-10-06T09:42:58.745210+00:00 app[web.1]:         allowHalfOpen: true,
+2013-10-06T09:42:58.745407+00:00 app[web.1]:         onend: [Function],
+2013-10-06T09:42:58.745407+00:00 app[web.1]:         destroyed: false,
+2013-10-06T09:42:58.745407+00:00 app[web.1]:         errorEmitted: false,
+2013-10-06T09:42:58.745407+00:00 app[web.1]:         bytesRead: 1157,
+2013-10-06T09:42:58.745407+00:00 app[web.1]:         _bytesDispatched: 0,
+2013-10-06T09:42:58.745407+00:00 app[web.1]:         _pendingData: null,
+2013-10-06T09:42:58.745407+00:00 app[web.1]:         _pendingEncoding: '',
+2013-10-06T09:42:58.745407+00:00 app[web.1]:         server: [Object],
+2013-10-06T09:42:58.745407+00:00 app[web.1]:         _idleTimeout: 120000,
+2013-10-06T09:42:58.745407+00:00 app[web.1]:         _idleNext: [Object],
+2013-10-06T09:42:58.745684+00:00 app[web.1]:         _idlePrev: [Object],
+2013-10-06T09:42:58.745684+00:00 app[web.1]:         _idleStart: 1381052578421,
+2013-10-06T09:42:58.745684+00:00 app[web.1]:         parser: [Object],
+2013-10-06T09:42:58.745684+00:00 app[web.1]:         ondata: [Function],
+2013-10-06T09:42:58.745684+00:00 app[web.1]:         _httpMessage: [Circular] },
+2013-10-06T09:42:58.745684+00:00 app[web.1]:      _consuming: false,
+2013-10-06T09:42:58.745684+00:00 app[web.1]:      _dumped: false,
+2013-10-06T09:42:58.745684+00:00 app[web.1]:      httpVersionMajor: 1,
+2013-10-06T09:42:58.745684+00:00 app[web.1]:      httpVersionMinor: 1,
+2013-10-06T09:42:58.745684+00:00 app[web.1]:      upgrade: false,
+2013-10-06T09:42:58.745830+00:00 app[web.1]:      originalUrl: '/auth/facebook/callback?code=AQDMTJO0EBVEdqzcpA0XQSePNMyBh_pLfCYU-kvZyVVuRHQGkFFv2tff1HZ6L8o5cIx6XqwiFYByW2fbBVGDUPwzk8j7bbvKkUTGVoFAjXN3G8-1p8Lzln_qtJbHTxOTa-hE10ch4lXMuybWHWsohxFqDasDKtB8bOFfzgB66_cowX6w9fhm9boqvNfAzkhmszI2KC2IE0AeyRQSiOvkASzgc6CwkQgL9CtYgH8Zf1B1_2V21SZp9W-mJpzkcLL8FsKPaPtAS8iQnSWLOZVPtH6bSywY5tPZprUZWu4KXIrYEdtY5N93C8BH0iH0I4MWWSA',
+2013-10-06T09:42:58.745830+00:00 app[web.1]:      _parsedUrl: 
+2013-10-06T09:42:58.745830+00:00 app[web.1]:       { protocol: null,
+2013-10-06T09:42:58.745830+00:00 app[web.1]:         slashes: null,
+2013-10-06T09:42:58.745830+00:00 app[web.1]:         auth: null,
+2013-10-06T09:42:58.745830+00:00 app[web.1]:         host: null,
+2013-10-06T09:42:58.745830+00:00 app[web.1]:         port: null,
+2013-10-06T09:42:58.745830+00:00 app[web.1]:         hostname: null,
+2013-10-06T09:42:58.745830+00:00 app[web.1]:         hash: null,
+2013-10-06T09:42:58.745830+00:00 app[web.1]:         search: '?code=AQDMTJO0EBVEdqzcpA0XQSePNMyBh_pLfCYU-kvZyVVuRHQGkFFv2tff1HZ6L8o5cIx6XqwiFYByW2fbBVGDUPwzk8j7bbvKkUTGVoFAjXN3G8-1p8Lzln_qtJbHTxOTa-hE10ch4lXMuybWHWsohxFqDasDKtB8bOFfzgB66_cowX6w9fhm9boqvNfAzkhmszI2KC2IE0AeyRQSiOvkASzgc6CwkQgL9CtYgH8Zf1B1_2V21SZp9W-mJpzkcLL8FsKPaPtAS8iQnSWLOZVPtH6bSywY5tPZprUZWu4KXIrYEdtY5N93C8BH0iH0I4MWWSA',
+2013-10-06T09:42:58.746110+00:00 app[web.1]:         query: 'code=AQDMTJO0EBVEdqzcpA0XQSePNMyBh_pLfCYU-kvZyVVuRHQGkFFv2tff1HZ6L8o5cIx6XqwiFYByW2fbBVGDUPwzk8j7bbvKkUTGVoFAjXN3G8-1p8Lzln_qtJbHTxOTa-hE10ch4lXMuybWHWsohxFqDasDKtB8bOFfzgB66_cowX6w9fhm9boqvNfAzkhmszI2KC2IE0AeyRQSiOvkASzgc6CwkQgL9CtYgH8Zf1B1_2V21SZp9W-mJpzkcLL8FsKPaPtAS8iQnSWLOZVPtH6bSywY5tPZprUZWu4KXIrYEdtY5N93C8BH0iH0I4MWWSA',
+2013-10-06T09:42:58.746110+00:00 app[web.1]:         pathname: '/auth/facebook/callback',
+2013-10-06T09:42:58.746110+00:00 app[web.1]:         path: '/auth/facebook/callback?code=AQDMTJO0EBVEdqzcpA0XQSePNMyBh_pLfCYU-kvZyVVuRHQGkFFv2tff1HZ6L8o5cIx6XqwiFYByW2fbBVGDUPwzk8j7bbvKkUTGVoFAjXN3G8-1p8Lzln_qtJbHTxOTa-hE10ch4lXMuybWHWsohxFqDasDKtB8bOFfzgB66_cowX6w9fhm9boqvNfAzkhmszI2KC2IE0AeyRQSiOvkASzgc6CwkQgL9CtYgH8Zf1B1_2V21SZp9W-mJpzkcLL8FsKPaPtAS8iQnSWLOZVPtH6bSywY5tPZprUZWu4KXIrYEdtY5N93C8BH0iH0I4MWWSA',
+2013-10-06T09:42:58.746110+00:00 app[web.1]:         href: '/auth/facebook/callback?code=AQDMTJO0EBVEdqzcpA0XQSePNMyBh_pLfCYU-kvZyVVuRHQGkFFv2tff1HZ6L8o5cIx6XqwiFYByW2fbBVGDUPwzk8j7bbvKkUTGVoFAjXN3G8-1p8Lzln_qtJbHTxOTa-hE10ch4lXMuybWHWsohxFqDasDKtB8bOFfzgB66_cowX6w9fhm9boqvNfAzkhmszI2KC2IE0AeyRQSiOvkASzgc6CwkQgL9CtYgH8Zf1B1_2V21SZp9W-mJpzkcLL8FsKPaPtAS8iQnSWLOZVPtH6bSywY5tPZprUZWu4KXIrYEdtY5N93C8BH0iH0I4MWWSA' },
+2013-10-06T09:42:58.746110+00:00 app[web.1]:      query: { code: 'AQDMTJO0EBVEdqzcpA0XQSePNMyBh_pLfCYU-kvZyVVuRHQGkFFv2tff1HZ6L8o5cIx6XqwiFYByW2fbBVGDUPwzk8j7bbvKkUTGVoFAjXN3G8-1p8Lzln_qtJbHTxOTa-hE10ch4lXMuybWHWsohxFqDasDKtB8bOFfzgB66_cowX6w9fhm9boqvNfAzkhmszI2KC2IE0AeyRQSiOvkASzgc6CwkQgL9CtYgH8Zf1B1_2V21SZp9W-mJpzkcLL8FsKPaPtAS8iQnSWLOZVPtH6bSywY5tPZprUZWu4KXIrYEdtY5N93C8BH0iH0I4MWWSA' },
+2013-10-06T09:42:58.746110+00:00 app[web.1]:      res: [Circular],
+2013-10-06T09:42:58.746110+00:00 app[web.1]:      next: [Function: next],
+2013-10-06T09:42:58.746110+00:00 app[web.1]:      _startTime: Sun Oct 06 2013 09:42:58 GMT+0000 (UTC),
+2013-10-06T09:42:58.746110+00:00 app[web.1]:      body: {},
+2013-10-06T09:42:58.746110+00:00 app[web.1]:      files: {},
+2013-10-06T09:42:58.746256+00:00 app[web.1]:      secret: undefined,
+2013-10-06T09:42:58.746256+00:00 app[web.1]:      cookies: 
+2013-10-06T09:42:58.746256+00:00 app[web.1]:       { __uvt: '',
+2013-10-06T09:42:58.746256+00:00 app[web.1]:         __utma: '40480754.1632644962.1380302854.1380302854.1380306610.2',
+2013-10-06T09:42:58.746256+00:00 app[web.1]:         __utmz: '40480754.1380302854.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)',
+2013-10-06T09:42:58.746256+00:00 app[web.1]:         uvts: 'eeOSNwSbD40yN7h',
+2013-10-06T09:42:58.746256+00:00 app[web.1]:         'connect.sid': 's:oH-9Jj_eY-txt7zfJVVmjDD2.fE9Z9MLGQMKzbj+i9zgWORYHwtlOkfgnXuofjp8zF6I',
+2013-10-06T09:42:58.746256+00:00 app[web.1]:         IN_HASH: '_=_',
+2013-10-06T09:42:58.746256+00:00 app[web.1]:         linkedin_oauth_12sy2ze5kvxl_crc: 'null' },
+2013-10-06T09:42:58.746256+00:00 app[web.1]:      signedCookies: {},
+2013-10-06T09:42:58.746543+00:00 app[web.1]:      originalMethod: 'GET',
+2013-10-06T09:42:58.746543+00:00 app[web.1]:      sessionStore: { sessions: [Object], generate: [Function], _events: [Object] },
+2013-10-06T09:42:58.746543+00:00 app[web.1]:      sessionID: 'oH-9Jj_eY-txt7zfJVVmjDD2',
+2013-10-06T09:42:58.746543+00:00 app[web.1]:      session: { cookie: [Object], passport: [Object] },
+2013-10-06T09:42:58.746543+00:00 app[web.1]:      _passport: { instance: [Object], session: [Object] },
+2013-10-06T09:42:58.746543+00:00 app[web.1]:      user: 
+2013-10-06T09:42:58.746543+00:00 app[web.1]:       { facebook: [Object],
+2013-10-06T09:42:58.746543+00:00 app[web.1]:         email: [Object],
+2013-10-06T09:42:58.746543+00:00 app[web.1]:         gender: 'male',
+2013-10-06T09:42:58.746543+00:00 app[web.1]:         name: 'Niranjan Bala',
+2013-10-06T09:42:58.746690+00:00 app[web.1]:         firstName: null,
+2013-10-06T09:42:58.746690+00:00 app[web.1]:         middleName: null,
+2013-10-06T09:42:58.746690+00:00 app[web.1]:         lastName: null,
+2013-10-06T09:42:58.746690+00:00 app[web.1]:         locale: null,
+2013-10-06T09:42:58.746690+00:00 app[web.1]:         timezone: null,
+2013-10-06T09:42:58.746690+00:00 app[web.1]:         location: null,
+2013-10-06T09:42:58.746690+00:00 app[web.1]:         associations: [],
+2013-10-06T09:42:58.746690+00:00 app[web.1]:         _id: 52512fbc4ad8ea0200000001 },
+2013-10-06T09:42:58.746690+00:00 app[web.1]:      _route_index: 3,
+2013-10-06T09:42:58.746690+00:00 app[web.1]:      route: 
+2013-10-06T09:42:58.746973+00:00 app[web.1]:       { path: '/auth/facebook/callback',
+2013-10-06T09:42:58.746973+00:00 app[web.1]:         method: 'get',
+2013-10-06T09:42:58.746973+00:00 app[web.1]:         callbacks: [Object],
+2013-10-06T09:42:58.746973+00:00 app[web.1]:         keys: [],
+2013-10-06T09:42:58.746973+00:00 app[web.1]:         regexp: /^\/auth\/facebook\/callback\/?$/i,
+2013-10-06T09:42:58.746973+00:00 app[web.1]:         params: [] },
+2013-10-06T09:42:58.746973+00:00 app[web.1]:      params: [],
+2013-10-06T09:42:58.746973+00:00 app[web.1]:      authInfo: {} },
+2013-10-06T09:42:58.746973+00:00 app[web.1]:   locals: [Function: locals],
+2013-10-06T09:42:58.746973+00:00 app[web.1]:   end: [Function] }
+2013-10-06T09:42:58.747145+00:00 app[web.1]: { facebook: 
+2013-10-06T09:42:58.747145+00:00 app[web.1]:    { id: '735102780',
+2013-10-06T09:42:58.747145+00:00 app[web.1]:      link: null,
+2013-10-06T09:42:58.747145+00:00 app[web.1]:      updated_time: null,
+2013-10-06T09:42:58.747145+00:00 app[web.1]:      username: 'niranjanbala.v',
+2013-10-06T09:42:58.747145+00:00 app[web.1]:      verified: null },
+2013-10-06T09:42:58.747145+00:00 app[web.1]:   email: [ null ],
+2013-10-06T09:42:58.747145+00:00 app[web.1]:   gender: 'male',
+2013-10-06T09:42:58.747145+00:00 app[web.1]:   name: 'Niranjan Bala',
+2013-10-06T09:42:58.747145+00:00 app[web.1]:   firstName: null,
+2013-10-06T09:42:58.747427+00:00 app[web.1]:   middleName: null,
+2013-10-06T09:42:58.747427+00:00 app[web.1]:   lastName: null,
+2013-10-06T09:42:58.747427+00:00 app[web.1]:   locale: null,
+2013-10-06T09:42:58.747427+00:00 app[web.1]:   timezone: null,
+2013-10-06T09:42:58.747427+00:00 app[web.1]:   location: null,
+2013-10-06T09:42:58.747427+00:00 app[web.1]:   associations: [],
+2013-10-06T09:42:58.747427+00:00 app[web.1]:   _id: 52512fbc4ad8ea0200000001 }
+2013-10-06T09:42:58.747427+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:58 GMT] "GET /auth/facebook/callback?code=AQDMTJO0EBVEdqzcpA0XQSePNMyBh_pLfCYU-kvZyVVuRHQGkFFv2tff1HZ6L8o5cIx6XqwiFYByW2fbBVGDUPwzk8j7bbvKkUTGVoFAjXN3G8-1p8Lzln_qtJbHTxOTa-hE10ch4lXMuybWHWsohxFqDasDKtB8bOFfzgB66_cowX6w9fhm9boqvNfAzkhmszI2KC2IE0AeyRQSiOvkASzgc6CwkQgL9CtYgH8Zf1B1_2V21SZp9W-mJpzkcLL8FsKPaPtAS8iQnSWLOZVPtH6bSywY5tPZprUZWu4KXIrYEdtY5N93C8BH0iH0I4MWWSA HTTP/1.1" 302 68 "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:58.747427+00:00 app[web.1]: [90mGET /auth/facebook/callback?code=AQDMTJO0EBVEdqzcpA0XQSePNMyBh_pLfCYU-kvZyVVuRHQGkFFv2tff1HZ6L8o5cIx6XqwiFYByW2fbBVGDUPwzk8j7bbvKkUTGVoFAjXN3G8-1p8Lzln_qtJbHTxOTa-hE10ch4lXMuybWHWsohxFqDasDKtB8bOFfzgB66_cowX6w9fhm9boqvNfAzkhmszI2KC2IE0AeyRQSiOvkASzgc6CwkQgL9CtYgH8Zf1B1_2V21SZp9W-mJpzkcLL8FsKPaPtAS8iQnSWLOZVPtH6bSywY5tPZprUZWu4KXIrYEdtY5N93C8BH0iH0I4MWWSA [36m302 [90m322ms - 68b[0m
+2013-10-06T09:42:58.747427+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:58 GMT] "GET /auth/facebook/callback?code=AQDMTJO0EBVEdqzcpA0XQSePNMyBh_pLfCYU-kvZyVVuRHQGkFFv2tff1HZ6L8o5cIx6XqwiFYByW2fbBVGDUPwzk8j7bbvKkUTGVoFAjXN3G8-1p8Lzln_qtJbHTxOTa-hE10ch4lXMuybWHWsohxFqDasDKtB8bOFfzgB66_cowX6w9fhm9boqvNfAzkhmszI2KC2IE0AeyRQSiOvkASzgc6CwkQgL9CtYgH8Zf1B1_2V21SZp9W-mJpzkcLL8FsKPaPtAS8iQnSWLOZVPtH6bSywY5tPZprUZWu4KXIrYEdtY5N93C8BH0iH0I4MWWSA HTTP/1.1" 302 68 "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:59.116809+00:00 heroku[router]: at=info method=GET path=/ host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=0ms service=4ms status=304 bytes=0
+2013-10-06T09:42:59.108819+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:59 GMT] "GET / HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:59.108819+00:00 app[web.1]: [90mGET / [36m304 [90m2ms[0m
+2013-10-06T09:42:59.108819+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:59 GMT] "GET / HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:59.557221+00:00 heroku[router]: at=info method=GET path=/css/carousel.css host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=0ms service=2ms status=304 bytes=0
+2013-10-06T09:42:59.550064+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:59 GMT] "GET /bootstrap/css/bootstrap.min.css HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:59.550064+00:00 app[web.1]: [90mGET /bootstrap/css/bootstrap.min.css [36m304 [90m1ms[0m
+2013-10-06T09:42:59.550064+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:59 GMT] "GET /bootstrap/css/bootstrap.min.css HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:59.553442+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:59 GMT] "GET /css/carousel.css HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:59.553442+00:00 app[web.1]: [90mGET /css/carousel.css [36m304 [90m1ms[0m
+2013-10-06T09:42:59.553570+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:59 GMT] "GET /css/carousel.css HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:59.554779+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:59 GMT] "GET /require/js/require.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:59.554779+00:00 app[web.1]: [90mGET /require/js/require.js [36m304 [90m0ms[0m
+2013-10-06T09:42:59.564466+00:00 heroku[router]: at=info method=GET path=/require/js/require.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=1ms service=3ms status=304 bytes=0
+2013-10-06T09:42:59.568393+00:00 heroku[router]: at=info method=GET path=/jquery/js/jquery-2.0.3.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=1ms service=3ms status=304 bytes=0
+2013-10-06T09:42:59.554779+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:59 GMT] "GET /require/js/require.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:59.560081+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:59 GMT] "GET /jquery/js/jquery-2.0.3.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:59.560264+00:00 app[web.1]: [90mGET /jquery/js/jquery-2.0.3.js [36m304 [90m2ms[0m
+2013-10-06T09:42:59.560264+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:59 GMT] "GET /jquery/js/jquery-2.0.3.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:59.584195+00:00 heroku[router]: at=info method=GET path=/underscore/js/underscore-min.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=1ms service=4ms status=304 bytes=0
+2013-10-06T09:42:59.579426+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:59 GMT] "GET /underscore/js/underscore-min.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:59.579426+00:00 app[web.1]: [90mGET /underscore/js/underscore-min.js [36m304 [90m4ms[0m
+2013-10-06T09:42:59.579426+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:59 GMT] "GET /underscore/js/underscore-min.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:59.582998+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:59 GMT] "GET /bootstrap/js/bootstrap.min.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:59.582998+00:00 app[web.1]: [90mGET /bootstrap/js/bootstrap.min.js [36m304 [90m3ms[0m
+2013-10-06T09:42:59.583264+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:59 GMT] "GET /bootstrap/js/bootstrap.min.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:59.592176+00:00 heroku[router]: at=info method=GET path=/bootstrap/js/bootstrap.min.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=2ms service=7ms status=304 bytes=0
+2013-10-06T09:42:59.560619+00:00 heroku[router]: at=info method=GET path=/bootstrap/css/bootstrap.min.css host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=2ms service=4ms status=304 bytes=0
+2013-10-06T09:42:59.937613+00:00 heroku[router]: at=info method=GET path=/backbone/js/backbone-min.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=0ms service=2ms status=304 bytes=0
+2013-10-06T09:42:59.928258+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:59 GMT] "GET /backbone/js/backbone-min.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:59.928258+00:00 app[web.1]: [90mGET /backbone/js/backbone-min.js [36m304 [90m1ms[0m
+2013-10-06T09:42:59.928258+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:59 GMT] "GET /backbone/js/backbone-min.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:59.940871+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:59 GMT] "GET /lib/holder.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:59.940871+00:00 app[web.1]: [90mGET /lib/holder.js [36m304 [90m1ms[0m
+2013-10-06T09:42:59.940871+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:59 GMT] "GET /lib/holder.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:59.966293+00:00 heroku[router]: at=info method=GET path=/lib/json2.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=1ms service=3ms status=304 bytes=0
+2013-10-06T09:42:59.946564+00:00 heroku[router]: at=info method=GET path=/lib/holder.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=1ms service=2ms status=304 bytes=0
+2013-10-06T09:42:59.980000+00:00 heroku[router]: at=info method=GET path=/js/app.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=0ms service=3ms status=304 bytes=0
+2013-10-06T09:42:59.958184+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:59 GMT] "GET /lib/json2.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:59.958184+00:00 app[web.1]: [90mGET /lib/json2.js [36m304 [90m2ms[0m
+2013-10-06T09:42:59.959097+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:59 GMT] "GET /lib/json2.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:59.970447+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:59 GMT] "GET /js/app.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:59.970447+00:00 app[web.1]: [90mGET /js/app.js [36m304 [90m1ms[0m
+2013-10-06T09:42:59.970447+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:59 GMT] "GET /js/app.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:59.991802+00:00 heroku[router]: at=info method=GET path=/js/views/LandingPage.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=1ms service=3ms status=304 bytes=0
+2013-10-06T09:43:00.003116+00:00 heroku[router]: at=info method=GET path=/js/views/FeedBack.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=1ms service=3ms status=304 bytes=0
+2013-10-06T09:42:59.983352+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:59 GMT] "GET /js/views/LandingPage.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:59.983589+00:00 app[web.1]: [90mGET /js/views/LandingPage.js [36m304 [90m2ms[0m
+2013-10-06T09:42:59.983748+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:59 GMT] "GET /js/views/LandingPage.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:59.995628+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:59 GMT] "GET /js/views/FeedBack.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:42:59.995628+00:00 app[web.1]: [90mGET /js/views/FeedBack.js [36m304 [90m1ms[0m
+2013-10-06T09:42:59.995628+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:42:59 GMT] "GET /js/views/FeedBack.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:43:00.306184+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:43:00 GMT] "GET /js/views/Navigation.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:43:00.306184+00:00 app[web.1]: [90mGET /js/views/Navigation.js [36m304 [90m2ms[0m
+2013-10-06T09:43:00.306184+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:43:00 GMT] "GET /js/views/Navigation.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:43:00.352602+00:00 heroku[router]: at=info method=GET path=/js/views/Features.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=1ms service=3ms status=304 bytes=0
+2013-10-06T09:43:00.344070+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:43:00 GMT] "GET /js/views/Features.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:43:00.344070+00:00 app[web.1]: [90mGET /js/views/Features.js [36m304 [90m1ms[0m
+2013-10-06T09:43:00.344070+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:43:00 GMT] "GET /js/views/Features.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:43:00.397714+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:43:00 GMT] "GET /js/views/Carousel.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:43:00.397714+00:00 app[web.1]: [90mGET /js/views/Carousel.js [36m304 [90m1ms[0m
+2013-10-06T09:43:00.406880+00:00 heroku[router]: at=info method=GET path=/js/views/Carousel.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=1ms service=3ms status=304 bytes=0
+2013-10-06T09:43:00.397714+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:43:00 GMT] "GET /js/views/Carousel.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:43:00.416206+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:43:00 GMT] "GET /js/views/Footer.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:43:00.416206+00:00 app[web.1]: [90mGET /js/views/Footer.js [36m304 [90m3ms[0m
+2013-10-06T09:43:00.416206+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:43:00 GMT] "GET /js/views/Footer.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:43:00.443263+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:43:00 GMT] "GET /js/views/Login.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:43:00.443263+00:00 app[web.1]: [90mGET /js/views/Login.js [36m304 [90m3ms[0m
+2013-10-06T09:43:00.443415+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:43:00 GMT] "GET /js/views/Login.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:43:00.463442+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:43:00 GMT] "GET /js/views/UserHomePage.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:43:00.463442+00:00 app[web.1]: [90mGET /js/views/UserHomePage.js [36m304 [90m2ms[0m
+2013-10-06T09:43:00.425057+00:00 heroku[router]: at=info method=GET path=/js/views/Footer.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=1ms service=4ms status=304 bytes=0
+2013-10-06T09:43:00.463442+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:43:00 GMT] "GET /js/views/UserHomePage.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:43:00.470187+00:00 heroku[router]: at=info method=GET path=/js/views/UserHomePage.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=0ms service=2ms status=304 bytes=0
+2013-10-06T09:43:00.697222+00:00 heroku[router]: at=info method=GET path=/js/social/facebook.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=0ms service=2ms status=304 bytes=0
+2013-10-06T09:43:00.688435+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:43:00 GMT] "GET /js/social/facebook.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:43:00.688435+00:00 app[web.1]: [90mGET /js/social/facebook.js [36m304 [90m1ms[0m
+2013-10-06T09:43:00.688530+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:43:00 GMT] "GET /js/social/facebook.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:43:00.736493+00:00 heroku[router]: at=info method=GET path=/js/social/linkedin.js host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=2ms service=4ms status=304 bytes=0
+2013-10-06T09:43:00.729332+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:43:00 GMT] "GET /js/social/linkedin.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:43:00.729332+00:00 app[web.1]: [90mGET /js/social/linkedin.js [36m304 [90m2ms[0m
+2013-10-06T09:43:00.729332+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:43:00 GMT] "GET /js/social/linkedin.js HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:43:01.150314+00:00 heroku[router]: at=info method=GET path=/templates/FeedBack.html host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=0ms service=5ms status=304 bytes=0
+2013-10-06T09:43:01.140921+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:43:01 GMT] "GET /templates/FeedBack.html HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:43:01.140921+00:00 app[web.1]: [90mGET /templates/FeedBack.html [36m304 [90m1ms[0m
+2013-10-06T09:43:01.140921+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:43:01 GMT] "GET /templates/FeedBack.html HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:43:01.189422+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:43:01 GMT] "GET /templates/Carousel.html HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:43:01.189422+00:00 app[web.1]: [90mGET /templates/Carousel.html [36m304 [90m4ms[0m
+2013-10-06T09:43:01.189422+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:43:01 GMT] "GET /templates/Carousel.html HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:43:01.195122+00:00 heroku[router]: at=info method=GET path=/templates/Carousel.html host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=1ms service=6ms status=304 bytes=0
+2013-10-06T09:43:01.244516+00:00 heroku[router]: at=info method=GET path=/templates/Navigation.html host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=0ms service=7ms status=304 bytes=0
+2013-10-06T09:43:01.236189+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:43:01 GMT] "GET /templates/Navigation.html HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:43:01.236189+00:00 app[web.1]: [90mGET /templates/Navigation.html [36m304 [90m5ms[0m
+2013-10-06T09:43:01.236189+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:43:01 GMT] "GET /templates/Navigation.html HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:43:01.293819+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:43:01 GMT] "GET /templates/Features.html HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:43:01.294288+00:00 app[web.1]: [90mGET /templates/Features.html [36m304 [90m2ms[0m
+2013-10-06T09:43:01.294460+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:43:01 GMT] "GET /templates/Features.html HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:43:01.302231+00:00 heroku[router]: at=info method=GET path=/templates/Features.html host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=1ms service=3ms status=304 bytes=0
+2013-10-06T09:43:01.382562+00:00 heroku[router]: at=info method=GET path=/templates/Login.html host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=0ms service=4ms status=304 bytes=0
+2013-10-06T09:43:01.380272+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:43:01 GMT] "GET /templates/Login.html HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:43:01.380272+00:00 app[web.1]: [90mGET /templates/Login.html [36m304 [90m3ms[0m
+2013-10-06T09:43:01.380272+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:43:01 GMT] "GET /templates/Login.html HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:43:01.529645+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:43:01 GMT] "GET /templates/Footer.html HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:43:01.529645+00:00 app[web.1]: [90mGET /templates/Footer.html [36m304 [90m2ms[0m
+2013-10-06T09:43:01.529645+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:43:01 GMT] "GET /templates/Footer.html HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:43:01.561680+00:00 heroku[router]: at=info method=GET path=/templates/UserHomePage.html host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=1ms service=5ms status=304 bytes=0
+2013-10-06T09:43:01.548762+00:00 heroku[router]: at=info method=GET path=/templates/Footer.html host=alumnize-beta.herokuapp.com fwd="106.198.95.75" dyno=web.1 connect=13ms service=16ms status=304 bytes=0
+2013-10-06T09:43:01.554063+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:43:01 GMT] "GET /templates/UserHomePage.html HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+2013-10-06T09:43:01.554063+00:00 app[web.1]: [90mGET /templates/UserHomePage.html [36m304 [90m2ms[0m
+2013-10-06T09:43:01.554063+00:00 app[web.1]: - - - [Sun, 06 Oct 2013 09:43:01 GMT] "GET /templates/UserHomePage.html HTTP/1.1" 304 - "http://alumnize-beta.herokuapp.com/" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
