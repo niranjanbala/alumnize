@@ -9,10 +9,17 @@ exports.findOrCreateFaceBookUser = function(accessToken, refreshToken, profile, 
 			if(item){
             	done(null,item);
         	}else {
+        		console.log(profile);
         		collection.insert([{
-                fbId : profile.id ,
-                email : profile.emails[0].value,
-                name : profile.displayName        			        		        	
+                	fbId : profile.id ,
+                	email : [profile.email]
+                	gender: profile.gender,
+	                name : profile.displayName,	
+    	            firstName: profile.first_name,
+        	        middleName: profile.middle_name,
+            	    lastName: profile.last_name,
+                	lastUpdated: profile.updated_time,
+                	associations:[],
         		}], {safe:true}, function(err, result) {
         			if(err) throw err;
                 	done(null, result);
