@@ -40,8 +40,7 @@ app.configure(function () {
 });
 
 app.get('/account', ensureAuthenticated, function(req, res){
-  //res.render('account', { user: req.user });
-  console.log(req.user);
+  res.jsonp(req.user);
 });
 
 app.get('/login', function(req, res){
