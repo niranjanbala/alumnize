@@ -9,27 +9,26 @@ exports.findOrCreateFaceBookUser = function(accessToken, refreshToken, profile, 
 			if(item){
             	done(null,item);
         	}else {
-        		console.log("**********profile-info******************");
-        		console.log(profile);
+        	    profile._json.work
+
         		collection.insert([{           
         			"facebook": {
         				"id": profile.id,
-        				"link": profile.profileUrl,
-        				"updated_time": profile.updated_time,
-        				"username": profile.username,
-						"verified": profile.verified,
-						"profile": profile._json,
-        			},    	
+						"profile": profile._json
+        			},   	
                 	"email" : profile.emails,
                 	"gender": profile.gender,
 	                "name" : profile.displayName,	
     	            "firstName": profile.name.givenName,
         	        "middleName": profile.name.middleName,
-            	    "lastName": profile.name.familyNam,
-            	    "locale" : profile.locale,
-            	    "timezone": profile.timezone,
-            	    "location": profile.location,
-                	"associations":[]
+            	    "lastName": profile.name.familyName,
+            	    "locale" : profile._json.locale,
+            	    "timezone": profile._json.timezone,
+            	    "location": profile._json.location.name,
+                	"associations":[
+                		"work": profile._json.work,
+                		"school": profile._json.school
+                	]
         		}], {safe:true}, function(err, result) {
         			if(err) throw err;
                 	done(null, result);
