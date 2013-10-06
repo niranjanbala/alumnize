@@ -44,8 +44,40 @@ exports.findOrCreateGoogleUser = function(identifier, profile, done) {
         		collection.insert([{           
         			"google": {
         				"id": identifier,
-						"profile": profile
-        			},   	
+					"profile": profile
+        			},
+	                	"email" : "",
+        	        	"gender": "",
+		                "name" : "",	
+    			        "firstName": "",
+        		        "middleName": "",
+		            	"lastName": "",
+	            	    	"locale" : "",
+		            	"timezone": "",
+		            	"location": "",
+	                	"associations": {
+        	        		"work": [],
+        	        		"education": []
+        	        	}
+        			}], {safe:true}, function(err, result) {
+        			if(err) throw err;
+        		        	done(null, result);
+        		});
+        	}            
+        });
+	});
+};
+exports.findOrCreateLinkedInUser = function(token, tokenSecret, profile, done) {
+	db.collection('users', function(err, collection) {		
+		collection.findOne({"linkedin.id" : profile.id}, function(err, item) {
+		if(item){
+            		done(null,item);
+        	}else {
+        		collection.insert([{           
+        			"linkedin": {
+        				"id": profile.id,
+					"profile": profile
+        			},
 	                	"email" : "",
         	        	"gender": "",
 		                "name" : "",	

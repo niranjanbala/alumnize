@@ -4,9 +4,12 @@ var express = require('express'),
     users = require('./routes/users'),
     passport = require('passport'),
     FacebookStrategy = require('passport-facebook').Strategy,
-    GoogleStrategy = require('passport-google').Strategy;
+    GoogleStrategy = require('passport-google').Strategy,
+    LinkedInStrategy = require('passport-linkedin').Strategy;
 var FACEBOOK_APP_ID = "629803890376356"
 var FACEBOOK_APP_SECRET = "e08df1dcb0bc79deed0d78946791e1de";
+var LINKEDIN_API_KEY = "--insert-linkedin-api-key-here--";
+var LINKEDIN_SECRET_KEY = "--insert-linkedin-secret-key-here--";
 passport.serializeUser(function(user, done) {
   done(null, user);
 });
@@ -29,9 +32,16 @@ passport.use(new GoogleStrategy({
     realm: 'http://alumnize-beta.herokuapp.com/'
   },
   function(identifier, profile, done) {
-    users.findOrCreateGoogleUser({ openId: identifier }, function(err, user) {
-      done(err, user);
-    });
+    users.findOrCreateGoogleUser(identifier, profile, done);
+  }
+));
+passport.use(new LinkedInStrategy({
+    consumerKey: LINKEDIN_API_KEY,
+    consumerSecret: LINKEDIN_SECRET_KEY,
+    callbackURL: "http://alumnize-beta.herokuapp.com/auth/linkedin/callback"
+  },
+  function(token, tokenSecret, profile, done) {
+    users.findOrCreateLinkedInUser(token, tokenSecret, profile, done);
   }
 ));
 
@@ -73,6 +83,12 @@ app.get('/auth/google/return',
   passport.authenticate('google', { successRedirect: '/#home',
                                     failureRedirect: '/#login' }));
 
+app.get('/auth/linkedin',
+  passport.authenticate('linkedin', { scope: ["r_fullprofile", "r_emailaddress","r_contactinfo"] })
+);
+app.get('/auth/linkedin/callback',
+  passport.authenticate('linkedin',  { successRedirect: '/#home',
+                                    failureRedirect: '/#login' }));
 app.get('/logout', function(req, res){
   req.logout();
   res.redirect('/');
