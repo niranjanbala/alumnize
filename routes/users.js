@@ -12,13 +12,13 @@ exports.findOrCreateFaceBookUser = function(accessToken, refreshToken, profile, 
         		console.log(profile);
         		collection.insert([{           
         			"facebook": {
-        				id: profile.id,
-        				link: profile.link,
-        				updated_time: profile.updated_time,
-        				username: profile.username,
-						verified: profile.verified,		
+        				"id": profile.id,
+        				"link": profile.link,
+        				"updated_time": profile.updated_time,
+        				"username": profile.username,
+						"verified": profile.verified,		
         			},    	
-                	"email" : [profile.email]
+                	"email" : [profile.email],
                 	"gender": profile.gender,
 	                "name" : profile.displayName,	
     	            "firstName": profile.first_name,
@@ -27,7 +27,7 @@ exports.findOrCreateFaceBookUser = function(accessToken, refreshToken, profile, 
             	    "locale" : profile.locale,
             	    "timezone": profile.timezone,
             	    "location": profile.location,
-                	"associations":[],
+                	"associations":[]
         		}], {safe:true}, function(err, result) {
         			if(err) throw err;
                 	done(null, result);
