@@ -17,6 +17,7 @@ var alumnize = {
 };
 alumnize.Router = Backbone.Router.extend({
     routes: {
+        "": "home",
         "home": "home",
         "login": "login",
         "signup":"signup"
@@ -42,12 +43,12 @@ alumnize.Router = Backbone.Router.extend({
         });    
     },
     login: function() {        
-        alumnize.landingPage = new alumnize.LandingPage();
-        $('body').html(alumnize.landingPage.render().el);
+        //alumnize.landingPage = new alumnize.LandingPage();
+        //$('body').html(alumnize.landingPage.render().el);
     },
     signup: function() {        
-        alumnize.landingPage = new alumnize.LandingPage();
-        $('body').html(alumnize.landingPage.render().el);
+        //alumnize.landingPage = new alumnize.LandingPage();
+        //$('body').html(alumnize.landingPage.render().el);
     }
 });
 $(document).on("ready", function () {
