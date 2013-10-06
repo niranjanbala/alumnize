@@ -44,21 +44,18 @@ app.get('/account', ensureAuthenticated, function(req, res){
 });
 
 app.get('/login', function(req, res){
-  res.render('login', { user: req.user });
+  //res.render('login', { user: req.user });
 });
 
 app.get('/auth/facebook',
   passport.authenticate('facebook', { 
   	scope: ['email','publish_stream','user_about_me','user_education_history','user_location','user_work_history'] 
-  })
+  });
 );
 
 app.get('/auth/facebook/callback', 
-  passport.authenticate('facebook', { failureRedirect: '/login' }),
-  function(req, res) {  
-    res.redirect('/#home');
-  });
-
+  passport.authenticate('facebook', { successRedirect: '/#home',
+                                      failureRedirect: '/login' }));
 app.get('/logout', function(req, res){
   req.logout();
   res.redirect('/');
