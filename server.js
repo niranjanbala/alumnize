@@ -8,8 +8,8 @@ var express = require('express'),
     LinkedInStrategy = require('passport-linkedin').Strategy;
 var FACEBOOK_APP_ID = "629803890376356"
 var FACEBOOK_APP_SECRET = "e08df1dcb0bc79deed0d78946791e1de";
-var LINKEDIN_API_KEY = "--insert-linkedin-api-key-here--";
-var LINKEDIN_SECRET_KEY = "--insert-linkedin-secret-key-here--";
+var LINKEDIN_API_KEY = "12sy2ze5kvxl";
+var LINKEDIN_SECRET_KEY = "qNXH12sq4DaZpYPR";
 passport.serializeUser(function(user, done) {
   done(null, user);
 });
@@ -88,7 +88,8 @@ app.get('/auth/linkedin',
 );
 app.get('/auth/linkedin/callback',
   passport.authenticate('linkedin',  { successRedirect: '/#home',
-                                    failureRedirect: '/#login' }));
+                                    failureRedirect: '/#login' })
+);
 app.get('/logout', function(req, res){
   req.logout();
   res.redirect('/');
