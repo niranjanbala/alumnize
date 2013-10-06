@@ -44,9 +44,6 @@ app.configure(function () {
 app.get('/account', ensureAuthenticated, function(req, res){
   res.jsonp(req.user);
 });
-app.get('/login', function(req, res){
-  res.render('login', { user: req.user });
-});
 // GET /auth/facebook
 //   Use passport.authenticate() as route middleware to authenticate the
 //   request.  The first step in Facebook authentication will involve
@@ -65,10 +62,11 @@ app.get('/auth/facebook',
 //   login page.  Otherwise, the primary route function function will be called,
 //   which, in this example, will redirect the user to the home page.
 app.get('/auth/facebook/callback', 
-  passport.authenticate('facebook', { failureRedirect: '/login' }),
+  passport.authenticate('facebook', { failureRedirect: '/#login' }),
   function(req, res) {
     res.redirect('/');
   });
+
 app.get('/logout', function(req, res){
   req.logout();
   res.redirect('/');
