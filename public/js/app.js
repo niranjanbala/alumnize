@@ -17,14 +17,16 @@ var alumnize = {
 };
 alumnize.Router = Backbone.Router.extend({
     routes: {
-        "": "home",
+        "": "landingPage",
         "home": "home",
         "login": "login",
         "signup":"signup"
     },
     initialize: function () {
-		alumnize.landingPage = new alumnize.LandingPage();
-		$('body').html(alumnize.landingPage.render().el);
+    },
+    landingPage: function () {
+        alumnize.landingPage = new alumnize.LandingPage();
+        $('body').html(alumnize.landingPage.render().el);
     },
     home: function() {            
         var user=new alumnize.User();
