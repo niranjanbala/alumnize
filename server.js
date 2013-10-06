@@ -38,7 +38,7 @@ passport.use(new GoogleStrategy({
 passport.use(new LinkedInStrategy({
     consumerKey: LINKEDIN_API_KEY,
     consumerSecret: LINKEDIN_SECRET_KEY,
-    callbackURL: "http://alumnize-beta.herokuapp.com/auth/linkedin/callback"
+    callbackURL: "http://alumnize-beta.herokuapp.com/auth/linkedin/callback" 
   },
   function(token, tokenSecret, profile, done) {
     users.findOrCreateLinkedInUser(token, tokenSecret, profile, done);
