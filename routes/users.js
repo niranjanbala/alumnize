@@ -9,29 +9,59 @@ exports.findOrCreateFaceBookUser = function(accessToken, refreshToken, profile, 
 			if(item){
             	done(null,item);
         	}else {
-        	    profile._json.work
-
         		collection.insert([{           
         			"facebook": {
         				"id": profile.id,
-						"profile": profile._json
+					"profile": profile._json
         			},   	
-                	"email" : profile.emails,
-                	"gender": profile.gender,
-	                "name" : profile.displayName,	
-    	            "firstName": profile.name.givenName,
-        	        "middleName": profile.name.middleName,
-            	    "lastName": profile.name.familyName,
-            	    "locale" : profile._json.locale,
-            	    "timezone": profile._json.timezone,
-            	    "location": profile._json.location.name,
-                	"associations": {
-                		"work": profile._json.work,
-                		"education": profile._json.education
-                	}
-        		}], {safe:true}, function(err, result) {
+	                	"email" : profile.emails,
+        	        	"gender": profile.gender,
+		                "name" : profile.displayName,	
+    			        "firstName": profile.name.givenName,
+        		        "middleName": profile.name.middleName,
+		            	"lastName": profile.name.familyName,
+	            	    	"locale" : profile._json.locale,
+		            	"timezone": profile._json.timezone,
+		            	"location": profile._json.location.name,
+	                	"associations": {
+        	        		"work": profile._json.work,
+        	        		"education": profile._json.education
+        	        	}
+        			}], {safe:true}, function(err, result) {
         			if(err) throw err;
-                	done(null, result);
+        		        	done(null, result);
+        		});
+        	}            
+        });
+	});
+};
+exports.findOrCreateGoogleUser = function(identifier, profile, done) {
+	db.collection('users', function(err, collection) {		
+		collection.findOne({"google.id" : identifier}, function(err, item) {
+		if(item){
+            		done(null,item);
+        	}else {
+        		collection.insert([{           
+        			"google": {
+        				"id": identifier,
+						"profile": profile
+        			},   	
+	                	"email" : "",
+        	        	"gender": "",
+		                "name" : "",	
+    			        "firstName": "",
+        		        "middleName": "",
+		            	"lastName": "",
+	            	    	"locale" : "",
+		            	"timezone": "",
+		            	"location": "",
+	                	"associations": {
+        	        		"work": [],
+        	        		"education": []
+        	        	}
+        			}], {safe:true}, function(err, result) {
+        			if(err) throw err;
+        		        	done(null, result);
         		});
         	}            
         });

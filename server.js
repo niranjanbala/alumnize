@@ -29,7 +29,7 @@ passport.use(new GoogleStrategy({
     realm: 'http://alumnize-beta.herokuapp.com/'
   },
   function(identifier, profile, done) {
-    User.findOrCreate({ openId: identifier }, function(err, user) {
+    users.findOrCreateGoogleUser({ openId: identifier }, function(err, user) {
       done(err, user);
     });
   }
@@ -70,8 +70,8 @@ app.get('/auth/google',
 );
 
 app.get('/auth/google/return', 
-  passport.authenticate('google', { successRedirect: '/',
-                                    failureRedirect: '/login' }));
+  passport.authenticate('google', { successRedirect: '/#home',
+                                    failureRedirect: '/#login' }));
 
 app.get('/logout', function(req, res){
   req.logout();
