@@ -36,7 +36,7 @@ alumnize.Router = Backbone.Router.extend({
                 $('body').html(alumnize.userHomePage.render().el);  
             },
             error:   function(model, xhr, options){
-                    login();
+                    this.login();
             }
         });    
     },
