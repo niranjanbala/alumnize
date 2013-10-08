@@ -13,7 +13,8 @@ exports.findOrCreateFaceBookUser = function(accessToken, refreshToken, profile, 
         		collection.insert([{
         			"facebook": {
         				"id": profile.id,
-					"profile": profile._json
+					     "work" : profile._json.work,
+                         "education": profile._json.education
         			},
                         "isNew": 1,
 	                	"email" : profile.emails,
