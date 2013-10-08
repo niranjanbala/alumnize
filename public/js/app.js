@@ -31,6 +31,7 @@ alumnize.Router = Backbone.Router.extend({
     home: function() {            
         var user=new alumnize.User();
         var self=this;
+        $('#login').modal('hide');
         user.fetch({
             success: function (data) {
                 console.log(data);
