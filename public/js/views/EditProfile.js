@@ -2,7 +2,7 @@
 
     render:function () {
         this.$el.html(this.template());
-        this.$el.modal('show');
+        $('#editProfile').modal('show');        
         return this;
     }
 
