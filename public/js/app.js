@@ -36,7 +36,8 @@ alumnize.Router = Backbone.Router.extend({
                 console.log(data);
                 alumnize.userHomePage = new alumnize.UserHomePage({model: data});
                 $('body').html(alumnize.userHomePage.render().el);  
-                if(data.get("isNew")==="1") {
+                console.log(data.get("isNew"));
+                if(data.get("isNew")===1) {
                     new alumnize.EditProfile({model: data}).render();
                 }
             },
