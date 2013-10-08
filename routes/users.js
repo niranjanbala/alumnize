@@ -9,11 +9,13 @@ exports.findOrCreateFaceBookUser = function(accessToken, refreshToken, profile, 
 			if(item){
             	done(null,item);
         	}else {
+
         		collection.insert([{
         			"facebook": {
         				"id": profile.id,
 					"profile": profile._json
         			},
+                        "isNew": 1,
 	                	"email" : profile.emails,
         	        	"gender": profile.gender,
 		                "name" : profile.displayName,
@@ -24,8 +26,8 @@ exports.findOrCreateFaceBookUser = function(accessToken, refreshToken, profile, 
 		            	"timezone": profile._json.timezone,
 		            	"location": profile._json.location,
 	                	"associations": {
-        	        		"work": profile._json.work,
-        	        		"education": profile._json.education
+        	        		"work": [],
+        	        		"education": []
         	        	}
         			}], {safe:true}, function(err, result) {
         			if(err) throw err;
@@ -46,6 +48,7 @@ exports.findOrCreateGoogleUser = function(identifier, profile, done) {
         				"id": identifier,
 					"profile": profile
         			},
+                        "isNew": 1,
 	                	"email" : "",
         	        	"gender": "",
 		                "name" : "",
@@ -78,6 +81,7 @@ exports.findOrCreateLinkedInUser = function(token, tokenSecret, profile, done) {
         				"id": profile.id,
 					"profile": profile
         			},
+                        "isNew": 1,
 	                	"email" : "",
         	        	"gender": "",
 		                "name" : "",
