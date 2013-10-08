@@ -1,9 +1,7 @@
  alumnize.EditProfile = Backbone.View.extend({
 
     render:function () {
-        this.$el.html(this.template());
-        console.log(this.$el);
-        $('#editProfile').modal('show');        
+        this.$el.html(this.template());        
         return this;
     }
 
