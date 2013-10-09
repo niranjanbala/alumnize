@@ -20,13 +20,17 @@ alumnize.Router = Backbone.Router.extend({
         "": "landingPage",
         "home": "home",
         "login": "login",
-        "signup":"signup"
+        "signup":"signup",
+        "people":"peopleSearch"
     },
     initialize: function () {
     },
     landingPage: function () {
         alumnize.landingPage = new alumnize.LandingPage();
         $('body').html(alumnize.landingPage.render().el);
+    },
+    peopleSearch: function() {
+        alumnize.userHomePage.peopleSearch();
     },
     home: function() {            
         var user=new alumnize.User();
@@ -39,7 +43,7 @@ alumnize.Router = Backbone.Router.extend({
                 $('body').html(alumnize.userHomePage.render().el);  
                 if(data.get("isNew")===1) {
                     alumnize.userHomePage.editProfile();
-                }
+                } 
             },
             error:   function(model, xhr, options){
                     self.login();
@@ -54,7 +58,7 @@ alumnize.Router = Backbone.Router.extend({
     }
 });
 $(document).on("ready", function () {
-    alumnize.loadTemplates(["FeedBack","Carousel","Navigation","Features","Footer","Login","UserHomePage","EditProfile"],
+    alumnize.loadTemplates(["FeedBack","Carousel","Navigation","Features","Footer","Login","UserHomePage","EditProfile","PeopleSearch"],
         function () {
             alumnize.router = new alumnize.Router();
             Backbone.history.start();
