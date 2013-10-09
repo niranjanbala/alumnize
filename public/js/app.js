@@ -30,7 +30,18 @@ alumnize.Router = Backbone.Router.extend({
         $('body').html(alumnize.landingPage.render().el);
     },
     peopleSearch: function() {
+        var peoples = new alumnize.Peoples();
         alumnize.userHomePage.peopleSearch();
+
+         peoples.fetch({
+            success: function (data) {
+                console.log(data);
+                alumnize.userHomePage.editProfile();
+            },
+            error: function(model, xhr, options){
+                self.login();
+            }
+        });
     },
     home: function() {            
         var user=new alumnize.User();
