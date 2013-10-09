@@ -35,7 +35,7 @@ alumnize.Router = Backbone.Router.extend({
             success: function (data) {
                 console.log("app data ",data);
                 alumnize.peopleSearch = new alumnize.PeopleSearch({model: data});
-                $('body').html(alumnize.peopleSearch.render().el);
+                $('.container').html(alumnize.peopleSearch.render().el);
             },
             error: function(model, xhr, options){
                 self.login();
