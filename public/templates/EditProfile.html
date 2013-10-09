@@ -33,11 +33,14 @@
 			            </div>
 			            <div class="pure-u-1-3">
 			                <label for="email">E-Mail</label>
-			                <% if(!_.isNull(email)) { %>
-			                	<input id="email" type="email" value="<%= email.join('') %>">
-			                <% } else { %>
-			                	<input id="email" type="email">
+			                <% 
+			                var emailArray=[];			                			               
+			                if(!_.isNull(email)) { %>
+							    for (var i=0; i<email.length; i++) { 
+							  	  out.push(email[i].value); 
+							  	}
 			                <% }  %>
+			                <input id="email" type="email" value="<%= email.join('') %>">
 			            </div>
 
 			            <div class="pure-u-1-3">
