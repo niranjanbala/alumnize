@@ -1,4 +1,4 @@
-alumnize.Peoples = Backbone.Model.extend();
+alumnize.Peoples = Backbone.Model.extend({
     url : "data/peoples.json",
     initialize:function () {               
     }
