@@ -1,112 +1,30 @@
-<ul class="nav nav-tabs">
-  <li><a dataTarget="profileBasic" data-toggle="tab">Basic Details</a></li>
-  <li><a dataTarget="profileEducation" data-toggle="tab">Education</a></li>
-  <li><a dataTarget="profileWork"data-toggle="tab">Work</a></li>  
-</ul>
-<div class="tab-content">
-  <div class="tab-pane active" id="profileBasic">
-    <div class="row">
-		<form class="form-horizontal span12">
-		    <fieldset>
-		        <legend>Basic Details</legend>
-		        <br/>
-		        <div class="row">
-		            <div class="span9">
-		                <div class="control-group">
-		                    <label for="name" class="control-label">First Name:</label>
-		                    <div class="controls">
-		                        <input type="text" id="title" name="title" value=""/>
-		                    </div>
-		                </div>
-		                <div class="control-group">
-		                    <label for="description" class="control-label">Last Name:</label>
-		                    <div class="controls">
-		                        <textarea id="description" name="description" value=""/>
-		                    </div>
-		                </div>
-		                <div class="control-group">
-		                    <label for="company" class="control-label">Gender:</label>
-		                    <div class="controls">
-		                        <input type="text" id="company" name="company" value=""/>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		    </fieldset>
-		    <div class="form-actions">
-		        <a href="#" class="btn btn-primary search">Search</a>
-		    </div>
-		</form>
+<div class="row">
+	<div class="col-md-3">
+		<div class="bs-sidebar hidden-print affix-top" role="complementary">
+		        <ul class="nav bs-sidenav" data-spy="affix" data-offset-top="50">              
+		            <li class="active">
+					  <a href="#js-overview">Profile Details</a>
+	  					<ul class="nav">
+							<li class=""><a href="#js-individual-compiled">General Settings</a></li>
+							<li class=""><a href="#js-data-attrs">Networks</a></li>
+						</ul>
+	   		    	</li>        
+		        </ul>
+		</div>
 	</div>
-</div>
-<div class="tab-pane" id="profileEducation">
-    <div class="row">
-		<form class="form-horizontal span12">
-		    <fieldset>
-		        <legend>Basic Details</legend>
-		        <br/>
-		        <div class="row">
-		            <div class="span9">
-		                <div class="control-group">
-		                    <label for="name" class="control-label">First Name:</label>
-		                    <div class="controls">
-		                        <input type="text" id="title" name="title" value=""/>
-		                    </div>
-		                </div>
-		                <div class="control-group">
-		                    <label for="description" class="control-label">Last Name:</label>
-		                    <div class="controls">
-		                        <textarea id="description" name="description" value=""/>
-		                    </div>
-		                </div>
-		                <div class="control-group">
-		                    <label for="company" class="control-label">Gender:</label>
-		                    <div class="controls">
-		                        <input type="text" id="company" name="company" value=""/>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		    </fieldset>
-		    <div class="form-actions">
-		        <a href="#" class="btn btn-primary search">Search</a>
-		    </div>
-		</form>
+	<div class="col-md-9" role="main">
+		<div class="bs-docs-section">
+			<div class="page-header">
+			  <h1 id="js-overview">Overview</h1>
+			</div>
+			<h3 id="js-individual-compiled">Individual or compiled</h3>
+			<div class="bs-callout bs-callout-danger">
+			  <h4>Do not attempt to include both.</h4>
+			  <p>Both <code>bootstrap.js</code> and <code>bootstrap.min.js</code> contain all plugins in a single file.</p>
+			</div>
+			<h3 id="js-data-attrs">Data attributes</h3>
+			<p>You can use all Bootstrap plugins purely through the markup API without writing a single line of JavaScript. This is Bootstrap's first-class API and should be your first consideration when using a plugin.</p>
+
+		</div>
 	</div>
-</div>
-<div class="tab-pane" id="profileWork">
-    <div class="row">
-		<form class="form-horizontal span12">
-		    <fieldset>
-		        <legend>Basic Details</legend>
-		        <br/>
-		        <div class="row">
-		            <div class="span9">
-		                <div class="control-group">
-		                    <label for="name" class="control-label">First Name:</label>
-		                    <div class="controls">
-		                        <input type="text" id="title" name="title" value=""/>
-		                    </div>
-		                </div>
-		                <div class="control-group">
-		                    <label for="description" class="control-label">Last Name:</label>
-		                    <div class="controls">
-		                        <textarea id="description" name="description" value=""/>
-		                    </div>
-		                </div>
-		                <div class="control-group">
-		                    <label for="company" class="control-label">Gender:</label>
-		                    <div class="controls">
-		                        <input type="text" id="company" name="company" value=""/>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		    </fieldset>
-		    <div class="form-actions">
-		        <a href="#" class="btn btn-primary search">Search</a>
-		    </div>
-		</form>
-	</div>
-</div>  
 </div>
