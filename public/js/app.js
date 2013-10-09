@@ -31,12 +31,10 @@ alumnize.Router = Backbone.Router.extend({
     },
     peopleSearch: function() {
         var peoples = new alumnize.Peoples();
-        alumnize.userHomePage.peopleSearch();
-
-         peoples.fetch({
+        peoples.fetch({
             success: function (data) {
                 console.log(data);
-                alumnize.userHomePage.editProfile();
+                alumnize.userHomePage.peopleSearch();
             },
             error: function(model, xhr, options){
                 self.login();
