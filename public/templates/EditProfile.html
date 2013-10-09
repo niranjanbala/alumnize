@@ -3,10 +3,10 @@
 		<div class="bs-sidebar hidden-print affix-top" role="complementary">
 		        <ul class="nav bs-sidenav" data-spy="affix" data-offset-top="50">              
 		            <li class="active">
-					  <a href="#js-overview">Profile Details</a>
+					  <a href="#edit-profile">Profile Details</a>
 	  					<ul class="nav">
-							<li class=""><a href="#js-individual-compiled">General Settings</a></li>
-							<li class=""><a href="#js-data-attrs">Networks</a></li>
+							<li class=""><a href="#edit-general-settings">General Settings</a></li>
+							<li class=""><a href="#edit-networks">Networks</a></li>
 						</ul>
 	   		    	</li>        
 		        </ul>
@@ -15,15 +15,63 @@
 	<div class="col-md-9" role="main">
 		<div class="bs-docs-section">
 			<div class="page-header">
-			  <h1 id="js-overview">Overview</h1>
-			</div>
-			<h3 id="js-individual-compiled">Individual or compiled</h3>
-			<div class="bs-callout bs-callout-danger">
-			  <h4>Do not attempt to include both.</h4>
-			  <p>Both <code>bootstrap.js</code> and <code>bootstrap.min.js</code> contain all plugins in a single file.</p>
-			</div>
-			<h3 id="js-data-attrs">Data attributes</h3>
-			<p>You can use all Bootstrap plugins purely through the markup API without writing a single line of JavaScript. This is Bootstrap's first-class API and should be your first consideration when using a plugin.</p>
+			  <h3 id="edit-profile">Profile Details</h1>
+			</div>			
+			<form class="form-horizontal">
+				<fieldset>					
+					<legend id="edit-general-settings">General Settings</legend>
+					<div class="control-group">
+			  			<label class="control-label" for="firstName">First Name</label>
+			  			<div class="controls">
+			    			<input id="firstName" name="firstName" type="text" placeholder="First Name" class="input-large">
+			    
+			  			</div>
+					</div>					
+					<div class="control-group">
+			  			<label class="control-label" for="middleName">Middle Name</label>
+			  			<div class="controls">
+			    		<input id="middleName" name="middleName" type="text" placeholder="Middle Name" class="input-large">	</div>
+					</div>					
+					<div class="control-group">
+			  			<label class="control-label" for="textinput">Last Name</label>
+			  			<div class="controls">
+			    		<input id="textinput" name="textinput" type="text" placeholder="Last Name" class="input-large">
+			    		</div>
+					</div>
+					<div class="control-group">
+					  <label class="control-label" for="gender">Gender</label>
+					  <div class="controls">
+					    <label class="radio inline" for="gender-0">
+					      <input type="radio" name="gender" id="gender-0" value="Male" checked="checked">
+					      Male
+					    </label>
+					    <label class="radio inline" for="gender-1">
+					      <input type="radio" name="gender" id="gender-1" value="Female">
+					      Female
+					    </label>
+					    <label class="radio inline" for="gender-2">
+					      <input type="radio" name="gender" id="gender-2" value="Decline to Answer">
+					      Decline to Answer
+					    </label>
+					  </div>
+					</div>
+					<!-- Text input-->
+					<div class="control-group">
+					  <label class="control-label" for="email">Email</label>
+					  <div class="controls">
+					    <input id="email" name="email" type="text" placeholder="Email" class="input-large">					    
+					  </div>
+					</div>
+					<!-- Text input-->
+					<div class="control-group">
+					  <label class="control-label" for="location">Location</label>
+					  <div class="controls">
+					    <input id="location" name="location" type="text" placeholder="Location" class="input-xlarge">
+					  </div>
+					</div>
+				</fieldset>
+			</form>
+			<h3 id="edit-networks">Networks</h3>
 
 		</div>
 	</div>
