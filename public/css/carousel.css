@@ -70,10 +70,13 @@ body {
   letter-spacing: -1px;
 }
 .userHomePage {
-	padding: 20px 20px 20px 20px;
+	padding: 10px 20px 0px 20px	;
+}
+.userHomePage.container {
+	padding: 0px 0px 0px 0px	;
 }
 .landingPage {
-	padding: 20px 20px 20px 20px;
+	padding: 10px 20px 0px 20px;
 }
 .userHomePage .navbar {
   margin-bottom: 5px;
@@ -88,6 +91,4 @@ body {
     padding-left: 0;
     padding-right: 0;
   }
-
-
 
