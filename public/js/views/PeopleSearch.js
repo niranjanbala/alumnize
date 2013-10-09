@@ -12,5 +12,8 @@ alumnize.PeopleSearch = Backbone.View.extend({
     	console.log("peoplesearch data ",data);
     	this.$el.html(this.template(data));        
         return this;
-    }
+    }, 
+    peopleSearch: function() {
+ 		$('.container').html(new alumnize.PeopleSearch({model: this.model}).render().el); 	
+ 	}
 });
