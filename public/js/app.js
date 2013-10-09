@@ -34,6 +34,7 @@ alumnize.Router = Backbone.Router.extend({
         peoples.fetch({
             success: function (data) {
                 console.log(data);
+                alumnize.UserHomePage = new alumnize.UserHomePage({model: data});
                 alumnize.userHomePage.peopleSearch();
             },
             error: function(model, xhr, options){
