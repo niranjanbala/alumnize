@@ -21,33 +21,43 @@
 			        <div class="pure-g-r">
 			            <div class="pure-u-1-3">
 			                <label for="first-name">First Name</label>
-			                <input id="firstName" type="text">
+			                <input id="firstName" type="text" value="<%= firstName %>">
 			            </div>
 			            <div class="pure-u-1-3">
 			                <label for="last-name">Middle Name</label>
-			                <input id="middleName" type="text">
+			                <input id="middleName" type="text" value="<%= middleName %>">
 			            </div>
 			            <div class="pure-u-1-3">
 			                <label for="last-name">Last Name</label>
-			                <input id="lastLame" type="text">
+			                <input id="lastLame" type="text" value="<%= lastName %>">
 			            </div>
-
 			            <div class="pure-u-1-3">
 			                <label for="email">E-Mail</label>
-			                <input id="email" type="email" required>
+			                <% 
+			                var emailArray=[];			                			               
+			                if(!_.isNull(email)) { 
+							    for (var i=0; i<email.length; i++) { 
+							  	  emailArray.push(email[i].value); 
+							  	}
+							  }
+			                %>
+			                <input id="email" type="email" value="<%= emailArray.join('') %>">
 			            </div>
 
 			            <div class="pure-u-1-3">
-			                <label for="city">City</label>
-			                <input id="location" type="text">
+			                <label for="city">City</label>			                
+			                <% if(!_.isNull(location)) { %>
+			                	<input id="location" type="text" value="<%= location.name %>">			                
+			                <% } else { %>
+			                	<input id="location" type="text">
+			                <% }  %>
 			            </div>
-
 			            <div class="pure-u-1-3">
 			                <label for="gender">Gender</label>
-			                <select id="gender" class="pure-input-1-2">
-			                    <option>Male</option>
-			                    <option>Female</option>
-			                    <option>Undisclosed</option>
+			                <select id="gender" class="pure-input-1-2" value="<%= gender %>">
+			                    <option value="male">Male</option>
+			                    <option value="female">Female</option>
+			                    <option value="">Undisclosed</option>
 			                </select>
 			            </div>
 			        </div>
