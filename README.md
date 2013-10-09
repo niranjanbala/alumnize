@@ -1,4 +1,4 @@
-alumnize
+<alumnize>
 ========
 
 Connect with you alumni..
