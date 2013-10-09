@@ -9,6 +9,9 @@ alumnize.UserHomePage= Backbone.View.extend({
 	 return this;
  },
  editProfile: function() {
- 	$('.userHomePage.container').html(new alumnize.EditProfile().render().el); 	
- }
+ 	$('.container').html(new alumnize.EditProfile().render().el); 	
+ },
+ className: function(){
+	    return "userHomePage";
+ },
 });
