@@ -9,7 +9,7 @@ alumnize.PeopleSearch = Backbone.View.extend({
     	console.log("Reached PeopleSearch...");
     	var data = _.clone(this.model.attributes);
     	data.id = this.model.id;
-    	console.log(data);
+    	console.log("peoplesearch data ",data);
     	this.$el.html(this.template(data));        
         return this;
     }
