@@ -20,7 +20,7 @@ alumnize.PeopleSearch = Backbone.View.extend({
             $('.thumbnails', this.el).append(new PeopleListView({model: data[i]}).render().el);
         }
 
-        $(this.el).append(new Paginator({model: this.model, page: this.options.page}).render().el);
+        //$(this.el).append(new Paginator({model: this.model, page: this.options.page}).render().el);
 
         return this;
 
