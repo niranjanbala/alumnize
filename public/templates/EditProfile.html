@@ -1,20 +1,20 @@
 <div class="row">
 	<div class="col-md-3">
 		<div class="bs-sidebar hidden-print affix-top" role="complementary">
-		        <ul class="nav bs-sidenav" data-spy="affix" data-offset-top="50">              
+		        <ul class="nav bs-sidenav" data-spy="affix" data-offset-top="50">
 		            <li class="active">
 					  <a href="#edit-profile">Profile Details</a>
 	  					<ul class="nav">
 							<li class=""><a href="#edit-general-settings">General Settings</a></li>
 							<li class=""><a href="#edit-networks">Networks</a></li>
 						</ul>
-	   		    	</li>        
+	   		    	</li>
 		        </ul>
 		</div>
 	</div>
 	<div class="col-md-9" role="main">
 		<div class="bs-docs-section">
-			<div id="edit-profile"></div>			
+			<div id="edit-profile"></div>
 			<form id="editProfile" class="pure-form pure-form-stacked">
 				<fieldset>
 			        <legend id="edit-general-settings">General Settings</legend>
@@ -33,11 +33,11 @@
 			            </div>
 			            <div class="pure-u-1-3">
 			                <label for="email">E-Mail</label>
-			                <% 
-			                var emailArray=[];			                			               
-			                if(!_.isNull(email)) { 
-							    for (var i=0; i<email.length; i++) { 
-							  	  emailArray.push(email[i].value); 
+			                <%
+			                var emailArray=[];
+			                if(!_.isNull(email)) {
+							    for (var i=0; i<email.length; i++) {
+							  	  emailArray.push(email[i].value);
 							  	}
 							  }
 			                %>
@@ -45,19 +45,20 @@
 			            </div>
 
 			            <div class="pure-u-1-3">
-			                <label for="city">City</label>			                
+			                <label for="city">City</label>
 			                <% if(!_.isNull(location)) { %>
-			                	<input id="location" type="text" value="<%= location.name %>">			                
+			                	<input id="location" type="text" value="<%= location.name %>">
 			                <% } else { %>
 			                	<input id="location" type="text">
 			                <% }  %>
 			            </div>
 			            <div class="pure-u-1-3">
 			                <label for="gender">Gender</label>
-			                <select id="gender" class="pure-input-1-2" value="<%= gender %>">
-			                    <option value="male">Male</option>
-			                    <option value="female">Female</option>
-			                    <option value="">Undisclosed</option>
+			                <select id="gender" class="pure-input-1-2">
+			                	<option value="" <% if(gender=="") { %>selected <% }%> >Undisclosed</option>
+			                    <option value="male" <% if(gender=="male") { %>selected <% }%> >Male</option>
+			                    <option value="female" <% if(gender=="female") { %>selected <% }%>>Female</option>
+
 			                </select>
 			            </div>
 			        </div>
@@ -66,7 +67,7 @@
 					<legend id="edit-networks">Networks</legend>
 				</fieldset>
 			</form>
-			
+
 			<button type="submit" class="pure-button pure-button-primary">Save</button>
 		</div>
 	</div>
