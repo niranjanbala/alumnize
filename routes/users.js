@@ -104,3 +104,10 @@ exports.findOrCreateLinkedInUser = function(token, tokenSecret, profile, done) {
         });
 	});
 };
+exports.findByFilterAndSort = function(req, res)) {
+    db.collection('users', function(err, collection) {
+        collection.find().toArray(function(err, items) {
+            res.jsonp(items);
+        });
+    });
+};

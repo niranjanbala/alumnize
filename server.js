@@ -106,7 +106,7 @@ app.get('/logout', function(req, res){
   req.logout();
   res.redirect('/');
 });
-
+app.get('/user/find', ensureAuthenticated, users.findByFilterAndSort(req,res));
 http.createServer(app).listen(app.get('port'), function () {
     console.log("Express server listening on port " + app.get('port'));
 });
