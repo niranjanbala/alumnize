@@ -108,8 +108,16 @@ exports.findByFilterAndSort = function(req, res) {
     db.collection('users', function(err, collection) {
         var filters={};
         var sorter={firstName: 1};
-        collection.find(filters).sort(sorter).toArray(function(err, items) {
-            res.jsonp(items);
+        var records=collection.find(filters).sort(sorter);
+        var totalCount=items.count;
+        var pageSize=5;
+        var pageNumber=req.params.pageNumber;
+        records.skip(pageSize * (pageNumber-1)).limit(pageSize).toArray(function(err, items) {                                
+            res.jsonp({
+                pageSize : pageSize
+                pageNumber: pageNumber
+                result : items
+            });
         });
     });
 };
