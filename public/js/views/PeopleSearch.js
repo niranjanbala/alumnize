@@ -10,8 +10,8 @@ alumnize.PeopleSearch = Backbone.View.extend({
     	data.id = this.model.id;
     	console.log("peoplesearch data ",data);
 
-        var len = data.length;
-        var startPos = (this.options.page - 1) * 8;
+        var len = 9;
+        var startPos = (0 - 1) * 8;
         var endPos = Math.min(startPos + 8, len);
 
         alert(len);
