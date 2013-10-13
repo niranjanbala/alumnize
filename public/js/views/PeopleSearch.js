@@ -14,6 +14,10 @@ alumnize.PeopleSearch = Backbone.View.extend({
         var startPos = (this.options.page - 1) * 8;
         var endPos = Math.min(startPos + 8, len);
 
+        alert(len);
+        alert(startPos);
+        alert(endPos);
+
         $(this.el).html('<ul class="thumbnails"></ul>');
 
         for (var i = startPos; i < endPos; i++) {
