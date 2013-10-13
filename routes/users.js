@@ -112,10 +112,11 @@ exports.findByFilterAndSort = function(req, res) {
         var totalCount=items.count;
         var pageSize=5;
         var pageNumber=req.params.pageNumber;
+
         records.skip(pageSize * (pageNumber-1)).limit(pageSize).toArray(function(err, items) {                                
             res.jsonp({
-                pageSize : pageSize
-                pageNumber: pageNumber
+                pageSize : pageSize,
+                pageNumber: pageNumber,
                 result : items
             });
         });
