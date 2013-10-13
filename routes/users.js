@@ -108,14 +108,15 @@ exports.findByFilterAndSort = function(req, res) {
     db.collection('users', function(err, collection) {
         var filters={};
         var sorter={firstName: 1};
-        var records=collection.find(filters).sort(sorter);
+        var records=collection.find(filters).sort(sorter).skip(pageSize * (pageNumber-1)).limit(pageSize);
+        console.log(records.count());
         var totalCount=25;
         var pageSize=5;
         var pageNumber=1;
         if(req.params.pageNumber) {
             pageNumber=req.params.pageNumber;
         }
-        records.skip(pageSize * (pageNumber-1)).limit(pageSize).toArray(function(err, items) {                                
+        records.toArray(function(err, items) {                                
             res.jsonp({
                 "pageSize" : pageSize,
                 "totalCount": totalCount,
