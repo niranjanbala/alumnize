@@ -28,6 +28,8 @@ alumnize.PeopleSearch = Backbone.View.extend({
 
 alumnize.PeopleListItemView = Backbone.View.extend({
 
+    var data = _.clone(this.model.attributes);
+
     tagName: "li",
 
     initialize: function () {
@@ -36,7 +38,7 @@ alumnize.PeopleListItemView = Backbone.View.extend({
     },
 
     render: function () {
-        $(this.el).html(this.template(this.model.toJSON()));
+        $(this.el).html(this.template(data));
         return this;
     }
 
