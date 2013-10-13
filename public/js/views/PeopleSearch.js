@@ -35,8 +35,8 @@ alumnize.PeopleListItemView = Backbone.View.extend({
     tagName: "li",
 
     initialize: function () {
-        this.model.bind("change", this.render, this);
-        this.model.bind("destroy", this.close, this);
+        //this.model.bind("change", this.render, this);
+        //this.model.bind("destroy", this.close, this);
     },
 
     render: function () {
