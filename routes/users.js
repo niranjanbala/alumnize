@@ -109,7 +109,7 @@ exports.findByFilterAndSort = function(req, res) {
         var filters={};
         var sorter={firstName: 1};
         var records=collection.find(filters).sort(sorter);
-        var totalCount=items.count;
+        var totalCount=records.count;
         var pageSize=5;
         var pageNumber=req.params.pageNumber;
 
