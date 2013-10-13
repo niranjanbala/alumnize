@@ -111,8 +111,10 @@ exports.findByFilterAndSort = function(req, res) {
         var records=collection.find(filters).sort(sorter);
         var totalCount=25;
         var pageSize=5;
-        var pageNumber=req.params.pageNumber;
-
+        var pageNumber=1;
+        if(req.params.pageNumber) {
+            pageNumber=req.params.pageNumber;
+        }
         records.skip(pageSize * (pageNumber-1)).limit(pageSize).toArray(function(err, items) {                                
             res.jsonp({
                 "pageSize" : pageSize,
