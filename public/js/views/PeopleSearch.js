@@ -27,7 +27,6 @@ alumnize.PeopleSearch = Backbone.View.extend({
 });
 
 alumnize.PeopleListItemView = Backbone.View.extend({
-    console.log("PeopleListItemView", this.model);
 
     tagName: "li",
 
@@ -37,6 +36,7 @@ alumnize.PeopleListItemView = Backbone.View.extend({
     },
 
     render: function () {
+        console.log("PeopleListItemView :: ",this.model);
         $(this.el).html(this.template(this.model));
         return this;
     }
