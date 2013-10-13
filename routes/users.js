@@ -115,10 +115,10 @@ exports.findByFilterAndSort = function(req, res) {
 
         records.skip(pageSize * (pageNumber-1)).limit(pageSize).toArray(function(err, items) {                                
             res.jsonp({
-                pageSize : pageSize,
-                totalCount: totalCount,
-                pageNumber: pageNumber,
-                result : items
+                "pageSize" : pageSize,
+                "totalCount": totalCount,
+                "pageNumber": pageNumber,
+                "result" : items
             });
         });
     });
