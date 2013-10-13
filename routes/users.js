@@ -106,7 +106,9 @@ exports.findOrCreateLinkedInUser = function(token, tokenSecret, profile, done) {
 };
 exports.findByFilterAndSort = function(req, res) {
     db.collection('users', function(err, collection) {
-        collection.find().toArray(function(err, items) {
+        var filters={};
+        var sorter={firstName: 1};
+        collection.find(filters).sort(sorter).toArray(function(err, items) {
             res.jsonp(items);
         });
     });
