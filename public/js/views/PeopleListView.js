@@ -21,8 +21,10 @@ alumnize.PeopleListView = Backbone.View.extend({
     render:function () {
         this.$el.empty();
         alert("PeopleListView");
-        console.log("this.model.models : ",this.model.models);
-        _.each(this.model.models, function (people) {
+        var data = _.clone(this.model.attributes);
+        console.log("this.model.models : ",data);
+        _.each(data.result, function (people) {
+            console.log("people : ",people);
             this.$el.append(new alumnize.PeopleListItemView({model:people}).render().el);
         }, this);
         return this;
