@@ -21,8 +21,8 @@ alumnize.PeopleSearch = Backbone.View.extend({
         $(this.el).html('<ul class="thumbnails"></ul>');
 
         for (var i = startPos; i < endPos; i++) {
-            alert(data[i].name);
-            $('.thumbnails', this.el).append($("<li>"+data[i].name+"</li>"));
+            console.log(data[i]);
+            $('.thumbnails', this.el).append($("<li>"+data[i]+"</li>"));
         }
 
         this.$el.html(this.template(data));
