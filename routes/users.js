@@ -108,7 +108,8 @@ exports.findByFilterAndSort = function(req, res) {
     db.collection('users', function(err, collection) {
         var filters={};
         var sorter={firstName: 1};
-        var records=collection.find(filters,{"_id": 0,"isNew":0,"email":1,"gender":1,"name":1,"firstName":1,"middleName":1,"lastName":1}).sort(sorter).skip(pageSize * (pageNumber-1)).limit(pageSize);
+        var projections={"_id": 0,"isNew":0,"email":1,"gender":1,"name":1,"firstName":1,"middleName":1,"lastName":1}
+        var records=collection.find(filters).sort(sorter).skip(pageSize * (pageNumber-1)).limit(pageSize);
         console.log(records.count());
         var totalCount=25;
         var pageSize=5;
