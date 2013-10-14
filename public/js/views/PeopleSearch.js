@@ -1,5 +1,5 @@
 alumnize.Peoples = Backbone.Model.extend({
-    url : "/account",
+    url : "data/peoples.json",
     initialize:function () {               
     }
 });
