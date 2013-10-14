@@ -68,7 +68,7 @@ alumnize.Router = Backbone.Router.extend({
     }
 });
 $(document).on("ready", function () {
-    alumnize.loadTemplates(["FeedBack","Carousel","Navigation","Features","Footer","Login","UserHomePage","EditProfile","PeopleSearch"],
+    alumnize.loadTemplates(["FeedBack","Carousel","Navigation","Features","Footer","Login","UserHomePage","EditProfile","PeopleListView"],
         function () {
             alumnize.router = new alumnize.Router();
             Backbone.history.start();
