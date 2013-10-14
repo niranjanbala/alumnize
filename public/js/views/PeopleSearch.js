@@ -1,5 +1,5 @@
 alumnize.Peoples = Backbone.Model.extend({
-    url : "/user/find/1",
+    url : "/user/find",
     initialize:function () {               
     }
 });
