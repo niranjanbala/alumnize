@@ -113,11 +113,9 @@ exports.findByFilterAndSort = function(req, res) {
 		if(req.params.pageNumber) {
 			pageNumber=req.params.pageNumber;
 		}
-        var projections={"_id": 0,"isNew":0,"email":1,"gender":1,"name":1,"firstName":1,"middleName":1,"lastName":1};
-        collection.find(filters,projections).sort(sorter).skip(pageSize * (pageNumber-1)).limit(pageSize).toArray(function(err, items) {
+        collection.find(filters).sort(sorter).skip(pageSize * (pageNumber-1)).limit(pageSize).toArray(function(err, items) {
             res.jsonp({
                 "pageSize" : pageSize,
-                "totalCount": 10,
                 "pageNumber": pageNumber,
                 "result" : items
             });
