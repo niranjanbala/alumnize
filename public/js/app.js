@@ -34,7 +34,7 @@ alumnize.Router = Backbone.Router.extend({
         peoples.fetch({
             success: function (data) {
                 console.log("app data ",data);
-                alumnize.PeopleListView = new alumnize.PeopleSearch({model: data});
+                alumnize.PeopleListView = new alumnize.PeopleListView({model: data});
                 $('.container').html(alumnize.PeopleListView.render().el);
             },
             error: function(model, xhr, options){
