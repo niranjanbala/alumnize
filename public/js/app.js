@@ -21,7 +21,7 @@ alumnize.Router = Backbone.Router.extend({
         "home": "home",
         "login": "login",
         "signup":"signup",
-        "people":"peopleSearch"
+        "people":"peopleListView"
     },
     initialize: function () {
     },
@@ -29,13 +29,13 @@ alumnize.Router = Backbone.Router.extend({
         alumnize.landingPage = new alumnize.LandingPage();
         $('body').html(alumnize.landingPage.render().el);
     },
-    peopleSearch: function() {
+    peopleListView: function() {
         var peoples = new alumnize.Peoples();
         peoples.fetch({
             success: function (data) {
                 console.log("app data ",data);
-                alumnize.peopleSearch = new alumnize.PeopleSearch({model: data});
-                $('.container').html(alumnize.peopleSearch.render().el);
+                alumnize.PeopleListView = new alumnize.PeopleSearch({model: data});
+                $('.container').html(alumnize.PeopleListView.render().el);
             },
             error: function(model, xhr, options){
                 self.login();
