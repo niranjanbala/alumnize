@@ -25,6 +25,9 @@ alumnize.PeopleListView = Backbone.View.extend({
         _.each(data.result, function (people) {
             console.log("people : ",people);
             this.$el.append(this.template(people));
+            if(data.pageNumber == "1") {
+                document.getElementById('previous').style.display = 'none';
+            }
         }, this);
         return this;
     }
