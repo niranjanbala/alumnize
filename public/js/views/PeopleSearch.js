@@ -4,57 +4,46 @@ alumnize.Peoples = Backbone.Model.extend({
     }
 });
 
-alumnize.PeopleSearch = Backbone.View.extend({
+alumnize.PeopleListView = Backbone.View.extend({
+
+    tagName:'ul',
+
+    className:'nav nav-list',
+
+    initialize:function () {
+        var self = this;
+        this.model.on("reset", this.render, this);
+        this.model.on("add", function (employee) {
+            self.$el.append(new alumnize.PeopleListItemView({model:employee}).render().el);
+        });
+    },
+
     render:function () {
-    	var data = _.clone(this.model.attributes);
-    	data.id = this.model.id;
-    	console.log("peoplesearch data ",data);
-
-        var totalCount = data.totalCount;
-        var pageSize = data.pageSize;
-        var pageNumber = data.pageNumber;
-
-        alert(totalCount);
-        alert(pageSize);
-        alert(pageNumber);
-
-        //$(this.el).html('<ul class="thumbnails"></ul>');
-
-        for (var i = startPos; i < endPos; i++) {
-            console.log(data);
-            console.log(data[0]);
-            $('.list-group', this.el).append($("<li>"+data[0].name+"</li>"));
-        }
-
-        //this.$el.html(this.template(data));
-
-   //     $(this.el).append(new Paginator({model: this.model, page: this.options.page}).render().el);
-
+        this.$el.empty();
+        _.each(this.model.models, function (employee) {
+            this.$el.append(new alumnize.PeopleListItemView({model:employee}).render().el);
+        }, this);
         return this;
     }
 });
 
-alumnize.Paginator = Backbone.View.extend({
+alumnize.PeopleListItemView = Backbone.View.extend({
 
-    className: "pagination pagination-centered",
+    tagName:"li",
 
     initialize:function () {
-        this.model.bind("reset", this.render, this);
-        this.render();
+        this.model.on("change", this.render, this);
+        this.model.on("destroy", this.close, this);
     },
 
     render:function () {
-
-        var items = this.model.models;
-        var len = items.length;
-        var pageCount = Math.ceil(len / 8);
-
-        $(this.el).html('<ul />');
-
-        for (var i=0; i < pageCount; i++) {
-            $('ul', this.el).append("<li" + ((i + 1) === this.options.page ? " class='active'" : "") + "><a href='#people"+(i+1)+"'>" + (i+1) + "</a></li>");
-        }
-
+        // The clone hack here is to support parse.com which doesn't add the id to model.attributes. For all other persistence
+        // layers, you can directly pass model.attributes to the template function
+        var data = _.clone(this.model.attributes);
+        data.id = this.model.id;
+        console.log("New data :: ", data);
+        this.$el.html(this.template(data));
         return this;
     }
+
 });
