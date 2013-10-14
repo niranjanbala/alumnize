@@ -108,7 +108,7 @@ exports.findByFilterAndSort = function(req, res) {
     db.collection('users', function(err, collection) {
         var filters={};
         var sorter={firstName: 1};
-        var records=collection.find(filters).sort(sorter).skip(pageSize * (pageNumber-1)).limit(pageSize);
+        var records=collection.find(filters,{"facebook.education":0,"facebook.work":0,"linkedin.profile": 0}).sort(sorter).skip(pageSize * (pageNumber-1)).limit(pageSize);
         console.log(records.count());
         var totalCount=25;
         var pageSize=5;
@@ -116,7 +116,7 @@ exports.findByFilterAndSort = function(req, res) {
         if(req.params.pageNumber) {
             pageNumber=req.params.pageNumber;
         }
-        records.toArray(function(err, items) {                                
+        records.toArray(function(err, items) {
             res.jsonp({
                 "pageSize" : pageSize,
                 "totalCount": totalCount,
