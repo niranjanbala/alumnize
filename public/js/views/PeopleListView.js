@@ -24,7 +24,7 @@ alumnize.PeopleListView = Backbone.View.extend({
         console.log("PeopleListView data : ",data);
         _.each(data.result, function (people) {
             console.log("people : ",people);
-            this.$el.html(this.template(people));
+            this.$el.append(this.template(people));
         }, this);
         return this;
     }
