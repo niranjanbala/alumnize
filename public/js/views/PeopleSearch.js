@@ -1,5 +1,5 @@
 alumnize.Peoples = Backbone.Model.extend({
-    url : "data/peoples.json",
+    url : "/user/find/1",
     initialize:function () {               
     }
 });
@@ -10,9 +10,9 @@ alumnize.PeopleSearch = Backbone.View.extend({
     	data.id = this.model.id;
     	console.log("peoplesearch data ",data);
 
-        var len = 9;
-        var startPos = (0 - 1) * 8;
-        var endPos = Math.min(startPos + 8, len);
+        var len = 4;
+        var startPos = 0; //(0 - 1) * 8;
+        var endPos = 3; //Math.min(startPos + 8, len);
 
         alert(len);
         alert(startPos);
