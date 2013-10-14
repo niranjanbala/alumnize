@@ -21,30 +21,16 @@ alumnize.PeopleSearch = Backbone.View.extend({
         $(this.el).html('<ul class="thumbnails"></ul>');
 
         for (var i = startPos; i < endPos; i++) {
-            $('.thumbnails', this.el).append($("<li></li>").text(data[i]));
+            alert(data[i].name);
+            $('.thumbnails', this.el).append($("<li>"+data[i].name+"</li>"));
         }
+
+        this.$el.html(this.template(data));
 
    //     $(this.el).append(new Paginator({model: this.model, page: this.options.page}).render().el);
 
         return this;
     }
-});
-
-alumnize.PeopleListItemView = Backbone.View.extend({
-
-    tagName: "li",
-
-    initialize: function () {
-        //this.model.bind("change", this.render, this);
-        //this.model.bind("destroy", this.close, this);
-    },
-
-    render: function () {
-        console.log("PeopleListItemView :: ",this.model);
-        $(this.el).html(this.template(this.model));
-        return this;
-    }
-
 });
 
 alumnize.Paginator = Backbone.View.extend({
