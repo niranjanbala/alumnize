@@ -21,7 +21,8 @@ alumnize.Router = Backbone.Router.extend({
         "home": "home",
         "login": "login",
         "signup":"signup",
-        "people":"peopleListView"
+        "people":"peopleListView",
+        "people/:pageNumber":"peopleListViewByPage"
     },
     initialize: function () {
     },
@@ -30,6 +31,22 @@ alumnize.Router = Backbone.Router.extend({
         $('body').html(alumnize.landingPage.render().el);
     },
     peopleListView: function() {
+        var peoples = new alumnize.Peoples();
+        peoples.fetch({
+            success: function (data) {
+                console.log("app data ",data);
+                alumnize.PeopleListView = new alumnize.PeopleListView({model: data});
+                $('.container').html(alumnize.PeopleListView.render().el);
+            },
+            error: function(model, xhr, options){
+                self.login();
+            }
+        });
+    },
+    peopleListViewByPage: function() {
+
+        alert("coming");
+
         var peoples = new alumnize.Peoples();
         peoples.fetch({
             success: function (data) {
