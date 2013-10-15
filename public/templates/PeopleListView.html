@@ -26,9 +26,9 @@
 	        <% }); %>
 
 			<% if (pageNumber != 1) { %>
-				<a href='#people'+<%= pageNumber-1 %>>Previous</a>
+				<a href=<%= '#people/'+parseInt(pageNumber)-1 %>>Previous</a>
 			<% } %>
-			<a href=<%= '#people'+pageNumber+1 %>>Next</a>
+			<a href=<%= '#people/'+parseInt(pageNumber)+1 %>>Next</a>
 			
 		</div>
 	</div>
