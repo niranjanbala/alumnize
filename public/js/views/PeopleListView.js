@@ -1,11 +1,10 @@
-alumnize.Peoples(pageNo) = Backbone.Model.extend({
-    url : "/user/find/"+pageNo,
+alumnize.Peoples = Backbone.Model.extend({
+    url : "/user/find/1",
     initialize:function () {               
     }
 });
 
 alumnize.PeopleListView = Backbone.View.extend({
-
     initialize:function () {
     },
 

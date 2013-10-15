@@ -31,7 +31,7 @@ alumnize.Router = Backbone.Router.extend({
         $('body').html(alumnize.landingPage.render().el);
     },
     peopleListView: function() {
-        var peoples = new alumnize.Peoples(1);
+        var peoples = new alumnize.Peoples();
         peoples.fetch({
             success: function (data) {
                 console.log("app data ",data);
@@ -45,7 +45,7 @@ alumnize.Router = Backbone.Router.extend({
     },
     peopleListViewByPage: function() {
 
-        alert("coming");
+        alert("Coming to peopleListViewByPage");
 
         var peoples = new alumnize.Peoples();
         peoples.fetch({
