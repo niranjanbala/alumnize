@@ -17,9 +17,16 @@
 			  <h1>People list</h1>
 			</div>
 
-			<a href='#people'>
-			    <p class="list-item"><%= firstName %> <%= lastName %><br /></p>
+
+			<% _.each(result, function(people) { %>
+            <li>
+              <a href='#people'>
+			    <p class="list-item"><%= people.firstName %> <%= people.lastName %><br /></p>
 			</a>
+            </li>
+          <% }); %>
+
+			
 
 			<button class="previous" type="button">Previous</button>
 			<button class="next" type="button">Next</button>

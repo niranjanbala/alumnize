@@ -22,13 +22,14 @@ alumnize.PeopleListView = Backbone.View.extend({
         this.$el.empty();
         var data = _.clone(this.model.attributes);
         console.log("PeopleListView data : ",data);
-        _.each(data.result, function (people) {
+        this.$el.append(this.template(data));
+       /* _.each(data.result, function (people) {
             console.log("people : ",people);
             this.$el.append(this.template(people));
             if(data.pageNumber == 1) {
                $('.previous').hide();
             }
-        }, this);
+        }, this); */
         return this;
     }
 });
