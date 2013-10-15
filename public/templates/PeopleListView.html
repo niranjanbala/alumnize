@@ -17,18 +17,18 @@
 			  <h1>People list</h1>
 			</div>
 
-
 			<% _.each(result, function(people) { %>
-            <li>
-              <a href='#people'>
-			    <p class="list-item"><%= people.firstName %> <%= people.lastName %><br /></p>
-			</a>
-            </li>
-          <% }); %>
+	            <li>
+	              <a href='#people'>
+				    <p class="list-item"><%= people.firstName %> <%= people.lastName %><br /></p>
+				</a>
+	            </li>
+	        <% }); %>
 
-			
+			<% if (pageNumber != 1) { %>
+			    <button class="previous" type="button">Previous</button>
+			<% } %>
 
-			<button class="previous" type="button">Previous</button>
 			<button class="next" type="button">Next</button>
 
 			
