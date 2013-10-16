@@ -47,16 +47,8 @@ alumnize.Router = Backbone.Router.extend({
 
         alert("Coming to peopleListViewByPage");
         var peoples = new alumnize.Peoples();
-        peoples.fetch({
-            success: function (data) {
-                console.log("app data ",data);
-                alumnize.PeopleListView = new alumnize.PeopleListView({model: data});
-                $('.container').html(alumnize.PeopleListView.render().el);
-            },
-            error: function(model, xhr, options){
-                self.login();
-            }
-        });
+        alumnize.PeopleListView = new alumnize.PeopleListView({model: peoples});
+        peoples.fetch({reset: true});
     },
     home: function() {
         var user=new alumnize.User();
