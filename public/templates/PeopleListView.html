@@ -1,7 +1,7 @@
 <div class="row">
 	<div class="col-md-3">
 		<div class="bs-sidebar hidden-print affix-top" role="complementary">
-		        <ul class="nav bs-sidenav" data-spy="affix" data-offset-top="50">              
+		        <ul class="nav bs-sidenav" data-spy="affix" data-offset-top="50">
 		            <div class="input-group">
 				      <input type="text" class="form-control">
 				      <span class="input-group-btn">
@@ -16,20 +16,12 @@
 			<div class="page-header">
 			  <h1>People list</h1>
 			</div>
-
-			<% _.each(result, function(people) { %>
-	            <li>
-	              <a href='#people'>
-				    <p class="list-item"><%= people.firstName %> <%= people.lastName %><br /></p>
-				</a>
-	            </li>
-	        <% }); %>
-
+			<div class="pure-g">
+			</div>
 			<% if (pageNumber != 1) { %>
 				<a href=<%= '#people/'+(parseInt(pageNumber)-1) %>>Previous</a>
 			<% } %>
 			<a href=<%= '#people/'+(parseInt(pageNumber)+1) %>>Next</a>
-			
 		</div>
 	</div>
 </div>

@@ -59,7 +59,7 @@ alumnize.Router = Backbone.Router.extend({
             }
         });
     },
-    home: function() {            
+    home: function() {
         var user=new alumnize.User();
         var self=this;
         $('#login').modal('hide');
@@ -67,25 +67,26 @@ alumnize.Router = Backbone.Router.extend({
             success: function (data) {
                 console.log(data);
                 alumnize.userHomePage = new alumnize.UserHomePage({model: data});
-                $('body').html(alumnize.userHomePage.render().el);  
+                $('body').html(alumnize.userHomePage.render().el);
                 if(data.get("isNew")===1) {
                     alumnize.userHomePage.editProfile();
-                } 
+                }
             },
             error:   function(model, xhr, options){
                     self.login();
             }
-        });    
+        });
     },
-    login: function() {        
+    login: function() {
         this.landingPage();
     },
-    signup: function() {        
+    signup: function() {
         this.landingPage();
     }
 });
 $(document).on("ready", function () {
-    alumnize.loadTemplates(["FeedBack","Carousel","Navigation","Features","Footer","Login","UserHomePage","EditProfile","PeopleListView"],
+    alumnize.loadTemplates(["FeedBack","Carousel","Navigation","Features","Footer","Login",
+    					"UserHomePage","EditProfile","PeopleListView","UserSmallView"],
         function () {
             alumnize.router = new alumnize.Router();
             Backbone.history.start();
