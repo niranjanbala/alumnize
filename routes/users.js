@@ -108,7 +108,7 @@ exports.findByFilterAndSort = function(req, res) {
     db.collection('users', function(err, collection) {
         var filters={};
         var sorter={firstName: 1};
-		var pageSize=5;
+		var pageSize=15;
 		var pageNumber=1;
 		if(req.params.pageNumber) {
 			pageNumber=req.params.pageNumber;
