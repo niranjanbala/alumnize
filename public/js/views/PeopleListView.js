@@ -12,7 +12,8 @@ alumnize.PeopleListView = Backbone.View.extend({
     render:function () {
 		this.$el.empty();
 		var data = _.clone(this.model.attributes);
-		console.log('pl render',data);
+		console.log('pl render',this.model);
+		console.log('pl render',this.model.get('result'));
 		this.$el.html(this.template(data));
 		_.each(data.result, function (user) {
 			console.log('pl render',user);
