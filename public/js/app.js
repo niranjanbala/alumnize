@@ -31,29 +31,12 @@ alumnize.Router = Backbone.Router.extend({
         $('body').html(alumnize.landingPage.render().el);
     },
     peopleListView: function() {
-		var peoples = new alumnize.UserCollection([],{url: 'http://alumnize-beta.herokuapp.com/user/find'});
-		var alumnize.PeopleListView = new alumnize.PeopleListView({model: peoples});
-		$('.container').html(alumnize.PeopleListView.render().el);
-		peoples.fetch({reset: true});
-
-        /*var peoples = new alumnize.UserCollection([],{url: 'http://alumnize-beta.herokuapp.com/user/find'});
-        peoples.fetch({
-            success: function (data) {
-                console.log("app data ",data);
-                alumnize.PeopleListView = new alumnize.PeopleListView({model: data});
-                $('.container').html(alumnize.PeopleListView.render().el);
-            },
-            error: function(model, xhr, options){
-                self.login();
-            }
-        });*/
+        var userCollection = new alumnize.UserCollection([],{url: 'http://alumnize-beta.herokuapp.com/user/find'});
+        var peopleListView = new alumnize.PeopleListView({model: userCollection});
+        $('.container').html(peopleListView.render().el);
+        userCollection.fetch({reset: true, data: {name: key}});
     },
     peopleListViewByPage: function() {
-
-        alert("Coming to peopleListViewByPage");
-        var peoples = new alumnize.Peoples();
-        alumnize.PeopleListView = new alumnize.PeopleListView({model: peoples});
-        peoples.fetch({reset: true});
     },
     home: function() {
         var user=new alumnize.User();
