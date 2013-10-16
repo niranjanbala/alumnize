@@ -3,8 +3,8 @@ alumnize.PeopleListView = Backbone.View.extend({
     initialize:function () {
         var self = this;
         this.model.on("reset", this.render, this);
-        this.model.on("add", function (employee) {
-            self.$el.append(new alumnize.UserSmallView({model:employee}).render().el);
+        this.model.on("add", function (user) {
+            $('peopleList', this.el).append(new alumnize.UserSmallView({model:user}).render().el);
         });
     },
 
