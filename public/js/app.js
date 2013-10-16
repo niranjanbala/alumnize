@@ -32,9 +32,12 @@ alumnize.Router = Backbone.Router.extend({
     },
     peopleListView: function() {
         var userSearchResult = new alumnize.UserSearchResult();
-        var peopleListView = new alumnize.PeopleListView({model: userSearchResult});
-        $('.container').html(peopleListView.render().el);
-        userSearchResult.fetch({reset: true});
+        userSearchResult.fetch({
+			success: function (data) {
+				var peopleListView = new alumnize.PeopleListView({model: data});
+				$('.container').html(peopleListView.render().el);
+			}
+		});
     },
     peopleListViewByPage: function() {
     },
