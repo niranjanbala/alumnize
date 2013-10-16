@@ -14,7 +14,7 @@ alumnize.PeopleListView = Backbone.View.extend({
 		this.$el.html(this.template(data));
 		_.each(this.model.get('result').models, function(user) {
 			console.log(user);
-			$('.peopleList', this.el).append(new alumnize.UserSmallView({model:user}).render().el);
+			$('#peopleList').append(new alumnize.UserSmallView({model:user}).render().el);
 		});
         return this;
     }
