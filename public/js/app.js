@@ -31,7 +31,12 @@ alumnize.Router = Backbone.Router.extend({
         $('body').html(alumnize.landingPage.render().el);
     },
     peopleListView: function() {
-        var peoples = new alumnize.UserCollection([],{url: 'http://alumnize-beta.herokuapp.com/user/find'});
+		var peoples = new alumnize.UserCollection([],{url: 'http://alumnize-beta.herokuapp.com/user/find'});
+		var alumnize.PeopleListView = new alumnize.PeopleListView({model: peoples});
+		$('.container').html(alumnize.PeopleListView.render().el);
+		peoples.fetch({reset: true});
+
+        /*var peoples = new alumnize.UserCollection([],{url: 'http://alumnize-beta.herokuapp.com/user/find'});
         peoples.fetch({
             success: function (data) {
                 console.log("app data ",data);
@@ -41,7 +46,7 @@ alumnize.Router = Backbone.Router.extend({
             error: function(model, xhr, options){
                 self.login();
             }
-        });
+        });*/
     },
     peopleListViewByPage: function() {
 
