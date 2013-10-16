@@ -15,8 +15,8 @@ alumnize.UserSearchResult = Backbone.Model.extend({
 	        pageSize: 15,
 	        result : new alumnize.UserCollection()
     },
-    initialize : function(){
-		console.log(this)l
-		this.result= new alumnize.UserCollection(this.get('result'));
+    parse: function(response) {
+	  response.result= new alumnize.UserCollection(response.result);
+	  return response
 	}
 });
