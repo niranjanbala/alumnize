@@ -17,6 +17,6 @@ alumnize.UserSearchResult = Backbone.Model.extend({
     },
     parse: function(response) {
 	  response.result= new alumnize.UserCollection(response.result);
-	  return response
+	  return response;
 	}
 });
