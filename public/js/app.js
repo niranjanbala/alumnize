@@ -34,7 +34,7 @@ alumnize.Router = Backbone.Router.extend({
         var userSearchResult = new alumnize.UserSearchResult([],{url: 'http://alumnize-beta.herokuapp.com/user/find'});
         var peopleListView = new alumnize.PeopleListView({model: userSearchResult});
         $('.container').html(peopleListView.render().el);
-        userCollection.fetch({reset: true});
+        userSearchResult.fetch({reset: true});
     },
     peopleListViewByPage: function() {
     },
