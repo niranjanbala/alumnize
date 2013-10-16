@@ -12,6 +12,6 @@ alumnize.UserSearchResult = Backbone.Model.extend({
 	defaults: {
 	        pageNumber: 1,
 	        pageSize: 15,
-	        userList : new UserCollection()
+	        userList : new alumnize.UserCollection()
     }
 });
