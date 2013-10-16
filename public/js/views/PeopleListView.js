@@ -1,5 +1,4 @@
 alumnize.PeopleListView = Backbone.View.extend({
-    className:'nav nav-list',
     initialize:function () {
         var self = this;
         this.model.on("reset", this.render, this);
