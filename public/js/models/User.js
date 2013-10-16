@@ -9,6 +9,7 @@ alumnize.UserCollection = Backbone.Collection.extend({
 });
 
 alumnize.UserSearchResult = Backbone.Model.extend({
+	url: "http://alumnize-beta.herokuapp.com/user/find",
 	defaults: {
 	        pageNumber: 1,
 	        pageSize: 15,

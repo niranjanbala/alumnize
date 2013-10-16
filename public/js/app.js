@@ -31,10 +31,10 @@ alumnize.Router = Backbone.Router.extend({
         $('body').html(alumnize.landingPage.render().el);
     },
     peopleListView: function() {
-        var userSearchResult = new alumnize.UserSearchResult({url: 'http://alumnize-beta.herokuapp.com/user/find'});
+        var userSearchResult = new alumnize.UserSearchResult();
         var peopleListView = new alumnize.PeopleListView({model: userSearchResult});
         $('.container').html(peopleListView.render().el);
-        userSearchResult.fetch({reset: true});
+        userSearchResult.fetch();
     },
     peopleListViewByPage: function() {
     },
