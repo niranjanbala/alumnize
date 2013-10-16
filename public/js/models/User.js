@@ -7,3 +7,11 @@ alumnize.User = Backbone.Model.extend({
 alumnize.UserCollection = Backbone.Collection.extend({
     model: alumnize.User
 });
+
+alumnize.UserSearchResult = Backbone.Model.extend({
+	defaults: {
+	        pageNumber: 1,
+	        pageSize: 15,
+	        userList : new UserCollection()
+    }
+});
