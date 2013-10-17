@@ -23,7 +23,9 @@ alumnize.UserSearchResult = Backbone.Model.extend({
 		var self=this;
 		self.fetch({
 			success: function (data) {
-				self.set('result')=data.get('result');				
+				console.log(data);
+				console.log(data.get('result'));
+				self.set('result',data.get('result'));				
 			}
 		});
     },    
