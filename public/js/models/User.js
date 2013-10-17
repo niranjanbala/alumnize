@@ -19,12 +19,11 @@ alumnize.UserSearchResult = Backbone.Model.extend({
 	  response.result= new alumnize.UserCollection(response.result);
 	  return response;
 	},
-	performSearch: function(){
+	performSearch: function(v){
 		var self=this;
+		console.log(v);
 		self.fetch({
 			success: function (data) {
-				console.log(data);
-				console.log(data.get('result'));
 				self.set('result',data.get('result'));				
 			}
 		});
