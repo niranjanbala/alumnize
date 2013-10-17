@@ -4,7 +4,7 @@ alumnize.PeopleListView = Backbone.View.extend({
     },
     formSubmitted: function(e) {
         e.preventDefault();            
-        this.model.performSearch($('#searchForm').serializeArray());      
+        this.model.performSearch($('#searchForm').serialize());      
     },
     initialize:function () {
         var self = this;
