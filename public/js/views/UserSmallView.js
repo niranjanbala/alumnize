@@ -10,5 +10,8 @@ alumnize.UserSmallView = Backbone.View.extend({
         data.id = this.model.id;		
         this.$el.html(this.template(data));		
         return this;
-    }
+    },
+	className: function() {
+			return "userSmallView pure-u-1-3";
+	}
 });
