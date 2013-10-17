@@ -3,8 +3,8 @@ alumnize.PeopleListView = Backbone.View.extend({
       "submit #searchForm": "formSubmitted"
     },
     formSubmitted: function(e) {
-        e.preventDefault();
-        this.model.performSearch(e.target.value);      
+        e.preventDefault();            
+        this.model.performSearch($('#searchForm').serializeArray());      
     },
     initialize:function () {
         var self = this;
