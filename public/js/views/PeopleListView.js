@@ -1,6 +1,6 @@
 alumnize.PeopleListView = Backbone.View.extend({
     events: {
-      "submit searchForm": "formSubmitted"
+      "submit .searchForm": "formSubmitted"
     },
     formSubmitted: function(e) {
         this.model.performSearch(e.target.value);      
