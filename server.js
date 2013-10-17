@@ -81,7 +81,7 @@ app.get('/account', ensureAuthenticated, function(req, res){
 });
 
 app.get('/auth/facebook',
-  passport.authenticate('facebook', { scope: ['email','publish_stream','user_about_me','user_education_history','user_location','user_work_history'] })
+  passport.authenticate('facebook', { scope: ['email','user_about_me','user_education_history','user_location','user_work_history'] })
 );
 
 app.get('/auth/facebook/callback',
