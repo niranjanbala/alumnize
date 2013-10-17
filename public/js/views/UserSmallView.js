@@ -1,5 +1,5 @@
 alumnize.UserSmallView = Backbone.View.extend({
-    tagName:"li",
+
     initialize:function () {
         this.model.on("change", this.render, this);
         this.model.on("destroy", this.close, this);
@@ -11,5 +11,8 @@ alumnize.UserSmallView = Backbone.View.extend({
         data.id = this.model.id;
         this.$el.html(this.template(data));
         return this;
-    }
+    },
+	className: function(){
+	    return "userSmallView pure-u-1-3";
+	},
 });
