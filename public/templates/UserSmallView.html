@@ -1,9 +1,9 @@
 <div class="l-box">
     <h3><%= name %></h3>
 	<% if(!_.isNull(facebook)) { %>
-		<img src="/public/images/140x140.png">
+		<img src="https://graph.facebook.com/<%= facebook.id %>/picture?width=140&height=140">
     <% } else { %>
-		<img src="/public/images/140x140.png">
-    <% } %>
+		<img src="/images/140x140.png">
+    <% }  %>
 </div>
 
