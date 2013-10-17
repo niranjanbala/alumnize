@@ -1,5 +1,5 @@
 alumnize.UserSmallView = Backbone.View.extend({
-
+	tagName: "div",
     initialize:function () {
         this.model.on("change", this.render, this);
         this.model.on("destroy", this.close, this);
