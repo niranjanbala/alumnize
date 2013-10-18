@@ -8,7 +8,7 @@ alumnize.JobsCollection = Backbone.Collection.extend({
     model: alumnize.Jobs
 });
 
-alumnize.JobsSearchResult = Backbone.Model.extend({
+alumnize.JobSearchResult = Backbone.Model.extend({
 	url: "http://alumnize-beta.herokuapp.com/user/find",
 	defaults: {
 	        pageNumber: 1,
