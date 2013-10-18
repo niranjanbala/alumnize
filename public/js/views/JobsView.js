@@ -11,7 +11,7 @@ alumnize.JobsView = Backbone.View.extend({
         this.model.on("reset", this.render, this);
         this.model.on("change:result", this.render, this);
         this.model.on("add", function (user) {
-            $('jobList', this.el).append(new alumnize.UserSmallView({model:user}).render().el);
+            $('jobList', this.el).append(new alumnize.JobListView({model:user}).render().el);
         });
     },
 
@@ -21,7 +21,7 @@ alumnize.JobsView = Backbone.View.extend({
 		this.$el.html(this.template(data));
 		var that = this;
 		_.each(this.model.get('result').models, function(user) {			
-			$('#jobList',that.$el).append(new alumnize.UserSmallView({model:user}).render().el);
+			$('#jobList',that.$el).append(new alumnize.JobListView({model:user}).render().el);
 		});
         return this;
     }
