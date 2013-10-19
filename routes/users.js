@@ -149,10 +149,10 @@ exports.findJobs = function(req, res) {
                               
                                 "jobTitle": "PERL Developer",
                                 "jobDesc": "PERL Developer | Exp in PERL (CGI), CSS3, Ajax, MySQL, Jquery, JSON, Photoshop along with Facebook-Twitter API | Aware of HTML5 Responsive Design | Good communication skills | Problem Solving in the Live Environment",
-                                "experience": "3-4 years",
-                                "salary": "4-5 lacs P/A",
-                                "location": "Chennai",
-                                "company": "WIPRO"
+                                "experience": "5-6 years",
+                                "salary": "5-6 lacs P/A",
+                                "location": "Bangalore",
+                                "company": "HCL"
                               }
                             ]
             });
