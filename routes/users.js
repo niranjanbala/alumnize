@@ -114,6 +114,7 @@ exports.findByFilterAndSort = function(req, res) {
 			pageNumber=req.params.pageNumber;
 		}
         collection.find(filters).sort(sorter).skip(pageSize * (pageNumber-1)).limit(pageSize).toArray(function(err, items) {
+            console.log("items : " + items);
             res.jsonp({
                 "pageSize" : pageSize,
                 "pageNumber": pageNumber,
