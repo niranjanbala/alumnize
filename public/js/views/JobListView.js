@@ -12,6 +12,6 @@ alumnize.JobListView = Backbone.View.extend({
         return this;
     },
 	className: function() {
-		return "jobListView pure-u-1-5";
+		return "jobListView pure-u-1";
 	}
 });
