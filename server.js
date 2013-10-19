@@ -112,6 +112,14 @@ app.get('/user/find', ensureAuthenticated, function(req,res) {
 app.post('/user/find', ensureAuthenticated, function(req,res) {
   users.findByFilterAndSort(req,res);
 });
+
+app.get('/job/find', ensureAuthenticated, function(req,res) {
+  users.findJobs(req,res);
+});
+app.post('/job/find', ensureAuthenticated, function(req,res) {
+  users.findJobs(req,res);
+});
+
 http.createServer(app).listen(app.get('port'), function () {
     console.log("Express server listening on port " + app.get('port'));
 });
