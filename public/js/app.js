@@ -51,7 +51,7 @@ alumnize.Router = Backbone.Router.extend({
         });
     },
     events: function() {
-        var eventSearchResult = new alumnize.JobSearchResult();
+        var eventSearchResult = new alumnize.EventSearchResult();
         eventSearchResult.fetch({
             success: function (data) {
                 var eventsView = new alumnize.EventsView({model: data});

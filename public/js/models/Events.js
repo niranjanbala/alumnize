@@ -8,7 +8,7 @@ alumnize.EventsCollection = Backbone.Collection.extend({
 });
 
 alumnize.EventSearchResult = Backbone.Model.extend({
-	url: "http://alumnize-beta.herokuapp.com/event/find",
+	url: "http://alumnize-beta.herokuapp.com/user/find",
 	defaults: {
 	        pageNumber: 1,
 	        pageSize: 15,
