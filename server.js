@@ -120,6 +120,13 @@ app.post('/job/find', ensureAuthenticated, function(req,res) {
   users.findJobs(req,res);
 });
 
+app.get('/event/find', ensureAuthenticated, function(req,res) {
+  users.findEvents(req,res);
+});
+app.post('/event/find', ensureAuthenticated, function(req,res) {
+  users.findEvents(req,res);
+});
+
 http.createServer(app).listen(app.get('port'), function () {
     console.log("Express server listening on port " + app.get('port'));
 });

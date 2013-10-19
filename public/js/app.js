@@ -23,7 +23,8 @@ alumnize.Router = Backbone.Router.extend({
         "signup":"signup",
         "people":"peopleListView",
         "people/:pageNumber":"peopleListViewByPage",
-        "jobs":"jobs"
+        "jobs":"jobs",
+        "events":"events"
     },
     initialize: function () {
     },
@@ -46,6 +47,15 @@ alumnize.Router = Backbone.Router.extend({
             success: function (data) {
                 var jobsView = new alumnize.JobsView({model: data});
                 $('.container').html(jobsView.render().el);
+            }
+        });
+    },
+    events: function() {
+        var eventSearchResult = new alumnize.EventSearchResult();
+        eventSearchResult.fetch({
+            success: function (data) {
+                var eventsView = new alumnize.EventsView({model: data});
+                $('.container').html(eventsView.render().el);
             }
         });
     },
@@ -78,7 +88,8 @@ alumnize.Router = Backbone.Router.extend({
 });
 $(document).on("ready", function () {
     alumnize.loadTemplates(["FeedBack","Carousel","Navigation","Features","Footer","Login",
-    					"UserHomePage","EditProfile","PeopleListView","UserSmallView","JobsView","JobListView"],
+    					"UserHomePage","EditProfile","PeopleListView","UserSmallView","JobsView",
+                        "JobListView","EventsView","EventListView"],
         function () {
             alumnize.router = new alumnize.Router();
             Backbone.history.start();

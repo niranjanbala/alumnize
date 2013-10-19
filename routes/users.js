@@ -122,6 +122,7 @@ exports.findByFilterAndSort = function(req, res) {
         });
     });
 };
+
 exports.findJobs = function(req, res) {
     db.collection('jobs', function(err, collection) {
         var filters={};
@@ -153,6 +154,35 @@ exports.findJobs = function(req, res) {
                                 "salary": "5-6 lacs P/A",
                                 "location": "Bangalore",
                                 "company": "HCL"
+                              }
+                            ]
+            });
+        });
+    });
+};
+
+exports.findEvents = function(req, res) {
+    db.collection('events', function(err, collection) {
+        var filters={};
+        var sorter={firstName: 1};
+        var pageSize=25;
+        var pageNumber=1;
+        if(req.params.pageNumber) {
+            pageNumber=req.params.pageNumber;
+        }
+        collection.find(filters).sort(sorter).skip(pageSize * (pageNumber-1)).limit(pageSize).toArray(function(err, items) {
+            res.jsonp({
+                "pageSize" : pageSize,
+                "pageNumber": pageNumber,
+                "result": [
+                              {
+                                "eventName": "China International Organic Food Industry Expo",
+                                "eventType": "Festival, Fair, Exhibition, Show",
+                                "location": "Shanghai International Exhibition Center, Shanghai, China",
+                                "contactEmail": "foodexhibition11@163.com",
+                                "website": "http://www.gnfexpo.com.cn/",
+                                "startDate": "20-10-2013",
+                                "endDate": "22-10-2013"
                               }
                             ]
             });

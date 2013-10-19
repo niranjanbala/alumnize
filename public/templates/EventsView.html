@@ -1,0 +1,28 @@
+<div class="row">
+	<div class="col-md-3">
+		<h2>Find events</h2>
+      	<form id="searchForm" class="pure-form" data-ajax="true">
+		    <fieldset class="pure-group">
+		        <input name="eventName" type="text" class="pure-input-1" placeholder="Event Name"> 
+		    </fieldset>
+		    <fieldset class="pure-group">
+		        <input name="eventType" type="text" class="pure-input-1" placeholder="Event Type">
+		    </fieldset>
+		    <fieldset class="pure-group">					   
+		        <input name="startDate" type="text" class="pure-input-1" placeholder="Start Date">
+		    </fieldset>
+		    <fieldset class="pure-group">					   
+		        <input name="endDate" type="text" class="pure-input-1" placeholder="End Date">
+		    </fieldset>
+		    <fieldset class="pure-group">					   
+		        <input name="location" type="text" class="pure-input-1" placeholder="Location">
+		    </fieldset>
+	    	<button class="searchEvent pure-button pure-button-primary pure-input-1">Search</button>
+		</form>										
+	</div>
+	<div class="col-md-9" role="main">
+		<h2>Search Results</h2>
+		<div id="eventList" class="eventList pure-g-r">			
+		</div>
+	</div>
+</div>
