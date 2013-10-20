@@ -11,7 +11,7 @@ alumnize.EventsView = Backbone.View.extend({
         this.model.on("reset", this.render, this);
         this.model.on("change:result", this.render, this);
         this.model.on("add", function (user) {
-            
+            $('#dp3').datepicker('show');
             $('eventList', this.el).append(new alumnize.EventListView({model:user}).render().el);
         });
     },
