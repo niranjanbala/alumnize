@@ -7,6 +7,7 @@ alumnize.EventsView = Backbone.View.extend({
         this.model.performSearch($('#searchForm').serialize());
     },
     initialize:function () {
+        $('.datepicker').datepicker()
         var self = this;
         this.model.on("reset", this.render, this);
         this.model.on("change:result", this.render, this);
