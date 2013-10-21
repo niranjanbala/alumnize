@@ -8,6 +8,7 @@ alumnize.UserSmallView = Backbone.View.extend({
         // layers, you can directly pass model.attributes to the template function
         var data = _.clone(this.model.attributes);
         data.id = this.model.id;		
+        console.log(data);
         this.$el.html(this.template(data));		
         return this;
     },
