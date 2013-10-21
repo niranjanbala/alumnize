@@ -23,9 +23,9 @@ alumnize.EventsView = Backbone.View.extend({
 		_.each(this.model.get('result').models, function(user) {			
 			$('#eventList',that.$el).append(new alumnize.EventListView({model:user}).render().el);
 		});
-        $('#startDatePicker').datetimepicker({
+        $('#startDatePicker',this.$el).datetimepicker({
         });
-        $('#endDatePicker').datetimepicker({
+        $('#endDatePicker',this.$el).datetimepicker({
         });
         return this;
     }
