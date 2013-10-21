@@ -10,13 +10,17 @@ alumnize.User = Backbone.Model.extend({
 alumnize.UserCollection = Backbone.Collection.extend({
     model: alumnize.User
 });
+alumnize.UserSearchQuery = Backbone.Model.extend({
+
+});
 
 alumnize.UserSearchResult = Backbone.Model.extend({
 	url: "http://alumnize-beta.herokuapp.com/user/find",
 	defaults: {
 	        pageNumber: 1,
 	        pageSize: 15,
-	        result : new alumnize.UserCollection()
+	        result : new alumnize.UserCollection(),
+	       	query: new UserSearchQuery();
     },
     parse: function(response) {
 	  response.result= new alumnize.UserCollection(response.result);
