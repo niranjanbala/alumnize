@@ -8,7 +8,10 @@ alumnize.EventListView = Backbone.View.extend({
         // layers, you can directly pass model.attributes to the template function
         var data = _.clone(this.model.attributes);
         data.id = this.model.id;		
-        this.$el.html(this.template(data));		
+        this.$el.html(this.template(data));	
+        $('#datetimepicker').datetimepicker({
+          pickTime: false
+        });	
         return this;
     },
 	className: function() {
