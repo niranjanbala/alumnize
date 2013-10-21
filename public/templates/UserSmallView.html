@@ -1,6 +1,7 @@
 <div class="l-box">
     <h3><%= name %></h3>
-	<% if(!_.isNull(facebook)) { %>		
+	<% if(!_.isNull(facebook)) { %>
+		<img src="https://graph.facebook.com/<%= facebook.id %>/picture?width=100&height=100">
     <% } else { %>
 		<img src="/images/<%= gender %>.png">
     <% }  %>

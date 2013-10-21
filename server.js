@@ -73,6 +73,7 @@ app.configure(function () {
   	app.use(passport.initialize());
   	app.use(passport.session());
   	app.use(app.router);
+    app.use(express.compress());
     app.use(express.static(path.join(__dirname, 'public')));
 });
 

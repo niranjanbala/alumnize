@@ -1,5 +1,8 @@
 alumnize.User = Backbone.Model.extend({
-
+	defaults: {
+		facebook: null,
+		linkedin: null
+	},
     url : "http://alumnize-beta.herokuapp.com/account",
     initialize:function () {
     }
