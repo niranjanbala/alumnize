@@ -1,3 +1,8 @@
+var MongoClient = require('mongodb').MongoClient,
+    db;
+MongoClient.connect("mongodb://user:welcome001*@ds047448.mongolab.com:47448/heroku_app18353461", function(err, mDb) {
+    db=mDb;
+});
  exports.findJobs = function(req, res) {
     db.collection('jobs', function(err, collection) {
         var filters={};
