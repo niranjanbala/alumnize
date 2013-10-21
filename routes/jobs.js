@@ -17,8 +17,7 @@ MongoClient.connect("mongodb://user:welcome001*@ds047448.mongolab.com:47448/hero
                 "pageSize" : pageSize,
                 "pageNumber": pageNumber,
                 "result" : [
-                            {
-                              
+                            {                              
                                 "jobTitle": "PHP Developer",
                                 "jobDesc": "PHP Developer (Wordpress & Magento Development) | Exp in PHP, CSS3, Ajax, MySQL, Jquery, JSON, Photoshop along with Facebook-Twitter API | Aware of HTML5 Responsive Design | Good communication skills | Problem Solving in the Live Environment",
                                 "experience": "3-4 years",
