@@ -1,7 +1,6 @@
 alumnize.EventListView = Backbone.View.extend({
     initialize:function () {
-                    $('#datetimepicker1').datetimepicker({
-                    });
+                   
         this.model.on("change", this.render, this);
         this.model.on("destroy", this.close, this);
     },
@@ -11,7 +10,10 @@ alumnize.EventListView = Backbone.View.extend({
         var data = _.clone(this.model.attributes);
         data.id = this.model.id;		
         this.$el.html(this.template(data));	
+         $('#datetimepicker1').datetimepicker({
+                    });
         return this;
+
     },
 	className: function() {
 		return "eventListView pure-u-1";
