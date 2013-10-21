@@ -28,7 +28,7 @@ alumnize.EventsView = Backbone.View.extend({
         $('#endDatePicker',this.$el).datepicker({
         });
 
-        $("#location").tokenInput([
+        $("#demo-input-local").tokenInput([
                 {id: 7, name: "Ruby"},
                 {id: 11, name: "Python"},
                 {id: 13, name: "JavaScript"},
@@ -42,7 +42,6 @@ alumnize.EventsView = Backbone.View.extend({
                 {id: 43, name: "C++"},
                 {id: 47, name: "Java"}
             ]);
-        });
 
         return this;
     }
