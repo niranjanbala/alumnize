@@ -1,5 +1,8 @@
 alumnize.EventListView = Backbone.View.extend({
     initialize:function () {
+        $('#datetimepicker').datetimepicker({
+          pickTime: false
+        });
         this.model.on("change", this.render, this);
         this.model.on("destroy", this.close, this);
     },
