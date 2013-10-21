@@ -24,6 +24,7 @@ alumnize.UserSearchResult = Backbone.Model.extend({
 	},
 	performSearch: function(v){
 		var self=this;
+		console.log(this);
 		console.log(v);		
 		self.save({
 			success: function (data) {
