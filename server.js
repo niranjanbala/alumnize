@@ -2,6 +2,8 @@ var express = require('express'),
     path = require('path'),
     http = require('http'),
     users = require('./routes/users'),
+    jobs = require('./routes/jobs'),
+    events = require('./routes/events'),
     passport = require('passport'),
     FacebookStrategy = require('passport-facebook').Strategy,
     GoogleStrategy = require('passport-google').Strategy,
@@ -115,17 +117,16 @@ app.post('/user/find', ensureAuthenticated, function(req,res) {
 });
 
 app.get('/job/find', ensureAuthenticated, function(req,res) {
-  users.findJobs(req,res);
+  jobs.findJobs(req,res);
 });
 app.post('/job/find', ensureAuthenticated, function(req,res) {
-  users.findJobs(req,res);
+  jobs.findJobs(req,res);
 });
-
 app.get('/event/find', ensureAuthenticated, function(req,res) {
-  users.findEvents(req,res);
+  events.findEvents(req,res);
 });
 app.post('/event/find', ensureAuthenticated, function(req,res) {
-  users.findEvents(req,res);
+  events.findEvents(req,res);
 });
 
 http.createServer(app).listen(app.get('port'), function () {
