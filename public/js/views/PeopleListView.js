@@ -23,6 +23,68 @@ alumnize.PeopleListView = Backbone.View.extend({
 		_.each(this.model.get('result').models, function(user) {			
 			$('#peopleList',that.$el).append(new alumnize.UserSmallView({model:user}).render().el);
 		});
+
+        $("#collegeSchool",this.$el).tokenInput([
+                {
+                    "value": {
+                        "cityName": "Villupuram",
+                        "stateName": "Tamilnadu",
+                        "collegeName": "Theivanai Ammal College For Women"
+                    },
+                    "type": "college"
+                },
+                {
+                    "value": {
+                        "cityName": "Bangalore",
+                        "stateName": "Karnataka",
+                        "collegeName": "Bangalore Institute Of Legal Studies."
+                    },
+                    "type": "college"
+                },
+                {
+                    "value": {
+                        "cityName": "Bangalore",
+                        "stateName": "Karnataka",
+                        "collegeName": "Bangalore Technical Foundation Trust"
+                    },
+                    "type": "college"
+                },
+                {
+                    "value": {
+                        "cityName": "Amritsar",
+                        "stateName": "Punjab",
+                        "collegeName": "Department Of Food Science & Technology"
+                    },
+                    "type": "college"
+                },
+                {
+                    "value": {
+                        "cityName": "Kazhikode",
+                        "stateName": "Kerala",
+                        "collegeName": "Co-operative Institute Of Technology"
+                    },
+                    "type": "college"
+                },
+                {
+                    "value": {
+                        "cityName": "Pune",
+                        "stateName": "Maharashtra",
+                        "collegeName": "Nutan Maharashtra Vidya Prasarak Mandal's, Nutan Maharashtra Institute Of Technology"
+                    },
+                    "type": "college"
+                },
+                {
+                    "value": {
+                        "cityName": "Bangalore",
+                        "stateName": "Karnataka",
+                        "collegeName": "Vokkaligara Sangha Dental College & Hospital"
+                    },
+                    "type": "college"
+                }
+        ]{
+              propertyToSearch: "collegeName"}
+        );
+
         return this;
     }
 });
