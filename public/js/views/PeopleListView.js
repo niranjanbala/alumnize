@@ -82,8 +82,9 @@ alumnize.PeopleListView = Backbone.View.extend({
                     "type": "college"
                 }
         ],{
-              propertyToSearch: "type"}
-        );
+            propertyToSearch: "type",
+            resultsFormatter: function(item){ console..log() }
+        });
 
         return this;
     }
