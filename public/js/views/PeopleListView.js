@@ -82,8 +82,8 @@ alumnize.PeopleListView = Backbone.View.extend({
                     "type": "college"
                 }
         ],{
-            propertyToSearch: "value",
-            resultsFormatter: function(item){ console.log(item); }
+            propertyToSearch: "type",
+            resultsFormatter: function(item){ return item.value.collegeName}
         });
 
         return this;
